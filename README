@@ -2,3 +2,5 @@ These are not perfect, they are just hacked together definitions of Halo 2 Tag T
 They most likely will require a bit of manual editing from iside of IDA in the actual Structure, As I did not add in to tell IDA when to align things as that would have probably driven me mad. Also the plugins are not perfect and have some errors in them and I don't want to spend a lifetime fixing them. There is one fully working structure included which is the Weapon tag, you can just add that and start assigning it to variables as is.
 
 NOTE: Each file contains the structure definition for the root tag and all of it's reflexes, which means each file contains multiple structures so you cannot just select it all and paste it in.
+
+NOTE NOTE: The source is hot garbage, beware those who view it you will get cancer.
