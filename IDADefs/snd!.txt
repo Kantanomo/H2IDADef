@@ -1,0 +1,18 @@
+struct struct_snd!
+{
+	_WORD Flags;
+	_WORD Sound_Class;
+	_BYTE Format;
+	_BYTE padding_0[-1];
+	_BYTE padding_1[-4];
+	_BYTE padding_2[6];
+	_WORD Index_to_Sound_Properties;
+	_WORD Index_to_Sound_Premutations;
+	_BYTE Premutation_Chunk_Count;
+	_BYTE Index_to_Sound_Unknownseventeen;
+	_BYTE padding_3[-6];
+	_WORD Index_to_Something;
+	_WORD Index_to_Combat_Dialog_Raw;
+	_BYTE padding_4[6];
+	_DWORD Index_to_Something;
+};

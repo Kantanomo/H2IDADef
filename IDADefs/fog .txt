@@ -1,0 +1,43 @@
+struct struct_fog 
+{
+	_WORD Flags;
+	_WORD Priority;
+	_DWORD Global_Material_Name;
+	_BYTE padding_0[4];
+	float Maximum_Density;
+	float Opaque_Distance;
+	float Opaque_Depth;
+	float Atmospheric_Planar_Depth_Lower;
+	float Atmospheric_Planar_Depth_Upper;
+	float Eye_Offset_Scale;
+	float Color_R;
+	float Color_G;
+	float Color_B;
+	_DWORD Patchy_Fog_Count;
+	_DWORD Patchy_Fog_Offset;
+	_DWORD Background_Sound_Class;
+	_DWORD Background_Sound;
+	_DWORD Sound_Enviroment_Class;
+	_DWORD Sound_Enviroment;
+	float Environment_Damping_Factor;
+	float Background_Sound_Gain;
+	_DWORD Enter_Sound_Class;
+	_DWORD Enter_Sound;
+	_DWORD Exit_Sound_Class;
+	_DWORD Exit_Sound;
+};
+struct struct_tag_fog _Patchy_Fog
+{
+	float Color_R;
+	float Color_G;
+	float Color_B;
+	_BYTE padding_1[12];
+	float Density_Lower;
+	float Density_Upper;
+	float Distance_Lower;
+	float Distance_Upper;
+	float Min_Depth_Fraction;
+	_DWORD Patchy_Fog_Class;
+	_DWORD Patchy_Fog;
+	_BYTE padding_2[-4];
+};

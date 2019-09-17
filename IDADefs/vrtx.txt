@@ -1,0 +1,20 @@
+struct struct_vrtx
+{
+	_BYTE padding_0[4];
+	_DWORD Unknownfive_Count;
+	_DWORD Unknownfive_Offset;
+};
+struct struct_tag_vrtx_Unknownfive
+{
+	_BYTE padding_1[4];
+	_BYTE padding_2[-4];
+	_WORD Unknown;
+	_BYTE padding_3[10];
+	_DWORD Unknownten_Count;
+	_DWORD Unknownten_Offset;
+};
+struct struct_tag_vrtx_Unknownten
+{
+	_BYTE Unknown;
+	_BYTE padding_4[19];
+};

@@ -1,0 +1,52 @@
+struct struct_clwd
+{
+	_DWORD Flags;
+	_DWORD Marker_Attachment_Name;
+	_DWORD Shader_Class;
+	_DWORD Shader;
+	_WORD Grid_X_Dimension;
+	_WORD Grid_Y_Dimension;
+	float Grid_Spacing_X;
+	float Grid_Spacing_Y;
+	_WORD Integration_Type;
+	_BYTE padding_0[-2];
+	_BYTE padding_1[4];
+	float Weight;
+	float Drag;
+	float Wind_Scale;
+	float Wind_Flappiness_Scale;
+	float Longest_Rod;
+	_BYTE padding_2[24];
+	_DWORD Vertices_Count;
+	_DWORD Vertices_Offset;
+	_DWORD Indices_Count;
+	_DWORD Indices_Offset;
+	_DWORD Strip_Indices_Count;
+	_DWORD Strip_Indices_Offset;
+	_DWORD Links_Count;
+	_DWORD Links_Offset;
+};
+struct struct_tag_clwd_Vertices
+{
+	float Initial_Position_X;
+	float Initial_Position_Y;
+	float Initial_Position_Z;
+	float UV_i;
+	float UV_j;
+};
+struct struct_tag_clwd_Indices
+{
+	_WORD Index;
+};
+struct struct_tag_clwd_Strip_Indices
+{
+	_WORD Index;
+};
+struct struct_tag_clwd_Links
+{
+	float Attachment_Bits;
+	_WORD Index_one;
+	_WORD Index_two;
+	float Default_Distance;
+	float Damping_Multiplier;
+};

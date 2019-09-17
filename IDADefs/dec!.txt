@@ -1,0 +1,19 @@
+struct struct_dec!
+{
+	_DWORD Decal_Palette_Count;
+	_DWORD Decal_Palette_Offset;
+	_DWORD Decals_Count;
+	_DWORD Decals_Offset;
+};
+struct struct_tag_dec!_Decal_Palette
+{
+};
+struct struct_tag_dec!_Decals
+{
+	_WORD Type;
+	_BYTE Yaw;
+	_BYTE Pitch;
+	float Position_X;
+	float Position_Y;
+	float Position_Z;
+};

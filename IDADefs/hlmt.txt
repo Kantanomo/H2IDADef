@@ -1,0 +1,249 @@
+struct struct_hlmt
+{
+	_DWORD Render_Model_Class;
+	_DWORD Render_Model;
+	_DWORD Collision_Model_Class;
+	_DWORD Collision_Model;
+	_DWORD Animation_Class;
+	_DWORD Animation;
+	_DWORD Physics_Class;
+	_DWORD Physics;
+	_DWORD Physics_Model_Class;
+	_DWORD Physics_Model;
+	float Disappear_Distance;
+	float Begin_Fade_Distance;
+	_BYTE padding_0[4];
+	float Reduce_To_Lone;
+	float Reduce_To_Ltwo;
+	float Reduce_To_Lthree;
+	float Reduce_To_Lfour;
+	float Reduce_To_Lfive;
+	_BYTE padding_1[4];
+	_WORD Spawn_Type;
+	_BYTE padding_2[2];
+	_DWORD Variants_Count;
+	_DWORD Variants_Offset;
+	_DWORD Materials_Count;
+	_DWORD Materials_Offset;
+	_DWORD New_Damage_Info_Count;
+	_DWORD New_Damage_Info_Offset;
+	_DWORD Targets_Count;
+	_DWORD Targets_Offset;
+	_DWORD Model_Variations_Count;
+	_DWORD Model_Variations_Offset;
+	_DWORD Nodes_Count;
+	_DWORD Nodes_Offset;
+	_BYTE padding_21[4];
+	_DWORD Model_Object_Data_Count;
+	_DWORD Model_Object_Data_Offset;
+	_DWORD Unit_Dialoge_Class;
+	_DWORD Unit_Dialoge;
+	_DWORD Active_Camo_Shader_Class;
+	_DWORD Active_Camo_Shader;
+	_DWORD Flags;
+	_DWORD Default_Dialogue_Effect;
+	_DWORD Runtime_Flags;
+	_BYTE padding_22[72];
+	_DWORD Hologram_Shader_Class;
+	_DWORD Hologram_Shader;
+	_DWORD Hologram_Control_Function;
+};
+struct struct_tag_hlmt_Variants
+{
+	_DWORD Name;
+	_BYTE padding_3[16];
+	_DWORD Regions_Count;
+	_DWORD Regions_Offset;
+};
+struct struct_tag_hlmt_Regions
+{
+	_DWORD Name;
+	_WORD Parent_Variant_#;
+	_BYTE padding_4[2];
+	_DWORD Permutation_Count;
+	_DWORD Permutation_Offset;
+};
+struct struct_tag_hlmt_Permutation
+{
+	_DWORD Name;
+	_DWORD Flags;
+	float Probability;
+	_BYTE padding_5[4];
+	_DWORD Sort_Order;
+	_BYTE padding_6[24];
+	_DWORD Dialogue_Sound_Effect;
+	_DWORD Dialogue_Class;
+	_DWORD Dialogue;
+	_BYTE padding_7[-28];
+	_DWORD Objects_Count;
+	_DWORD Objects_Offset;
+};
+struct struct_tag_hlmt_Objects
+{
+	_DWORD Parent_Marker;
+	_DWORD Child_Marker;
+	_DWORD Child_Object_Class;
+	_DWORD Child_Object;
+};
+struct struct_tag_hlmt_Materials
+{
+	_DWORD Material_Name;
+	_DWORD Material_Type;
+	_DWORD Damage_Section;
+	_DWORD Global_Material_Name;
+};
+struct struct_tag_hlmt_New_Damage_Info
+{
+	_DWORD Flags;
+	_DWORD Global_Indirect_Material_Name;
+	_DWORD Indirect_Damage_Section;
+	_BYTE padding_8[4];
+	_WORD Collision_Damage_Reporting_Type;
+	_WORD Response_Damage_Reporting_Type;
+	_BYTE padding_9[20];
+	float Max_Vitality;
+	float Min_Stun_Damage;
+	float Stun_Time;
+	float Recharge_Time;
+	float Recharge_Fraction;
+	_BYTE padding_10[64];
+	_DWORD Shield_Damaged_FP_Shader_Class;
+	_DWORD Shield_Damaged_FP_Shader;
+	_DWORD Shield_Damaged_Shader_Class;
+	_DWORD Shield_Damaged_Shader;
+	float Max_Shield_Vitality;
+	_DWORD Global_Sheild_Material_Name;
+	float Min_Stun_Damage_0;
+	float Stun_Time_0;
+	float Shield_Recharge_Time;
+	float Sheild_Damaged_Threshold;
+	_DWORD Sheild_Damaged_Effect_Class;
+	_DWORD Sheild_Damaged_Effect;
+	_DWORD Sheild_Depleted_Effect_Class;
+	_DWORD Sheild_Depleted_Effect;
+	_DWORD Sheild_Recharging_Effect_Class;
+	_DWORD Sheild_Recharging_Effect;
+	_DWORD Damage_Secctions_Count;
+	_DWORD Damage_Secctions_Offset;
+};
+struct struct_tag_hlmt_Damage_Secctions
+{
+	_DWORD Name;
+	_DWORD Flags;
+	float Vitality_Percentage;
+	_DWORD Instant_Responses_Count;
+	_DWORD Instant_Responses_Offset;
+};
+struct struct_tag_hlmt_Instant_Responses
+{
+	_WORD Response_Type;
+	_WORD Constraint_Damage_Type;
+	_DWORD Flags;
+	float Damage_Threshold;
+	_DWORD Transition_Effect_Class;
+	_DWORD Transition_Effect;
+	_DWORD Transition_Damage_Effect_Class;
+	_DWORD Transition_Damage_Effect;
+	_DWORD Region;
+	_WORD New_State;
+	_WORD Runtime_Region_Index;
+	_DWORD Effect_Marker_Name;
+	_DWORD Damage_Effect_Marker_Name;
+	float Response_Delay;
+	_DWORD Delay_Effect_Class;
+	_DWORD Delay_Effect;
+	_DWORD Delay_Effect_Marker_Name;
+	_DWORD Contraint/Group_Name;
+	_DWORD Ejecting_Seat_Label;
+	float Skip_Fraction;
+	_DWORD Destroyed_Child_Object_Marker_Name;
+	float Total_Damage_Threshold;
+	_BYTE padding_11[-40];
+	float Stun_Time;
+	float Recharge_Time;
+	_DWORD Resurrection_Restored_Region_Name;
+	_BYTE padding_12[144];
+	_DWORD Nodes_Count;
+	_DWORD Nodes_Offset;
+};
+struct struct_tag_hlmt_Nodes
+{
+	_BYTE padding_13[216];
+	_DWORD Damage_Seats_Count;
+	_DWORD Damage_Seats_Offset;
+};
+struct struct_tag_hlmt_Damage_Seats
+{
+	_DWORD Seat_Label;
+	float Direct_Damage_Scale;
+	float Damage_Transfer_Fall_Off_Radius;
+	float Max_Transfer_Damage_Scale;
+	float Min_Transfer_Damage_Scale;
+	_BYTE padding_14[204];
+	_DWORD Damage_Constraints_Count;
+	_DWORD Damage_Constraints_Offset;
+};
+struct struct_tag_hlmt_Damage_Constraints
+{
+	_DWORD Physics_Model_Constraint_Name;
+	_DWORD Damage_Constraint_Name;
+	_DWORD Damage_Constaint_Goup_Name;
+	float Group_Probability_Scale;
+	_BYTE padding_15[216];
+	_DWORD Overshield_FP_Shader_Class;
+	_DWORD Overshield_FP_Shader;
+	_DWORD Overshield_Shader_Class;
+	_DWORD Overshield_Shader;
+};
+struct struct_tag_hlmt_Targets
+{
+	_DWORD Marker_Name;
+	float Size;
+	float Cone_Angle;
+	_WORD Damage_Section_#;
+	_WORD Variant_#;
+	float Targeting_Relevance;
+	_DWORD Flags;
+	float Lock_On_Distance;
+};
+struct struct_tag_hlmt_Model_Variations
+{
+	_DWORD Type;
+	_BYTE padding_16[4];
+	_DWORD Permutation_Count;
+	_DWORD Permutation_Offset;
+};
+struct struct_tag_hlmt_Permutation_0
+{
+	_DWORD Variation;
+};
+struct struct_tag_hlmt_Nodes_0
+{
+	_DWORD Name;
+	_WORD Parent_Index;
+	_WORD First_Child_Index;
+	_WORD Next_Sibling_Index;
+	_BYTE padding_17[2];
+	float Y;
+	float X;
+	_BYTE padding_18[-2];
+	float Z;
+	float i;
+	float j;
+	float k;
+	float w;
+	_BYTE padding_19[2];
+	float Scale_Factor;
+	_BYTE padding_20[36];
+	float Y_Leave_Child;
+	float X_Leave_Child;
+	float Z_Leave_Child;
+};
+struct struct_tag_hlmt_Model_Object_Data
+{
+	_DWORD Type;
+	float X;
+	float Y;
+	float Z;
+	float Radius;
+};

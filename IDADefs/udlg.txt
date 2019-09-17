@@ -1,0 +1,16 @@
+struct struct_udlg
+{
+	_DWORD Global_Dialogue_Info_Class;
+	_DWORD Global_Dialogue_Info;
+	_DWORD Flags;
+	_DWORD Vocalizations_Count;
+	_DWORD Vocalizations_Offset;
+	_DWORD Mission_Dialogue_Designator;
+};
+struct struct_tag_udlg_Vocalizations
+{
+	_DWORD Flags;
+	_DWORD Vocalization;
+	_DWORD Sound_Class;
+	_DWORD Sound;
+};

@@ -1,0 +1,96 @@
+struct struct_goof
+{
+	_BYTE padding_0[24];
+	_DWORD Game_Engine_Settings_Count;
+	_DWORD Game_Engine_Settings_Offset;
+	_BYTE padding_3[16];
+	_DWORD Default_Variant_Strings_Class;
+	_DWORD Default_Variant_Strings;
+	_DWORD Default_Variants_Count;
+	_DWORD Default_Variants_Offset;
+	_BYTE padding_6[12];
+	_BYTE padding_7[8];
+	_DWORD Create_New_Slayer_Variant_Count;
+	_DWORD Create_New_Slayer_Variant_Offset;
+	_BYTE padding_8[12];
+	_DWORD Create_New_King_Of_The_Hill_Variant_Count;
+	_DWORD Create_New_King_Of_The_Hill_Variant_Offset;
+	_BYTE padding_9[32];
+	_DWORD Create_New_Oddball_Variant_Count;
+	_DWORD Create_New_Oddball_Variant_Offset;
+	_BYTE padding_10[12];
+	_DWORD Create_New_Juggernaut_Variant_Count;
+	_DWORD Create_New_Juggernaut_Variant_Offset;
+	_BYTE padding_11[32];
+	_DWORD Create_New_Capture_The_Flag_Variant_Count;
+	_DWORD Create_New_Capture_The_Flag_Variant_Offset;
+	_BYTE padding_12[12];
+	_DWORD Create_New_Assault_Variant_Count;
+	_DWORD Create_New_Assault_Variant_Offset;
+	_BYTE padding_13[12];
+	_DWORD Create_New_Territories_Variant_Count;
+	_DWORD Create_New_Territories_Variant_Offset;
+};
+struct struct_tag_goof_Game_Engine_Settings
+{
+	_DWORD Setting_Category;
+	_BYTE padding_1[4];
+	_DWORD Options_Count;
+	_DWORD Options_Offset;
+};
+struct struct_tag_goof_Options
+{
+	_DWORD Value_Pairs_Class;
+	_DWORD Value_Pairs;
+	_BYTE padding_2[8];
+};
+struct struct_tag_goof_Default_Variants
+{
+	_DWORD Variant_Name;
+	_WORD Variant_Type;
+	_BYTE padding_4[2];
+	_DWORD Settings_Count;
+	_DWORD Settings_Offset;
+};
+struct struct_tag_goof_Settings
+{
+	_DWORD Setting_Catergory;
+	_DWORD Value;
+	_BYTE padding_5[8];
+	_WORD Description_Index;
+};
+struct struct_tag_goof_Create_New_Slayer_Variant
+{
+	_DWORD Setting_Catergory;
+	_DWORD Value;
+};
+struct struct_tag_goof_Create_New_King_Of_The_Hill_Variant
+{
+	_DWORD Setting_Catergory;
+	_DWORD Value;
+};
+struct struct_tag_goof_Create_New_Oddball_Variant
+{
+	_DWORD Setting_Catergory;
+	_DWORD Value;
+};
+struct struct_tag_goof_Create_New_Juggernaut_Variant
+{
+	_DWORD Setting_Catergory;
+	_DWORD Value;
+};
+struct struct_tag_goof_Create_New_Capture_The_Flag_Variant
+{
+	_DWORD Setting_Catergory;
+	_DWORD Value;
+};
+struct struct_tag_goof_Create_New_Assault_Variant
+{
+	_DWORD Setting_Catergory;
+	_DWORD Value;
+};
+struct struct_tag_goof_Create_New_Territories_Variant
+{
+	_DWORD Setting_Catergory;
+	_DWORD Value;
+};

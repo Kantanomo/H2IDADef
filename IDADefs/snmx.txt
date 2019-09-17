@@ -1,0 +1,25 @@
+struct struct_snmx
+{
+	float First_Person_Left_Side_Left_Stereo_Gain;
+	float First_Person_Left_Side_Right_Stereo_Gain;
+	float First_Person_Middle_Side_Left_Stereo_Gain;
+	float First_Person_Middle_Side_Right_Stereo_Gain;
+	float First_Person_Right_Side_Left_Stereo_Gain;
+	float First_Person_Right_Side_Right_Stereo_Gain;
+	float First_Person_Stereo_Front_Speaker_Gain_dB;
+	float First_Person_Stereo_Rear_Speaker_Gain_dB;
+	float Ambient_Stereo_Front_Speaker_Gain_dB;
+	float Ambient_Stereo_Rear_Speaker_Gain_dB;
+	float Global_Mono_Unspatialized_Gain_dB;
+	float Global_Stereo_To_threeD_Gain_dB;
+	float Global_Rear_Surround_To_Front_Stereo_Gain_dB;
+	float Surround_Center_Speaker_Gain_dB;
+	float Surround_Center_Speaker_Gain_dB_0;
+	float Stereo_Front_Speaker_Gain_dB;
+	float Stereo_Center_Speaker_Gain_dB;
+	float Stereo_Unspatialized_Gain_dB;
+	float Solo_Player_Fade_Out_Delay;
+	float Solo_Player_Fade_Out_Time_Sec;
+	float Solo_Player_Fade_In_Time_Sec;
+	float Game_Music_Fade_Out_Time_Sec;
+};

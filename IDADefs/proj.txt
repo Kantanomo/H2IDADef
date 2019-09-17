@@ -1,0 +1,214 @@
+struct struct_proj
+{
+	_DWORD Flags;
+	float Bounding_Radius;
+	float Bounding_Offset_X;
+	float Bounding_Offset_Y;
+	float Bounding_Offset_Z;
+	float Acceleration_Scale;
+	_DWORD Lightmap_Shadow_Mode;
+	_DWORD Sweetener_Size;
+	float Dynamic_Light_Sphere_Radius;
+	float Dynamic_Light_Sphere_Offset_X;
+	float Dynamic_Light_Sphere_Offset_Y;
+	float Dynamic_Light_Sphere_Offset_Z;
+	_DWORD Default_Model_Variant;
+	_DWORD Model_Class;
+	_DWORD Model;
+	_DWORD Crate_Object_Class;
+	_DWORD Crate_Object;
+	_DWORD Modifier_Shader_Class;
+	_DWORD Modifier_Shader;
+	_DWORD Creation_Effect_Class;
+	_DWORD Creation_Effect;
+	_DWORD Material_Effects_Class;
+	_DWORD Material_Effects;
+	_DWORD Ai_Properties_Count;
+	_DWORD Ai_Properties_Offset;
+	_DWORD Functions_Count;
+	_DWORD Functions_Offset;
+	float Apply_Collision_Damage_Scale;
+	float Min_Game_Acc_Default;
+	float Max_Game_Acc_Default;
+	float Min_Gam_Scale_Default;
+	float Max_Gam_Scale_Default;
+	float Min_abs_Acc_Default;
+	float Max_abs_Acc_Default;
+	float Min_abs_Scale_Default;
+	float Max_abs_Scale_Default;
+	_WORD Hud_Text_Message_Index;
+	_BYTE padding_1[2];
+	_DWORD Attachments_Count;
+	_DWORD Attachments_Offset;
+	_DWORD Widgets_Count;
+	_DWORD Widgets_Offset;
+	_DWORD Old_Functions_Count;
+	_DWORD Old_Functions_Offset;
+	_DWORD Change_Colors_Count;
+	_DWORD Change_Colors_Offset;
+	_DWORD Predicted_Resource_Count;
+	_DWORD Predicted_Resource_Offset;
+	_DWORD Flags;
+	_WORD Detonation_Timer_Starts;
+	_WORD Impact_Noise;
+	float AI_Perception_Radius;
+	float Collision_Radius;
+	float Arming_Time;
+	float Danger_Radius;
+	float Timersec;
+	float ___To;
+	float Minimum_Velocity;
+	float Maximum_Range;
+	_WORD Detonation_Noise;
+	_WORD Super_Detonation_Projectile_Count;
+	_DWORD Detonation_Started_Class;
+	_DWORD Detonation_Started;
+	_DWORD Airborne_Detonation_Class;
+	_DWORD Airborne_Detonation;
+	_DWORD Ground_Detonation_Class;
+	_DWORD Ground_Detonation;
+	_DWORD Detonation_Damage_Class;
+	_DWORD Detonation_Damage;
+	_DWORD Attached_Detonation_Damage_Class;
+	_DWORD Attached_Detonation_Damage;
+	_DWORD Super_Detonation_Class;
+	_DWORD Super_Detonation;
+	_DWORD Super_Detonation_Damage_Class;
+	_DWORD Super_Detonation_Damage;
+	_DWORD Detonation_Sound_Class;
+	_DWORD Detonation_Sound;
+	_DWORD Damage_Reporting_Type;
+	_DWORD Super_Attached_Detonation_Damage_Class;
+	_DWORD Super_Attached_Detonation_Damage;
+	float Material_Effect_Radius;
+	_DWORD Fly_By_Sound_Class;
+	_DWORD Fly_By_Sound;
+	_DWORD Impact_Effect_Class;
+	_DWORD Impact_Effect;
+	_DWORD Impact_Damage_Class;
+	_DWORD Impact_Damage;
+	float Boarding_Detonation_Time;
+	_DWORD Boarding_Detonation_Damage_Class;
+	_DWORD Boarding_Detonation_Damage;
+	_DWORD Boarding_Attached_Detonation_Damage_Class;
+	_DWORD Boarding_Attached_Detonation_Damage;
+	float Air_Gravity_Scale;
+	float Air_Damage_Range;
+	float ___To_0;
+	float Water_Gravity_Scale;
+	float Water_Damage_Range;
+	float ___To_1;
+	float Initial_Velocity;
+	float Final_Velocity;
+	float Guided_Angular_Velocity_Lower_degrees_per_sec;
+	float Guided_Angular_Velocity_Upper_degrees_per_sec;
+	float Acceleration_range_world_units;
+	float ___To_2;
+	float Targeted_Leading_Fraction;
+	float Position_Loops;
+	_DWORD Material_Responses_Count;
+	_DWORD Material_Responses_Offset;
+};
+struct struct_tag_proj_Ai_Properties
+{
+	_DWORD Flags;
+	_DWORD Type_Name;
+	_DWORD Size;
+	_DWORD Leap_Jump_Speed;
+};
+struct struct_tag_proj_Functions
+{
+	_DWORD Flags;
+	_DWORD Import_Name;
+	_DWORD Export_Name;
+	_DWORD Turn_Off_With;
+	float Min_Value;
+	_DWORD Function_Type_Graph_Count;
+	_DWORD Function_Type_Graph_Offset;
+};
+struct struct_tag_proj_Function_Type_Graph
+{
+	_BYTE Data;
+	_BYTE padding_0[27];
+	_DWORD Scale_By;
+};
+struct struct_tag_proj_Attachments
+{
+	_DWORD Type_Class;
+	_DWORD Type;
+	_DWORD Marker;
+	_DWORD Change_Color;
+	_DWORD Primary_Scale;
+	_DWORD Secondary_Scale;
+};
+struct struct_tag_proj_Widgets
+{
+	_DWORD Type_Class;
+	_DWORD Type;
+};
+struct struct_tag_proj_Old_Functions
+{
+};
+struct struct_tag_proj_Change_Colors
+{
+	_DWORD Initial_Permutations_Count;
+	_DWORD Initial_Permutations_Offset;
+};
+struct struct_tag_proj_Initial_Permutations
+{
+	_BYTE padding_2[4];
+	float Color_Lower_Bound_R;
+	float Color_Lower_Bound_G;
+	float Color_Lower_Bound_B;
+	float Color_Upper_Bound_R;
+	float Color_Upper_Bound_G;
+	float Color_Upper_Bound_B;
+	_DWORD Variant_Name;
+	_BYTE padding_3[-24];
+	_DWORD Functions_Count;
+	_DWORD Functions_Offset;
+};
+struct struct_tag_proj_Functions_0
+{
+	_DWORD Scale_Flags;
+	float Color_Lower_Bound_R;
+	float Color_Lower_Bound_G;
+	float Color_Lower_Bound_B;
+	float Color_Upper_Bound_R;
+	float Color_Upper_Bound_G;
+	float Color_Upper_Bound_B;
+	_DWORD Darken_By;
+	_DWORD Scale_By;
+};
+struct struct_tag_proj_Predicted_Resource
+{
+	_WORD Type;
+	_WORD Resource_Index;
+};
+struct struct_tag_proj_Material_Responses
+{
+	_WORD Flags;
+	_WORD Default_Response;
+	_DWORD DO_NOT_USE_OLD_effect_Class;
+	_DWORD DO_NOT_USE_OLD_effect;
+	_DWORD Material_Name;
+	_BYTE padding_4[2];
+	_WORD Response;
+	_DWORD Flags;
+	float Chance_Fraction;
+	float Between;
+	float To;
+	float And;
+	float To_0;
+	_DWORD DO_NOT_USE_OLD_Effect_Class;
+	_DWORD DO_NOT_USE_OLD_Effect;
+	_DWORD Scale_Effects_By;
+	float Angular_Noise;
+	float Veloctiy_Noise;
+	_DWORD DO_NOT_USE_OLD_Detonation_Class;
+	_DWORD DO_NOT_USE_OLD_Detonation;
+	float Initial_Friction;
+	float Maximum_Distance;
+	float Parallel_Friction;
+	float Perpendicluar_Friction;
+};

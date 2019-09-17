@@ -1,0 +1,81 @@
+struct struct_bitm
+{
+	_WORD Type;
+	_WORD Format;
+	_WORD Usage;
+	_WORD Format_0;
+	float Detail_Fade_Factor;
+	float Sharpen_Amount;
+	float Bump_Height;
+	_WORD Sprite_Budget_Size;
+	_WORD Sprite_Budget_Count;
+	_WORD Colour_Plate_Width;
+	_WORD Colour_Plate_Height;
+	_DWORD Compressed_Colour_Plate_Data;
+	_BYTE padding_0[12];
+	float Blur_Filter_Size;
+	float Alpha_Bias;
+	_WORD MipMap_Count;
+	_WORD Sprite_Usage;
+	_WORD Sprite_Spacing;
+	_WORD Face_Format;
+	_DWORD Squences_Count;
+	_DWORD Squences_Offset;
+	_DWORD Bitmap_Data_Count;
+	_DWORD Bitmap_Data_Offset;
+};
+struct struct_tag_bitm_Squences
+{
+	_BYTE padding_1[32];
+	_WORD First_Bitmap_Index;
+	_WORD Bitmap_Count;
+	_BYTE padding_2[16];
+	_DWORD Sprites_Count;
+	_DWORD Sprites_Offset;
+};
+struct struct_tag_bitm_Sprites
+{
+	_DWORD Bitmap_Index;
+	_BYTE padding_3[4];
+	float Left;
+	float Right;
+	float Top;
+	float Bottom;
+	float Reg_Point_X;
+	float Reg_Point_Y;
+};
+struct struct_tag_bitm_Bitmap_Data
+{
+	_DWORD Tag;
+	_WORD Width;
+	_WORD Height;
+	_WORD Depth;
+	_WORD Type;
+	_WORD Format;
+	_WORD Flags;
+	_WORD Reg_X;
+	_WORD Reg_Y;
+	_WORD MipMap_Count;
+	_WORD PixelOffset;
+	_DWORD Zero;
+	_DWORD LODone_Offset;
+	_DWORD LODtwo_Offset;
+	_DWORD LODthree_Offset;
+	_DWORD LODfour_Offset;
+	_DWORD LODfive_Offset;
+	_DWORD LODsix_Offset;
+	_DWORD LODone_Size;
+	_DWORD LODtwo_Size;
+	_DWORD LODthree_Size;
+	_DWORD LODfour_Size;
+	_DWORD LODfive_Size;
+	_DWORD LODsix_Size;
+	_BYTE padding_4[4];
+	_BYTE padding_5[8];
+	_DWORD FlagsCBZ;
+	_BYTE padding_6[4];
+	_DWORD UnknownCBZ;
+	_DWORD UnknownCBZ_0;
+	_DWORD UnknownCBZ_1;
+	_DWORD UnknownCBZ_2;
+};

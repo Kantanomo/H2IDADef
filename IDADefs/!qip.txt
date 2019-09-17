@@ -1,0 +1,56 @@
+struct struct_!qip
+{
+	_DWORD Script_Object_Names_Count;
+	_DWORD Script_Object_Names_Offset;
+	_BYTE padding_1[16];
+	_DWORD Eqipment_Pallet_Count;
+	_DWORD Eqipment_Pallet_Offset;
+	_BYTE padding_2[-16];
+	_DWORD BSP_Indexing_Count;
+	_DWORD BSP_Indexing_Offset;
+	_BYTE padding_6[8];
+	_DWORD Equipment_Placement_Count;
+	_DWORD Equipment_Placement_Offset;
+	_DWORD Unknown;
+};
+struct struct_tag_!qip_Script_Object_Names
+{
+	_BYTE padding_0[32];
+	_DWORD Unused;
+};
+struct struct_tag_!qip_Eqipment_Pallet
+{
+	_DWORD Eqipment_Class;
+	_DWORD Eqipment;
+};
+struct struct_tag_!qip_BSP_Indexing
+{
+	_BYTE padding_3[16];
+	_BYTE padding_4[8];
+	_DWORD Lightmap_Class;
+	_DWORD Lightmap;
+	_BYTE padding_5[28];
+	_DWORD Unknown;
+	_DWORD Unknown_0;
+};
+struct struct_tag_!qip_Equipment_Placement
+{
+	_WORD Type;
+	_WORD Name;
+	_DWORD Placement_Flags;
+	float Position_X;
+	float Position_Y;
+	float Position_Z;
+	float Rotation_Yaw;
+	float Rotation_Pitch;
+	float Rotation_Roll;
+	float Scale;
+	_BYTE padding_7[2];
+	_WORD Manual_BSP_Flags;
+	_DWORD Unique_ID;
+	_WORD Origin_BSP;
+	_WORD Type_0;
+	_WORD Source;
+	_WORD BSP_Policy;
+	_WORD Editor_Folder;
+};

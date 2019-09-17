@@ -1,0 +1,73 @@
+struct struct_lens
+{
+	_BYTE padding_0[8];
+	float Falloff_Angle_Degrees;
+	float Cuttoff_Angle_Degrees;
+	float Occlusion_Radius;
+	_WORD Occlusion_Offset_Direction;
+	_WORD Occlusion_Inner_Radius_Scale;
+	float Near_Fade_Distance;
+	float Far_Fade_Distance;
+	_DWORD Bitmap_Class;
+	_DWORD Bitmap;
+	_BYTE padding_1[-4];
+	_BYTE padding_2[4];
+	_DWORD Flags;
+	_DWORD Rotation_Function;
+	float Rotation_Function_Scale;
+	float Corona_Scale_i;
+	float Corona_Scale_j;
+	_DWORD Falloff_Function;
+	_DWORD Reflections_Count;
+	_DWORD Reflections_Offset;
+	_DWORD Flags_0;
+	_DWORD Brightness_Count;
+	_DWORD Brightness_Offset;
+	_DWORD Color_Count;
+	_DWORD Color_Offset;
+	_DWORD Rotation_Count;
+	_DWORD Rotation_Offset;
+};
+struct struct_tag_lens_Reflections
+{
+	_WORD Flags;
+	_WORD Bitmap_Index;
+	_BYTE padding_3[4];
+	float Position_Along_Flare_Axis;
+	float Rotation_Offset;
+	float Radius;
+	float ___To;
+	float Brightness;
+	float ___To_0;
+	float Modulation_Factor;
+	float Color_R;
+	float Color_G;
+	float Color_B;
+};
+struct struct_tag_lens_Brightness
+{
+	_DWORD Function_Count;
+	_DWORD Function_Offset;
+};
+struct struct_tag_lens_Function
+{
+	_BYTE padding_4[8];
+};
+struct struct_tag_lens_Color
+{
+	_DWORD Function_Count;
+	_DWORD Function_Offset;
+};
+struct struct_tag_lens_Function_0
+{
+	_BYTE padding_5[8];
+};
+struct struct_tag_lens_Rotation
+{
+	_DWORD Function_Count;
+	_DWORD Function_Offset;
+};
+struct struct_tag_lens_Function_1
+{
+	_BYTE padding_6[8];
+};

@@ -1,0 +1,110 @@
+struct struct_tdtl
+{
+	_WORD Unknown;
+	_WORD Unknown_0;
+	_DWORD Unknown;
+	_BYTE padding_0[56];
+	float Unknown;
+	float Unknown_0;
+	_BYTE padding_1[32];
+	_DWORD Unknownnine_Count;
+	_DWORD Unknownnine_Offset;
+};
+struct struct_tag_tdtl_Unknownnine
+{
+	_WORD Unknown;
+	_WORD Unknown_0;
+	float Unknown;
+	_WORD Unknown_1;
+	_WORD Unknown_2;
+	_BYTE padding_2[16];
+	_DWORD Unknown_Class;
+	_DWORD Unknown;
+	_DWORD Unknown_Class_0;
+	_DWORD Unknown_0;
+	_BYTE padding_3[8];
+	_DWORD Unknownnineteen_Count;
+	_DWORD Unknownnineteen_Offset;
+};
+struct struct_tag_tdtl_Unknownnineteen
+{
+	_BYTE Unknown;
+	_BYTE padding_4[59];
+	_DWORD Unknowntwenty_two_Count;
+	_DWORD Unknowntwenty_two_Offset;
+};
+struct struct_tag_tdtl_Unknowntwenty_two
+{
+	_BYTE Unknown;
+	_BYTE padding_5[67];
+	float Unknown;
+	_DWORD Unknowntwenty_six_Count;
+	_DWORD Unknowntwenty_six_Offset;
+};
+struct struct_tag_tdtl_Unknowntwenty_six
+{
+	_BYTE Unknown;
+	_BYTE padding_6[79];
+	_BYTE padding_7[64];
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+	float Unknown_3;
+	_BYTE padding_8[44];
+	float Unknown_4;
+	_DWORD Unknownthirty_seven_Count;
+	_DWORD Unknownthirty_seven_Offset;
+};
+struct struct_tag_tdtl_Unknownthirty_seven
+{
+	_BYTE padding_9[16];
+	_DWORD Unknownthirty_nine_Count;
+	_DWORD Unknownthirty_nine_Offset;
+};
+struct struct_tag_tdtl_Unknownthirty_nine
+{
+	_BYTE Unknown;
+	_BYTE padding_10[23];
+	_DWORD Unknownforty_two_Count;
+	_DWORD Unknownforty_two_Offset;
+};
+struct struct_tag_tdtl_Unknownforty_two
+{
+	_BYTE Unknown;
+	_BYTE padding_11[31];
+	_DWORD Unknownforty_two_Count;
+	_DWORD Unknownforty_two_Offset;
+};
+struct struct_tag_tdtl_Unknownforty_two_0
+{
+	_BYTE Unknown;
+	_BYTE padding_12[39];
+	_DWORD Unknownforty_seven_Count;
+	_DWORD Unknownforty_seven_Offset;
+};
+struct struct_tag_tdtl_Unknownforty_seven
+{
+	_BYTE Unknown;
+	_BYTE padding_13[47];
+	_DWORD Unknownfifty_Count;
+	_DWORD Unknownfifty_Offset;
+};
+struct struct_tag_tdtl_Unknownfifty
+{
+	_BYTE Unknown;
+	_BYTE padding_14[219];
+	_DWORD Unknownfifty_four_Count;
+	_DWORD Unknownfifty_four_Offset;
+};
+struct struct_tag_tdtl_Unknownfifty_four
+{
+	_WORD Unknown;
+	_BYTE padding_15[226];
+	_DWORD Unknownfifty_six_Count;
+	_DWORD Unknownfifty_six_Offset;
+};
+struct struct_tag_tdtl_Unknownfifty_six
+{
+	_BYTE Unknown;
+};

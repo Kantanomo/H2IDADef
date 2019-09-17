@@ -1,0 +1,127 @@
+struct struct_sfx+
+{
+	_DWORD Unknownthree_Count;
+	_DWORD Unknownthree_Offset;
+};
+struct struct_tag_sfx+_Unknownthree
+{
+	_BYTE padding_0[4];
+	_BYTE padding_1[8];
+	float Unknown;
+	_BYTE padding_2[8];
+	_DWORD Unknowneight_Count;
+	_DWORD Unknowneight_Offset;
+};
+struct struct_tag_sfx+_Unknowneight
+{
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+	_BYTE padding_3[8];
+	float Unknown_3;
+	float Unknown_4;
+	_BYTE padding_4[8];
+	float Unknown_5;
+	float Unknown_6;
+	_BYTE padding_5[8];
+	float Unknown_7;
+	float Unknown_8;
+	_BYTE padding_6[-32];
+	_DWORD Unknowntwenty_four_Count;
+	_DWORD Unknowntwenty_four_Offset;
+};
+struct struct_tag_sfx+_Unknowntwenty_four
+{
+	_BYTE padding_7[16];
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+	float Unknown_3;
+	float Unknown_4;
+	_DWORD Unknownthirty_four_Count;
+	_DWORD Unknownthirty_four_Offset;
+};
+struct struct_tag_sfx+_Unknownthirty_four
+{
+	_BYTE padding_8[16];
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+	float Unknown_3;
+	float Unknown_4;
+	_BYTE padding_9[8];
+	float Unknown_5;
+	float Unknown_6;
+	_BYTE padding_10[-8];
+	_DWORD Unknownforty_seven_Count;
+	_DWORD Unknownforty_seven_Offset;
+};
+struct struct_tag_sfx+_Unknownforty_seven
+{
+	_DWORD Unknown_Class;
+	_DWORD Unknown;
+	_DWORD Unknownfifty_Count;
+	_DWORD Unknownfifty_Offset;
+};
+struct struct_tag_sfx+_Unknownfifty
+{
+	_DWORD Unknown_Class;
+	_DWORD Unknown;
+	float Unknown;
+	_BYTE padding_11[4];
+	_BYTE padding_12[16];
+	_DWORD Unknownfifty_seven_Count;
+	_DWORD Unknownfifty_seven_Offset;
+};
+struct struct_tag_sfx+_Unknownfifty_seven
+{
+	_DWORD Unknownfifty_eight_Count;
+	_DWORD Unknownfifty_eight_Offset;
+};
+struct struct_tag_sfx+_Unknownfifty_eight
+{
+	_BYTE padding_13[4];
+	_DWORD Unknownsixty_one_Count;
+	_DWORD Unknownsixty_one_Offset;
+};
+struct struct_tag_sfx+_Unknownsixty_one
+{
+	_BYTE Unknown;
+	_BYTE padding_14[11];
+	float Unknown;
+	_BYTE padding_15[-8];
+	_DWORD Unknownsixty_six_Count;
+	_DWORD Unknownsixty_six_Offset;
+};
+struct struct_tag_sfx+_Unknownsixty_six
+{
+	float Unknown;
+	_BYTE padding_16[12];
+	_DWORD Unknownsixty_nine_Count;
+	_DWORD Unknownsixty_nine_Offset;
+};
+struct struct_tag_sfx+_Unknownsixty_nine
+{
+	float Unknown;
+	_BYTE padding_17[20];
+	float Unknown_0;
+	_BYTE padding_18[-20];
+	_DWORD Unknownseventy_four_Count;
+	_DWORD Unknownseventy_four_Offset;
+};
+struct struct_tag_sfx+_Unknownseventy_four
+{
+	float Unknown;
+	_DWORD Unknownseventy_six_Count;
+	_DWORD Unknownseventy_six_Offset;
+};
+struct struct_tag_sfx+_Unknownseventy_six
+{
+	_BYTE Unknown;
+	_BYTE padding_19[11];
+	float Unknown;
+	float Unknown_0;
+};

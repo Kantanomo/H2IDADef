@@ -1,0 +1,4 @@
+struct struct_hsc_
+{
+	_BYTE padding_0[32];
+};

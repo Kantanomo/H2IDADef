@@ -1,0 +1,117 @@
+struct struct_MGStwo
+{
+	float Unknown;
+	float Unknown_0;
+	_DWORD Unknownfive_Count;
+	_DWORD Unknownfive_Offset;
+};
+struct struct_tag_MGStwo_Unknownfive
+{
+	_WORD Unknown;
+	_WORD Unknown_0;
+	_DWORD Unknown_Class;
+	_DWORD Unknown;
+	_WORD Unknown_1;
+	_WORD Unknown_2;
+	_DWORD Unknownten_Count;
+	_DWORD Unknownten_Offset;
+};
+struct struct_tag_MGStwo_Unknownten
+{
+	_BYTE Unknown;
+	_BYTE padding_0[23];
+	_DWORD Unknownthirteen_Count;
+	_DWORD Unknownthirteen_Offset;
+};
+struct struct_tag_MGStwo_Unknownthirteen
+{
+	_BYTE Unknown;
+	_BYTE padding_1[31];
+	_DWORD Unknownsixteen_Count;
+	_DWORD Unknownsixteen_Offset;
+};
+struct struct_tag_MGStwo_Unknownsixteen
+{
+	_BYTE Unknown;
+	_BYTE padding_2[39];
+	_DWORD Unknownnineteen_Count;
+	_DWORD Unknownnineteen_Offset;
+};
+struct struct_tag_MGStwo_Unknownnineteen
+{
+	_BYTE Unknown;
+	_BYTE padding_3[47];
+	_DWORD Unknowntwenty_two_Count;
+	_DWORD Unknowntwenty_two_Offset;
+};
+struct struct_tag_MGStwo_Unknowntwenty_two
+{
+	_BYTE Unknown;
+	_BYTE padding_4[55];
+	_DWORD Unknowntwenty_five_Count;
+	_DWORD Unknowntwenty_five_Offset;
+};
+struct struct_tag_MGStwo_Unknowntwenty_five
+{
+	_DWORD Unknowntwenty_six_Count;
+	_DWORD Unknowntwenty_six_Offset;
+};
+struct struct_tag_MGStwo_Unknowntwenty_six
+{
+	_BYTE padding_5[8];
+	_DWORD Unknowntwenty_nine_Count;
+	_DWORD Unknowntwenty_nine_Offset;
+};
+struct struct_tag_MGStwo_Unknowntwenty_nine
+{
+	_BYTE Unknown;
+	_BYTE padding_6[15];
+	float Unknown;
+	_WORD Unknown;
+	_WORD Unknown_0;
+	float Unknown_0;
+	_BYTE padding_7[36];
+	float Unknown_1;
+	float Unknown_2;
+	_WORD Unknown_1;
+	_WORD Unknown_2;
+	_WORD Unknown_3;
+	_WORD Unknown_4;
+	_WORD Unknown_5;
+	_WORD Unknown_6;
+	_WORD Unknown_7;
+	_WORD Unknown_8;
+	float Unknown_3;
+	_WORD Unknown_9;
+	_WORD Unknown_10;
+	_DWORD Unknownforty_four_Count;
+	_DWORD Unknownforty_four_Offset;
+};
+struct struct_tag_MGStwo_Unknownforty_four
+{
+	_BYTE Unknown;
+	_BYTE Unknown_0;
+	_BYTE Unknown_1;
+	_BYTE Unknown_2;
+	_BYTE Unknown_3;
+	_BYTE Unknown_4;
+	_BYTE Unknown_5;
+	_BYTE Unknown_6;
+	_BYTE padding_8[96];
+	_BYTE padding_9[8];
+	_WORD Unknown;
+	_WORD Unknown_0;
+	_BYTE padding_10[4];
+	_WORD Unknown_1;
+	_WORD Unknown_2;
+	_WORD Unknown_3;
+	_WORD Unknown_4;
+	_BYTE padding_11[8];
+	_WORD Unknown_5;
+	_WORD Unknown_6;
+	_BYTE padding_12[4];
+	_WORD Unknown_7;
+	_WORD Unknown_8;
+	_WORD Unknown_9;
+	_WORD Unknown_10;
+};

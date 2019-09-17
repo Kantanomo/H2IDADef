@@ -1,0 +1,243 @@
+struct struct_ltmp
+{
+	float Search_Distance_Lower_Bound;
+	float Search_Distance_Upper_Bound;
+	float Luminels_Per_World_Unit;
+	float Output_White_Reference;
+	float Output_Black_Reference;
+	float Output_Schlick_Reference;
+	float Diffuse_Map_Scale;
+	float Sun_Scale;
+	float Sky_Scale;
+	float Indirect_Scale;
+	float Prt_Scale;
+	float Surface_Light_Scale;
+	float Scenario_Light_Scale;
+	float Lightprobe_Interpolation_Override;
+	_BYTE padding_0[72];
+	_DWORD Lightmap_Groups_Count;
+	_DWORD Lightmap_Groups_Offset;
+};
+struct struct_tag_ltmp_Lightmap_Groups
+{
+	_WORD Type;
+	_WORD Flags;
+	_DWORD reflexiveure_Checksum;
+	_DWORD Section_Palette_Count;
+	_DWORD Section_Palette_Offset;
+};
+struct struct_tag_ltmp_Section_Palette
+{
+	_DWORD First_Palette_Color;
+	_BYTE padding_1[12];
+	_DWORD Writable_Palettes_Count;
+	_DWORD Writable_Palettes_Offset;
+};
+struct struct_tag_ltmp_Writable_Palettes
+{
+	_DWORD First_Palette_Color;
+	_BYTE padding_2[20];
+	_DWORD Bitmap_Group_Class;
+	_DWORD Bitmap_Group;
+	_BYTE padding_3[-4];
+	_BYTE padding_4[4];
+	_DWORD Clusters_Count;
+	_DWORD Clusters_Offset;
+};
+struct struct_tag_ltmp_Clusters
+{
+	_WORD Total_Vertex_Count;
+	_WORD Total_Triangle_Count;
+	_WORD Total_Part_Count;
+	_WORD Shadow_Casting_Triangle_Count;
+	_WORD Shadow_Casting_Part_Count;
+	_WORD Opaque_Point_Count;
+	_WORD Opaque_Vertex_Count;
+	_WORD Opaque_Part_Count;
+	_WORD Opague_Max_Nodes/Vertex;
+	_WORD Transparent_Max_Nodes/Vertex;
+	_WORD Shadow_Casting_Rigid_Triangle;
+	_DWORD Geometry_Classification;
+	_WORD Geometry_Compression_Flags;
+	_WORD Hardware_Node_Count;
+	_WORD Node_Map_Size;
+	_WORD Software_Plane_Count;
+	_WORD Total_Subpart_Count;
+	_DWORD Section_Lighting_Flags;
+	_DWORD Block_Offset;
+	_DWORD Block_Size;
+	_DWORD Section_Data_Size;
+	_DWORD Resource_Data_Size;
+	_BYTE padding_5[12];
+	_DWORD Owner_ident_Section_Offset;
+	_BYTE padding_6[-32];
+	_DWORD Cluster_Render_Info_Count;
+	_DWORD Cluster_Render_Info_Offset;
+};
+struct struct_tag_ltmp_Cluster_Render_Info
+{
+	_WORD Bitmap_Index;
+	_WORD Palette_Index;
+	_BYTE padding_7[44];
+	_DWORD Poop_Definitions_Count;
+	_DWORD Poop_Definitions_Offset;
+};
+struct struct_tag_ltmp_Poop_Definitions
+{
+	_WORD Total_Vertex_Count;
+	_WORD Total_Triangle_Count;
+	_WORD Total_Part_Count;
+	_WORD Shadow_Casting_Triangle_Count;
+	_WORD Shadow_Casting_Part_Count;
+	_WORD Opaque_Point_Count;
+	_WORD Opaque_Vertex_Count;
+	_WORD Opaque_Part_Count;
+	_WORD Opague_Max_Nodes/Vertex;
+	_WORD Transparent_Max_Nodes/Vertex;
+	_WORD Shadow_Casting_Rigid_Triangle;
+	_DWORD Geometry_Classification;
+	_WORD Geometry_Compression_Flags;
+	_WORD Hardware_Node_Count;
+	_WORD Node_Map_Size;
+	_WORD Software_Plane_Count;
+	_WORD Total_Subpart_Count;
+	_DWORD Section_Lighting_Flags;
+	_DWORD Block_Offset;
+	_DWORD Block_Size;
+	_DWORD Section_Data_Size;
+	_DWORD Resource_Data_Size;
+	_BYTE padding_8[12];
+	_DWORD Owner_ident_Section_Offset;
+	_BYTE padding_9[-16];
+	_DWORD Lighting_Environments_Count;
+	_DWORD Lighting_Environments_Offset;
+};
+struct struct_tag_ltmp_Lighting_Environments
+{
+	float Sample_Point_X;
+	float Sample_Point_Y;
+	float Sample_Point_Z;
+	float Red_Coefficient;
+	float Red_Coefficient_0;
+	float Red_Coefficient_1;
+	float Red_Coefficient_2;
+	float Red_Coefficient_3;
+	float Red_Coefficient_4;
+	float Red_Coefficient_5;
+	float Red_Coefficient_6;
+	float Red_Coefficient_7;
+	float Green_Coefficient;
+	float Green_Coefficient_0;
+	float Green_Coefficient_1;
+	float Green_Coefficient_2;
+	float Green_Coefficient_3;
+	float Green_Coefficient_4;
+	float Green_Coefficient_5;
+	float Green_Coefficient_6;
+	float Green_Coefficient_7;
+	float Green_Coefficient_8;
+	float Blue_Coefficient;
+	float Blue_Coefficient_0;
+	float Blue_Coefficient_1;
+	float Blue_Coefficient_2;
+	float Blue_Coefficient_3;
+	float Blue_Coefficient_4;
+	float Blue_Coefficient_5;
+	float Blue_Coefficient_6;
+	float Blue_Coefficient_7;
+	float Mean_Incoming_Light_Direction_i;
+	float Mean_Incoming_Light_Direction_j;
+	float Mean_Incoming_Light_Direction_k;
+	float Incoming_Light_Intensity_X;
+	float Incoming_Light_Intensity_Y;
+	float Incoming_Light_Intensity_Z;
+	_DWORD Specular_Bitmap_Index;
+	float Rotation_Axis_i;
+	float Rotation_Axis_j;
+	float Rotation_Axis_k;
+	float Rotation_Speed;
+	float Bump_Direction_i;
+	float Bump_Direction_j;
+	float Bump_Direction_k;
+	float Color_Tint;
+	_DWORD Procedural_Overide;
+	_DWORD Flags;
+	float Procedural_Paramzero_i;
+	float Procedural_Paramzero_j;
+	float Procedural_Paramzero_k;
+	float Procedural_Paramone_XYZ_i;
+	float Procedural_Paramone_XYZ_j;
+	float Procedural_Paramone_XYZ_k;
+	float Procedural_Paramone_w;
+	_BYTE padding_10[-156];
+	_DWORD Geometry_Buckets_Count;
+	_DWORD Geometry_Buckets_Offset;
+};
+struct struct_tag_ltmp_Geometry_Buckets
+{
+	_DWORD Flags;
+	_BYTE padding_11[8];
+	_DWORD Raw_Offset;
+	_DWORD Raw_Size;
+	_DWORD Section_Data_Size;
+	_DWORD Resource_Data_Size;
+	_DWORD Resources_Count;
+	_DWORD Resources_Offset;
+};
+struct struct_tag_ltmp_Resources
+{
+	_DWORD Type;
+	_WORD Primary_Locator;
+	_WORD Secondary_Locator;
+	_DWORD Resource_Data_Size;
+	_DWORD Resource_Data_Offset;
+	_BYTE padding_12[20];
+	_DWORD Owner_ident_Section_Offset;
+	_BYTE padding_13[32];
+	_DWORD Instance_Render_Info_Count;
+	_DWORD Instance_Render_Info_Offset;
+};
+struct struct_tag_ltmp_Instance_Render_Info
+{
+	_WORD Bitmap_Index;
+	_BYTE padding_14[-2];
+	_BYTE padding_15[80];
+	_DWORD Instance_Bucket_Refs_Count;
+	_DWORD Instance_Bucket_Refs_Offset;
+};
+struct struct_tag_ltmp_Instance_Bucket_Refs
+{
+	_WORD Flags;
+	_WORD Bucket_Index;
+	_DWORD Section_Offsets_Count;
+	_DWORD Section_Offsets_Offset;
+};
+struct struct_tag_ltmp_Section_Offsets
+{
+	_DWORD Section_Offset;
+	_BYTE padding_16[84];
+	_DWORD Scenary_Object_Info_Count;
+	_DWORD Scenary_Object_Info_Offset;
+};
+struct struct_tag_ltmp_Scenary_Object_Info
+{
+	_DWORD Unique_ID;
+	_WORD Origin_BSP_Index;
+	_BYTE Type;
+	_BYTE Source;
+	_DWORD Render_Model_Checksum;
+	_BYTE padding_17[84];
+	_DWORD Scenary_Object_Bucket_Refs_Count;
+	_DWORD Scenary_Object_Bucket_Refs_Offset;
+};
+struct struct_tag_ltmp_Scenary_Object_Bucket_Refs
+{
+	_WORD Flags;
+	_WORD Bucket_Index;
+	_DWORD Section_Offsets_Count;
+	_DWORD Section_Offsets_Offset;
+};
+struct struct_tag_ltmp_Section_Offsets_0
+{
+	_DWORD Section_Offset;
+};

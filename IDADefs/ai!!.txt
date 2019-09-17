@@ -1,0 +1,160 @@
+struct struct_ai!!
+{
+	_DWORD Actor_Palette_Count;
+	_DWORD Actor_Palette_Offset;
+	_DWORD AI_Squad_Types_Count;
+	_DWORD AI_Squad_Types_Offset;
+	_DWORD AI_Squads_Count;
+	_DWORD AI_Squads_Offset;
+	_DWORD Unknown;
+	_DWORD Unknown_0;
+	_DWORD Characters_Count;
+	_DWORD Characters_Offset;
+	_DWORD Unknown_1;
+	_DWORD Unknown_2;
+	_DWORD Unknown_3;
+	_DWORD Unknown_4;
+	_DWORD Unknown_5;
+	_DWORD Unknown_6;
+	_DWORD Unknown_7;
+	_DWORD Unknown_8;
+	_DWORD Unknown_9;
+	_DWORD Unknown_10;
+	_DWORD Zones_Count;
+	_DWORD Zones_Offset;
+	_DWORD AI_Triggers_Count;
+	_DWORD AI_Triggers_Offset;
+	_DWORD Unknowntwo;
+	_DWORD Unknown;
+	_DWORD Unknownthree;
+	_DWORD Unknown_0;
+	_DWORD Unknownfour;
+	_DWORD Unknown_1;
+	_DWORD Unknownfive;
+	_DWORD Unknown_2;
+	_DWORD Unknownsix;
+	_DWORD Unknown_3;
+	_DWORD Unknownseven;
+	_DWORD Unknown_4;
+};
+struct struct_tag_ai!!_Actor_Palette
+{
+};
+struct struct_tag_ai!!_AI_Squad_Types
+{
+	_BYTE padding_0[32];
+	_WORD Unknown;
+	_WORD Unknown_0;
+};
+struct struct_tag_ai!!_AI_Squads
+{
+	_BYTE padding_1[32];
+	_DWORD Flags;
+	_WORD Team;
+	_WORD Platoons;
+	_WORD Unknown;
+	_WORD Unknown_0;
+	_WORD #_of_AI_that_spawn_on_Easy;
+	_WORD #_of_AI_that_spawn_on_Legendary;
+	_WORD Vehicle_Spawn;
+	_WORD Unknown_1;
+	_WORD Vehicle;
+	_WORD Character;
+	_WORD initial_state;
+	_WORD return_state;
+	_WORD Primary_Weapon;
+	_WORD Secondary_Weapon;
+	_WORD Grenade_Type;
+	_WORD AI_Orders_Index;
+	_DWORD Vehicle_Permutation;
+	_DWORD Starting_Loctations_Count;
+	_DWORD Starting_Loctations_Offset;
+};
+struct struct_tag_ai!!_Starting_Loctations
+{
+	_DWORD Name;
+	float X;
+	float Y;
+	float Z;
+	_WORD Unknown;
+	_WORD Unknown_0;
+	float Facing_Direction;
+	float Unknown;
+	_WORD Unknown_1;
+	_WORD Unknown_2;
+	_WORD Character;
+	_WORD Primary_Weapon;
+	_WORD Secondary_Weapon;
+	_WORD Unknown_3;
+	_WORD Vehicle;
+	_WORD Vehicle_Spawn;
+	_BYTE padding_2[4];
+	_DWORD Spawned_Permutation;
+	_DWORD Spawned_Properties;
+	_BYTE padding_3[4];
+	_WORD Unknown_4;
+	_WORD Unknown_5;
+	_BYTE padding_4[32];
+	_WORD Script;
+	_WORD unknown;
+	_BYTE padding_5[-20];
+	_BYTE padding_6[32];
+	_WORD Script_0;
+	_WORD Unknown_6;
+};
+struct struct_tag_ai!!_Characters
+{
+	_DWORD Character_Class;
+	_DWORD Character;
+};
+struct struct_tag_ai!!_Zones
+{
+	_BYTE padding_7[32];
+	_WORD Unknown;
+	_WORD Unknown_0;
+	float X_Axis;
+	float Y_Axis;
+	float Z_Axis;
+	_WORD Unknown_1;
+	_WORD Unknown_2;
+	float Radius;
+	_WORD Unknown_3;
+	_WORD Unknown_4;
+	_BYTE Unknown?;
+	_BYTE Unknown;
+	_BYTE Unknown_0;
+	_BYTE Unknown_1;
+	_WORD Unknown_5;
+	_WORD Unknown_6;
+	_WORD Unknown_7;
+	_WORD Unknown_8;
+	_WORD Unknown_9;
+	_WORD Unknown_10;
+	_WORD Unknown_11;
+	_WORD Unknown_12;
+};
+struct struct_tag_ai!!_AI_Triggers
+{
+	_BYTE padding_8[32];
+	_WORD Unknown;
+	_WORD Unused;
+	_WORD Unknown_0;
+	_WORD Unused_0;
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_ai!!_Unknown
+{
+	_WORD Trigger_type;
+	_WORD Unknown;
+	_WORD Unknown_0;
+	_WORD Timer/Count;
+	float Damage/Health/World_Units;
+	_WORD Trigger_Zone;
+	_WORD Unknown_1;
+	_BYTE padding_9[32];
+	_WORD Trigger_Number?;
+	_WORD Unused;
+	_WORD Unknown_2;
+	_WORD Unused_0;
+};

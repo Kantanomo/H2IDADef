@@ -1,0 +1,196 @@
+struct struct_shad
+{
+	_DWORD Shader_Template_Class;
+	_DWORD Shader_Template;
+	_DWORD Material_Type;
+	_DWORD Self_Illumination_Properties_Count;
+	_DWORD Self_Illumination_Properties_Offset;
+	_WORD Unknown;
+	_WORD Unknown_0;
+	_BYTE padding_2[8];
+	_DWORD Shader_Properties_Count;
+	_DWORD Shader_Properties_Offset;
+	_BYTE padding_21[4];
+	_DWORD Resources_Count;
+	_DWORD Resources_Offset;
+	_DWORD Static_Value_[unknown];
+	_BYTE padding_22[6];
+	_WORD Shadow_Value_[?];
+	_BYTE padding_23[-2];
+	_BYTE padding_24[-62];
+	_BYTE padding_25[64];
+	_DWORD unknown_zero:unknown,_one:unknown,_two:unknown,_three:unknown_[Do_not_use_other_value];
+	float Specularity_Level_zero_one hundred _[Diminishing_Returns_after_ten];
+	float Diffuse_Self_illumination_Level_zero_one hundred _[Diminishing_Returns_after_ten];
+};
+struct struct_tag_shad_Self_Illumination_Properties
+{
+	_DWORD Base_Map_Class;
+	_DWORD Base_Map;
+	_DWORD Self_Illumination_Map_Class;
+	_DWORD Self_Illumination_Map;
+	float Primary_On_Colour:_Red;
+	float Primary_On_Colour:_Blue;
+	float Primary_On_Colour:_Green;
+	float Primary_On_Colour:_Brightness;
+	_BYTE padding_0[4];
+	float Unknown;
+	_BYTE padding_1[4];
+	_DWORD Alpha_Map_Class;
+	_DWORD Alpha_Map;
+	_DWORD Specular_Map_Class;
+	_DWORD Specular_Map;
+	float Secondary_On_Colour:_Red;
+	float Secondary_On_Colour:_Blue;
+	float Secondary_On_Colour:_Green;
+	float Secondary_On_Colour:_Brightness;
+	float Unknown_0;
+};
+struct struct_tag_shad_Shader_Properties
+{
+	_DWORD Shader_Template_Class;
+	_DWORD Shader_Template;
+	_BYTE padding_3[-4];
+	_DWORD Shader_Maps_Count;
+	_DWORD Shader_Maps_Offset;
+};
+struct struct_tag_shad_Shader_Maps
+{
+	_DWORD Bitmap_|_Cubemap_|_Detailmap_|_Other_Class;
+	_DWORD Bitmap_|_Cubemap_|_Detailmap_|_Other;
+	_BYTE padding_4[-4];
+	float unused;
+	_DWORD Map_Hierarchy_[?];
+	_DWORD Specularity_Colour_|_Illumination_Colour_Count;
+	_DWORD Specularity_Colour_|_Illumination_Colour_Offset;
+};
+struct struct_tag_shad_Specularity_Colour_|_Illumination_Colour
+{
+	_BYTE Blue;
+	_BYTE Green;
+	_BYTE Red;
+	_BYTE Intensity;
+	_BYTE padding_5[16];
+	_DWORD Detail_Tiling_|_Falloff_Colours_Count;
+	_DWORD Detail_Tiling_|_Falloff_Colours_Offset;
+};
+struct struct_tag_shad_Detail_Tiling_|_Falloff_Colours
+{
+	float U_Tiling_|_Red;
+	float V_tiling_|_Green;
+	_BYTE padding_6[-8];
+	float Blue;
+	_BYTE padding_7[8];
+	float Intensity_[?];
+	_BYTE padding_8[12];
+	_DWORD TestMeone_Count;
+	_DWORD TestMeone_Offset;
+};
+struct struct_tag_shad_TestMeone
+{
+	_BYTE TestMe;
+	_BYTE padding_9[1];
+	_WORD TestMe;
+	_WORD TestMe_0;
+	_BYTE TestMe_0;
+	_BYTE padding_10[29];
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_shad_Unknown
+{
+	_BYTE Unknown;
+	_BYTE Unknown_0;
+	_BYTE padding_11[42];
+	_DWORD TestMetwo_Count;
+	_DWORD TestMetwo_Offset;
+};
+struct struct_tag_shad_TestMetwo
+{
+	_WORD TestMe;
+	_WORD TestMe_0;
+	_BYTE padding_12[48];
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_shad_Unknown_0
+{
+	_DWORD TestMe;
+	_DWORD TestMe_0;
+	_DWORD TestMe_1;
+	_BYTE padding_13[48];
+	_DWORD Shader_Functions_Count;
+	_DWORD Shader_Functions_Offset;
+};
+struct struct_tag_shad_Shader_Functions
+{
+	_DWORD Trigger;
+	_DWORD Scale_[?];
+	float Loop_Time_seconds_|_Speed_|_Other_[?];
+	_DWORD Data_|_Settings_|_Other_[?]_Count;
+	_DWORD Data_|_Settings_|_Other_[?]_Offset;
+};
+struct struct_tag_shad_Data_|_Settings_|_Other_[?]
+{
+	_BYTE Value_[Function_Type_in_chunk_#one,_zero:Other,_one:One_Channel,_thirty_two:Two_Channel,_forty_eight:Three_Channel,_sixty_four:Four_Channel];
+	_BYTE padding_14[67];
+	_DWORD Illumination_reflexive_something_Count_Count;
+	_DWORD Illumination_reflexive_something_Count_Offset;
+};
+struct struct_tag_shad_Illumination_reflexive_something_Count
+{
+	_WORD Unknown;
+	_WORD Unknown_0;
+	_BYTE padding_15[72];
+	_DWORD Illumination_reflexive_Count;
+	_DWORD Illumination_reflexive_Offset;
+};
+struct struct_tag_shad_Illumination_reflexive
+{
+	_BYTE TestMe;
+	_BYTE TestMe_0;
+	_BYTE TestMe_1;
+	_BYTE TestMe_2;
+	_BYTE padding_16[80];
+	_DWORD Illumination_reflexive_Count;
+	_DWORD Illumination_reflexive_Offset;
+};
+struct struct_tag_shad_Illumination_reflexive_0
+{
+	_BYTE TestMe;
+	_BYTE TestMe_0;
+	_BYTE TestMe_1;
+	_BYTE TestMe_2;
+	_BYTE padding_17[88];
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_shad_Unknown_1
+{
+	_WORD index;
+	_WORD index_0;
+	_BYTE padding_18[96];
+	_DWORD Radiosity_Properties:_onest_chunk_=_colour_of_emitted_light,_second_chunk_=_tint_colour_Count;
+	_DWORD Radiosity_Properties:_onest_chunk_=_colour_of_emitted_light,_second_chunk_=_tint_colour_Offset;
+};
+struct struct_tag_shad_Radiosity_Properties:_onest_chunk_=_colour_of_emitted_light,_second_chunk_=_tint_colour
+{
+	float R;
+	float G;
+	float B;
+	_BYTE padding_19[96];
+	_DWORD Brightness_Levels_Count;
+	_DWORD Brightness_Levels_Offset;
+};
+struct struct_tag_shad_Brightness_Levels
+{
+	float Brightness;
+	_BYTE padding_20[112];
+};
+struct struct_tag_shad_Resources
+{
+	_WORD Unknown;
+	_WORD Bitmap_Submap_Chunk;
+	_DWORD Bitmap_Used_Class;
+	_DWORD Bitmap_Used;
+};

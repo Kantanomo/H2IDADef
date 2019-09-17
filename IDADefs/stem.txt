@@ -1,0 +1,65 @@
+struct struct_stem
+{
+	_DWORD Documentation_Count;
+	_DWORD Documentation_Offset;
+	_DWORD Default_Material_Name;
+	_DWORD Flags;
+	_BYTE padding_0[16];
+	_DWORD Light_Response_Class;
+	_DWORD Light_Response;
+	_BYTE padding_1[24];
+	_DWORD Aux_one_Shader_Class;
+	_DWORD Aux_one_Shader;
+	_DWORD Aux_one_Layer;
+	_DWORD Aux_two_Shader_Class;
+	_DWORD Aux_two_Shader;
+	_DWORD Aux_two_Layer;
+	_DWORD Postprocess_Definition_Count;
+	_DWORD Postprocess_Definition_Offset;
+};
+struct struct_tag_stem_Documentation
+{
+};
+struct struct_tag_stem_Postprocess_Definition
+{
+	_DWORD Levels_Of_Detail_Count;
+	_DWORD Levels_Of_Detail_Offset;
+};
+struct struct_tag_stem_Levels_Of_Detail
+{
+	_BYTE padding_2[2];
+	_DWORD Available_Layers;
+	float Projected_Height_Percenidente;
+	_BYTE padding_3[-2];
+	_DWORD Layers_Count;
+	_DWORD Layers_Offset;
+};
+struct struct_tag_stem_Layers
+{
+	_WORD Block_Index_Data;
+	_BYTE padding_4[14];
+	_DWORD Passes_Count;
+	_DWORD Passes_Offset;
+};
+struct struct_tag_stem_Passes
+{
+	_DWORD Pass_Class;
+	_DWORD Pass;
+	_WORD Block_Index_Data;
+	_BYTE padding_5[14];
+	_DWORD Implementations_Count;
+	_DWORD Implementations_Offset;
+};
+struct struct_tag_stem_Implementations
+{
+	_WORD Block_Index_Data;
+	_WORD Block_Index_Data_0;
+	_WORD Block_Index_Data_1;
+	_BYTE padding_6[26];
+	_DWORD Remappings_Count;
+	_DWORD Remappings_Offset;
+};
+struct struct_tag_stem_Remappings
+{
+	_WORD Source_Index;
+};

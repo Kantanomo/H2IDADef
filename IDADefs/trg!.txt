@@ -1,0 +1,27 @@
+struct struct_trg!
+{
+	_DWORD Trigger_Volumes_Count;
+	_DWORD Trigger_Volumes_Offset;
+};
+struct struct_tag_trg!_Trigger_Volumes
+{
+	_BYTE padding_0[4];
+	_WORD Unknown;
+	_WORD unknown;
+	_DWORD Node_Name;
+	float Unknown;
+	float Unknown_0;
+	float unused;
+	float unused_0;
+	float unused_1;
+	float Unknown_1;
+	float Position_X;
+	float Position_Y;
+	float Position_Z;
+	float Extents_X;
+	float Extents_Y;
+	float Extents_Z;
+	float Extents_Unknown;
+	_WORD Volume_Kill_Players_when_value_is_zero_or_more;
+	_WORD Unused;
+};

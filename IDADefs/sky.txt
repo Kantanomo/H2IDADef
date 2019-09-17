@@ -1,0 +1,142 @@
+struct struct_sky
+{
+	_DWORD Render_Model_Class;
+	_DWORD Render_Model;
+	_DWORD Animation_Graph_Class;
+	_DWORD Animation_Graph;
+	_DWORD Flags;
+	float Render_Model_Scale;
+	float Movement_Scale;
+	_DWORD Cube_Map_Count;
+	_DWORD Cube_Map_Offset;
+	float Indoor_Ambient_Light_Color_R;
+	float Indoor_Ambient_Light_Color_G;
+	float Indoor_Ambient_Light_Color_B;
+	float Indoor_Ambient_Light_Color_A;
+	float Outdoor_Ambient_Light_Color_R;
+	float Outdoor_Ambient_Light_Color_G;
+	float Outdoor_Ambient_Light_Color_B;
+	float Outdoor_Ambient_Light_Color_A;
+	float Fog_Spread_Distance;
+	_DWORD Atmospheric_Fog_Count;
+	_DWORD Atmospheric_Fog_Offset;
+	_DWORD Secondary_Fog_Count;
+	_DWORD Secondary_Fog_Offset;
+	_DWORD Sky_Fog_Count;
+	_DWORD Sky_Fog_Offset;
+	_DWORD Patchy_Fog_Count;
+	_DWORD Patchy_Fog_Offset;
+	float Bloom_Override_Amount;
+	float Bloom_Override_Threshold;
+	float Bloom_Override_Brightness;
+	float Bloom_Override_Gamma_Power;
+	_DWORD Lights_Count;
+	_DWORD Lights_Offset;
+	float Global_Sky_Rotation;
+	_BYTE padding_4[28];
+	float Clear_Color_R;
+	float Clear_Color_G;
+	float Clear_Color_B;
+};
+struct struct_tag_sky_Cube_Map
+{
+	_DWORD Cube_Map_Class;
+	_DWORD Cube_Map;
+	float Power_Scale;
+};
+struct struct_tag_sky_Atmospheric_Fog
+{
+	float Color_R;
+	float Color_G;
+	float Color_B;
+	float Maximum_Density;
+	float Start_Distance;
+	float Opaque_Distnace;
+};
+struct struct_tag_sky_Secondary_Fog
+{
+	float Color_R;
+	float Color_G;
+	float Color_B;
+	float Color_A;
+	float Maximum_Density;
+	float Opaque_Distnace;
+};
+struct struct_tag_sky_Sky_Fog
+{
+	float Color_R;
+	float Color_G;
+	float Color_B;
+	float Color_A;
+};
+struct struct_tag_sky_Patchy_Fog
+{
+	float Color_R;
+	float Color_G;
+	float Color_B;
+	float Color_A;
+	_BYTE padding_0[8];
+	float Density_Lower;
+	float Density_Upper;
+	float Distance_Lower;
+	float Distance_Upper;
+	_BYTE padding_1[32];
+	_DWORD Patch_Fog_Class;
+	_DWORD Patch_Fog;
+};
+struct struct_tag_sky_Lights
+{
+	float Direction_Vector_i;
+	float Direction_Vector_j;
+	float Direction_Vector_k;
+	float Direction_Y;
+	float Direction_P;
+	_DWORD Lens_Flare_Class;
+	_DWORD Lens_Flare;
+	_DWORD Fog_Count;
+	_DWORD Fog_Offset;
+};
+struct struct_tag_sky_Fog
+{
+	float Color_R;
+	float Color_G;
+	float Color_B;
+	float Color_A;
+	float Maximum_Density;
+	float Opaque_Distnace;
+	float Cone_Lower;
+	float Cone_Upper;
+	float Atmospheroc_Fog_Influence;
+	float Secondary_Fog_Influence;
+	float Sky_Fog_Influence;
+	_BYTE padding_2[-12];
+	_DWORD Fog_Opposite_Count;
+	_DWORD Fog_Opposite_Offset;
+};
+struct struct_tag_sky_Fog_Opposite
+{
+	float Color_R;
+	float Color_G;
+	float Color_B;
+	float Color_A;
+	float Maximum_Density;
+	float Opaque_Distnace;
+	float Cone_Lower;
+	float Cone_Upper;
+	float Atmospheroc_Fog_Influence;
+	float Secondary_Fog_Influence;
+	float Sky_Fog_Influence;
+	_DWORD Radiosity_Count;
+	_DWORD Radiosity_Offset;
+};
+struct struct_tag_sky_Radiosity
+{
+	_DWORD Flags;
+	float Color_R;
+	float Color_G;
+	float Color_B;
+	float Power;
+	float Test_Distance;
+	_BYTE padding_3[12];
+	float Diameter;
+};

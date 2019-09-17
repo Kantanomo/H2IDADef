@@ -1,0 +1,685 @@
+struct struct_scnr
+{
+	_DWORD Unused_Class;
+	_DWORD Unused;
+	_DWORD Skies_Count;
+	_DWORD Skies_Offset;
+	_WORD Map_Type;
+	_BYTE padding_0[54];
+	_DWORD Script_Objects_Count;
+	_DWORD Script_Objects_Offset;
+	_BYTE padding_2[200];
+	_DWORD Netgame_Flags_Count;
+	_DWORD Netgame_Flags_Offset;
+	_DWORD Netgame_Equipment_Count;
+	_DWORD Netgame_Equipment_Offset;
+	_BYTE padding_8[-216];
+	_DWORD Scenery_Count;
+	_DWORD Scenery_Offset;
+	_DWORD Scenery_Palette_Count;
+	_DWORD Scenery_Palette_Offset;
+	_DWORD Bipeds_Placement_Count;
+	_DWORD Bipeds_Placement_Offset;
+	_DWORD Biped_Palette_Count;
+	_DWORD Biped_Palette_Offset;
+	_BYTE padding_18[416];
+	_DWORD Structure_BSPS_Count;
+	_DWORD Structure_BSPS_Offset;
+	_BYTE padding_19[-424];
+	_DWORD Vehicle_Placement_Count;
+	_DWORD Vehicle_Placement_Offset;
+	_DWORD Vehicle_Palette_Count;
+	_DWORD Vehicle_Palette_Offset;
+	_DWORD Equipment_Placement_Count;
+	_DWORD Equipment_Placement_Offset;
+	_DWORD Equipment_Palette_Count;
+	_DWORD Equipment_Palette_Offset;
+	_DWORD Weapons_Count;
+	_DWORD Weapons_Offset;
+	_DWORD Weapon_Palette_Count;
+	_DWORD Weapon_Palette_Offset;
+	_DWORD Power_Groups_Count;
+	_DWORD Power_Groups_Offset;
+	_DWORD Machines_Count;
+	_DWORD Machines_Offset;
+	_DWORD Machine_Palette_Count;
+	_DWORD Machine_Palette_Offset;
+	_DWORD Controls_Count;
+	_DWORD Controls_Offset;
+	_DWORD Control_Palette_Count;
+	_DWORD Control_Palette_Offset;
+	_DWORD Light_Fixtures_Count;
+	_DWORD Light_Fixtures_Offset;
+	_DWORD Light_Fixtures_Palette_Count;
+	_DWORD Light_Fixtures_Palette_Offset;
+	_DWORD Sound_Scenery_Count;
+	_DWORD Sound_Scenery_Offset;
+	_DWORD Sound_Scenery_Palette_Count;
+	_DWORD Sound_Scenery_Palette_Offset;
+	_DWORD Light_Volumes_Placement_Count;
+	_DWORD Light_Volumes_Placement_Offset;
+	_DWORD Light_Volumes_Palette_Count;
+	_DWORD Light_Volumes_Palette_Offset;
+	_BYTE padding_35[176];
+	_DWORD Script_Syntax_Data_Count;
+	_DWORD Script_Syntax_Data_Offset;
+	_DWORD Script_String_Data_Count;
+	_DWORD Script_String_Data_Offset;
+	_DWORD Script_Names_Count;
+	_DWORD Script_Names_Offset;
+	_DWORD Script_Globals_Count;
+	_DWORD Script_Globals_Offset;
+	_BYTE padding_38[16];
+	_DWORD Script_Locations_Count;
+	_DWORD Script_Locations_Offset;
+	_BYTE padding_45[88];
+	_DWORD Scripts_Count;
+	_DWORD Scripts_Offset;
+	_BYTE padding_46[344];
+	_DWORD Map_Description_Count;
+	_DWORD Map_Description_Offset;
+};
+struct struct_tag_scnr_Skies
+{
+	_DWORD Sky_Class;
+	_DWORD Sky;
+};
+struct struct_tag_scnr_Script_Objects
+{
+	_BYTE padding_1[32];
+	_WORD Type;
+	_WORD Placement_Index;
+};
+struct struct_tag_scnr_Netgame_Flags
+{
+	float Position_X;
+	float Position_Y;
+	float Position_Z;
+	float Facing_Degrees;
+	_WORD Type;
+	_WORD Team_Designator;
+	_WORD Identifier;
+	_WORD Flags;
+};
+struct struct_tag_scnr_Netgame_Equipment
+{
+	_DWORD Flags;
+	_WORD Game_Type_one;
+	_BYTE padding_3[2];
+	_WORD Game_Type_two;
+	_BYTE padding_4[2];
+	_WORD Game_Type_three;
+	_BYTE padding_5[2];
+	_WORD Game_Type_four;
+	_WORD Team_Index;
+	_WORD Spawn_Time_Seconds;
+	_WORD Respawn_on_Empty_Time;
+	_WORD Respawn_Timer_Starts;
+	_WORD Classifier;
+	_BYTE padding_6[2];
+	_BYTE padding_7[34];
+	float Position_X;
+	float Position_Y;
+	float Position_Z;
+	float Orientation_Yaw;
+	float Orientation_Pitch;
+	float Orientation_Roll;
+	_DWORD Collection_Class;
+	_DWORD Collection;
+};
+struct struct_tag_scnr_Scenery
+{
+	_WORD Type;
+	_WORD Name;
+	_DWORD Placement_Flags;
+	float Position_X;
+	float Position_Y;
+	float Position_Z;
+	float Rotation_Yaw;
+	float Rotation_Pitch;
+	float Rotation_Roll;
+	float Scale;
+	_BYTE padding_9[2];
+	_WORD Manual_BSP_Flags;
+	_DWORD Unique_ID;
+	_WORD Origin_BSP;
+	_WORD Type_0;
+	_WORD Source;
+	_WORD BSP_Policy;
+	_WORD Editor_Folder;
+	_BYTE padding_10[4];
+	_DWORD Variant_Name;
+	_DWORD Active_Change_Colors;
+	_BYTE Primary_Color_R;
+	_BYTE Primary_Color_G;
+	_BYTE Primary_Color_B;
+	_BYTE Secondary_Color_R;
+	_BYTE Secondary_Color_G;
+	_BYTE Secondary_Color_B;
+	_BYTE Tertiary_Color_R;
+	_BYTE Tertiary_Color_G;
+	_BYTE Tertiary_Color_B;
+	_BYTE Quaternary_Color_R;
+	_BYTE Quaternary_Color_G;
+	_BYTE Quaternary_Color_B;
+	_BYTE Pathfinding_Policy;
+	_BYTE padding_11[1];
+	_BYTE Lightmapping_Policy;
+	_BYTE padding_12[1];
+	_DWORD Pathfinding_References_Count;
+	_DWORD Pathfinding_References_Offset;
+};
+struct struct_tag_scnr_Pathfinding_References
+{
+	_WORD BSP_Index;
+	_WORD Pathfinding_Object_Index;
+	_BYTE padding_13[86];
+	_DWORD Valid_Multiplayer_Games;
+};
+struct struct_tag_scnr_Scenery_Palette
+{
+	_DWORD Scenery_Class;
+	_DWORD Scenery;
+};
+struct struct_tag_scnr_Bipeds_Placement
+{
+	_WORD Type;
+	_WORD Name;
+	_DWORD Placement_Flags;
+	float Position_X;
+	float Position_Y;
+	float Position_Z;
+	float Rotation_Yaw;
+	float Rotation_Pitch;
+	float Rotation_Roll;
+	float Scale;
+	_BYTE padding_14[2];
+	_WORD Manual_BSP_Flags;
+	_DWORD Unique_ID;
+	_WORD Origin_BSP;
+	_WORD Type_0;
+	_WORD Source;
+	_WORD BSP_Policy;
+	_WORD Editor_Folder;
+	_BYTE padding_15[4];
+	_DWORD Variant_Name;
+	_DWORD Active_Change_Colors;
+	_BYTE Primary_Color_R;
+	_BYTE Primary_Color_G;
+	_BYTE Primary_Color_B;
+	_BYTE Secondary_Color_R;
+	_BYTE Secondary_Color_G;
+	_BYTE Secondary_Color_B;
+	_BYTE Tertiary_Color_R;
+	_BYTE Tertiary_Color_G;
+	_BYTE Tertiary_Color_B;
+	_BYTE Quaternary_Color_R;
+	_BYTE Quaternary_Color_G;
+	_BYTE Quaternary_Color_B;
+	_BYTE Pathfinding_Policy;
+	_BYTE padding_16[1];
+	_BYTE Lightmapping_Policy;
+	_BYTE padding_17[1];
+	_DWORD Valid_Multiplayer_Games;
+};
+struct struct_tag_scnr_Biped_Palette
+{
+	_DWORD Biped_Class;
+	_DWORD Biped;
+};
+struct struct_tag_scnr_Structure_BSPS
+{
+	_DWORD BSP_Meta_Offset;
+	_DWORD BSP_Meta_Size;
+	_DWORD BSP_Magic_Modifier;
+	_DWORD Unknown;
+	_DWORD Structure_BSP_Class;
+	_DWORD Structure_BSP;
+	_DWORD Light_Map_Class;
+	_DWORD Light_Map;
+	_DWORD Unknown_0;
+	_DWORD Unknown_1;
+	_DWORD Unknown_2;
+	_DWORD Unknown_3;
+	_DWORD Unknown_4;
+	_DWORD Unknown_5;
+	_DWORD Unknown_6;
+	_DWORD Unknown_7;
+	_DWORD Unknown_8;
+};
+struct struct_tag_scnr_Vehicle_Placement
+{
+	_WORD Type;
+	_WORD Name;
+	_DWORD Placement_Flags;
+	float Position_X;
+	float Position_Y;
+	float Position_Z;
+	float Rotation_Yaw;
+	float Rotation_Pitch;
+	float Rotation_Roll;
+	float Scale;
+	_BYTE padding_20[2];
+	_WORD Manual_BSP_Flags;
+	_DWORD Unique_ID;
+	_WORD Origin_BSP;
+	_WORD Type_0;
+	_WORD Source;
+	_WORD BSP_Policy;
+	_WORD Editor_Folder;
+	_BYTE padding_21[4];
+	_DWORD Variant_Name;
+	_DWORD Active_Change_Colors;
+	_BYTE Primary_Color_R;
+	_BYTE Primary_Color_G;
+	_BYTE Primary_Color_B;
+	_BYTE Secondary_Color_R;
+	_BYTE Secondary_Color_G;
+	_BYTE Secondary_Color_B;
+	_BYTE Tertiary_Color_R;
+	_BYTE Tertiary_Color_G;
+	_BYTE Tertiary_Color_B;
+	_BYTE Quaternary_Color_R;
+	_BYTE Quaternary_Color_G;
+	_BYTE Quaternary_Color_B;
+	_BYTE Pathfinding_Policy;
+	_BYTE padding_22[1];
+	_BYTE Lightmapping_Policy;
+	_BYTE padding_23[1];
+	_DWORD Valid_Multiplayer_Games;
+};
+struct struct_tag_scnr_Vehicle_Palette
+{
+	_DWORD Vehicle_Class;
+	_DWORD Vehicle;
+};
+struct struct_tag_scnr_Equipment_Placement
+{
+	_WORD Type;
+	_WORD Name;
+	_DWORD Placement_Flags;
+	float Position_X;
+	float Position_Y;
+	float Position_Z;
+	float Rotation_Yaw;
+	float Rotation_Pitch;
+	float Rotation_Roll;
+	float Scale;
+	_BYTE padding_24[2];
+	_WORD Manual_BSP_Flags;
+	_DWORD Unique_ID;
+	_WORD Origin_BSP;
+	_WORD Type_0;
+	_WORD Source;
+	_WORD BSP_Policy;
+	_WORD Editor_Folder;
+};
+struct struct_tag_scnr_Equipment_Palette
+{
+	_DWORD Equipment_Class;
+	_DWORD Equipment;
+};
+struct struct_tag_scnr_Weapons
+{
+	_WORD Type;
+	_WORD Name;
+	_DWORD Placement_Flags;
+	float Position_X;
+	float Position_Y;
+	float Position_Z;
+	float Rotation_Yaw;
+	float Rotation_Pitch;
+	float Rotation_Roll;
+	float Scale;
+	_BYTE padding_25[2];
+	_WORD Manual_BSP_Flags;
+	_DWORD Unique_ID;
+	_WORD Origin_BSP;
+	_WORD Type_0;
+	_WORD Source;
+	_WORD BSP_Policy;
+	_WORD Editor_Folder;
+	_BYTE padding_26[4];
+	_DWORD Variant_Name;
+	_DWORD Active_Change_Colors;
+	_BYTE Primary_Color_R;
+	_BYTE Primary_Color_G;
+	_BYTE Primary_Color_B;
+	_BYTE Secondary_Color_R;
+	_BYTE Secondary_Color_G;
+	_BYTE Secondary_Color_B;
+	_BYTE Tertiary_Color_R;
+	_BYTE Tertiary_Color_G;
+	_BYTE Tertiary_Color_B;
+	_BYTE Quaternary_Color_R;
+	_BYTE Quaternary_Color_G;
+	_BYTE Quaternary_Color_B;
+	_BYTE Pathfinding_Policy;
+	_BYTE padding_27[1];
+	_BYTE Lightmapping_Policy;
+	_BYTE padding_28[1];
+	_DWORD Valid_Multiplayer_Games;
+};
+struct struct_tag_scnr_Weapon_Palette
+{
+	_DWORD Weapon_Class;
+	_DWORD Weapon;
+};
+struct struct_tag_scnr_Power_Groups
+{
+	_BYTE padding_29[32];
+	float Inital_Value;
+	_DWORD Flags;
+};
+struct struct_tag_scnr_Machines
+{
+	_WORD Type;
+	_WORD Name;
+	_DWORD Placement_Flags;
+	float Position_X;
+	float Position_Y;
+	float Position_Z;
+	float Rotation_Yaw;
+	float Rotation_Pitch;
+	float Rotation_Roll;
+	float Scale;
+	_BYTE padding_30[2];
+	_WORD Manual_BSP_Flags;
+	_DWORD Unique_ID;
+	_WORD Origin_BSP;
+	_WORD Type_0;
+	_WORD Source;
+	_WORD BSP_Policy;
+	_WORD Editor_Folder;
+	_WORD Power_Group_Chunk_#;
+	_WORD Position_Group_Chunk_#;
+	_DWORD Flags;
+	_WORD Flags;
+	_DWORD Pathfinding_References_Count;
+	_DWORD Pathfinding_References_Offset;
+};
+struct struct_tag_scnr_Pathfinding_References_0
+{
+	_WORD BSP_Index;
+	_WORD Pathfinding_Object_Index;
+};
+struct struct_tag_scnr_Machine_Palette
+{
+	_DWORD Machine_Class;
+	_DWORD Machine;
+};
+struct struct_tag_scnr_Controls
+{
+	_WORD Type;
+	_WORD Name;
+	_DWORD Placement_Flags;
+	float Position_X;
+	float Position_Y;
+	float Position_Z;
+	float Rotation_Yaw;
+	float Rotation_Pitch;
+	float Rotation_Roll;
+	float Scale;
+	_BYTE padding_31[2];
+	_WORD Manual_BSP_Flags;
+	_DWORD Unique_ID;
+	_WORD Origin_BSP;
+	_WORD Type_0;
+	_WORD Source;
+	_WORD BSP_Policy;
+	_WORD Editor_Folder;
+	_WORD Power_Group_Chunk_#;
+	_WORD Position_Group_Chunk_#;
+	_DWORD Flags;
+	_DWORD Flags_0;
+};
+struct struct_tag_scnr_Control_Palette
+{
+	_DWORD Control_Class;
+	_DWORD Control;
+};
+struct struct_tag_scnr_Light_Fixtures
+{
+	_WORD Type;
+	_WORD Name;
+	_DWORD Placement_Flags;
+	float Position_X;
+	float Position_Y;
+	float Position_Z;
+	float Rotation_Yaw;
+	float Rotation_Pitch;
+	float Rotation_Roll;
+	float Scale;
+	_BYTE padding_32[2];
+	_WORD Manual_BSP_Flags;
+	_DWORD Unique_ID;
+	_WORD Origin_BSP;
+	_WORD Type_0;
+	_WORD Source;
+	_WORD BSP_Policy;
+	_WORD Editor_Folder;
+	_WORD Power_Group_Chunk_#;
+	_WORD Position_Group_Chunk_#;
+	_DWORD Flags;
+	_WORD Color_R;
+	_WORD Color_G;
+	_WORD Color_B;
+	float Intensity;
+	float Falloff_Angle_Degrees;
+	float Cutoff_Angle_Degrees;
+};
+struct struct_tag_scnr_Light_Fixtures_Palette
+{
+	_DWORD Light_Fixture_Class;
+	_DWORD Light_Fixture;
+};
+struct struct_tag_scnr_Sound_Scenery
+{
+	_WORD Type;
+	_WORD Name;
+	_DWORD Placement_Flags;
+	float Position_X;
+	float Position_Y;
+	float Position_Z;
+	float Rotation_Yaw;
+	float Rotation_Pitch;
+	float Rotation_Roll;
+	float Scale;
+	_BYTE padding_33[2];
+	_WORD Manual_BSP_Flags;
+	_DWORD Unique_ID;
+	_WORD Origin_BSP;
+	_WORD Type_0;
+	_WORD Source;
+	_WORD BSP_Policy;
+	_WORD Editor_Folder;
+	_WORD Volume_Type;
+	float Height;
+	float Override_Distance_Bounds_Lower;
+	float Override_Distance_Bounds_Upper;
+	float Override_Cone_Angle_Bounds_Lower;
+	float Override_Cone_Angle_Bounds_Upper;
+	float Override_Outer_Cone_Gain;
+};
+struct struct_tag_scnr_Sound_Scenery_Palette
+{
+	_DWORD Sound_Scenery_Class;
+	_DWORD Sound_Scenery;
+};
+struct struct_tag_scnr_Light_Volumes_Placement
+{
+	_WORD Type;
+	_WORD Name;
+	_DWORD Placement_Flags;
+	float Position_X;
+	float Position_Y;
+	float Position_Z;
+	float Rotation_Yaw;
+	float Rotation_Pitch;
+	float Rotation_Roll;
+	float Scale;
+	_BYTE padding_34[2];
+	_WORD Manual_BSP_Flags;
+	_DWORD Unique_ID;
+	_WORD Origin_BSP;
+	_WORD Type_0;
+	_WORD Source;
+	_WORD BSP_Policy;
+	_WORD Editor_Folder;
+	_WORD Power_Group_Chunk_#;
+	_WORD Position_Group_Chunk_#;
+	_DWORD Flags;
+	_WORD Type_1;
+	_BYTE Flags;
+	_WORD Lightmap_Type;
+	_BYTE Lightmap_Flags;
+	float Lightmap_Half_Light_Scale;
+	float Lightmap_Light_Scale;
+	float Target_Point_X;
+	float Target_Point_Y;
+	float Target_Point_Z;
+	float Width;
+	float Height_Scale;
+	float Field_Of_View;
+	float Falloff_Distance;
+	float Cutoff_Distance;
+};
+struct struct_tag_scnr_Light_Volumes_Palette
+{
+	_DWORD Light_Volume_Class;
+	_DWORD Light_Volume;
+};
+struct struct_tag_scnr_Script_Syntax_Data
+{
+};
+struct struct_tag_scnr_Script_String_Data
+{
+};
+struct struct_tag_scnr_Script_Names
+{
+	_BYTE padding_36[32];
+	_WORD Script_Type;
+	_WORD Return_Type;
+	_WORD Chunk_Number;
+	_WORD Expression_Index;
+};
+struct struct_tag_scnr_Script_Globals
+{
+	_BYTE padding_37[32];
+	_WORD Type;
+	_WORD Return_Type;
+	_WORD Chunk_Number;
+	_WORD Expression_Index;
+};
+struct struct_tag_scnr_Script_Locations
+{
+	_DWORD Groups_Count;
+	_DWORD Groups_Offset;
+};
+struct struct_tag_scnr_Groups
+{
+	_BYTE padding_39[32];
+	_DWORD Points_Count;
+	_DWORD Points_Offset;
+};
+struct struct_tag_scnr_Points
+{
+	_BYTE padding_40[32];
+	_BYTE padding_41[16];
+	float X;
+	float Y;
+	float Z;
+	_BYTE padding_42[-20];
+	_BYTE padding_43[4];
+	_BYTE padding_44[-36];
+};
+struct struct_tag_scnr_Scripts
+{
+	_WORD Expression_Index;
+	_WORD Identity;
+	_WORD Value_Type;
+	_WORD Expression_Type;
+	_WORD Sibling_Pointer_Chunk_Number;
+	_WORD Sibling_Pointer_Expression_Index;
+	_DWORD Script_Table_Pointer;
+	_WORD Value;
+	_WORD Unknown;
+};
+struct struct_tag_scnr_Map_Description
+{
+	_DWORD Map_Description_Class;
+	_DWORD Map_Description;
+	_DWORD Campaign_Level_Data_Count;
+	_DWORD Campaign_Level_Data_Offset;
+};
+struct struct_tag_scnr_Campaign_Level_Data
+{
+	_DWORD Campaign_ID;
+	_DWORD Map_ID;
+	_DWORD Preview_Image_Class;
+	_DWORD Preview_Image;
+	_BYTE padding_47[64];
+	_BYTE padding_48[64];
+	_BYTE padding_49[64];
+	_BYTE padding_50[64];
+	_BYTE padding_51[64];
+	_BYTE padding_52[64];
+	_BYTE padding_53[64];
+	_BYTE padding_54[64];
+	_BYTE padding_55[64];
+	_BYTE padding_56[256];
+	_BYTE padding_57[256];
+	_BYTE padding_58[256];
+	_BYTE padding_59[256];
+	_BYTE padding_60[256];
+	_BYTE padding_61[256];
+	_BYTE padding_62[256];
+	_BYTE padding_63[256];
+	_BYTE padding_64[-2624];
+	_DWORD Multiplayer_Count;
+	_DWORD Multiplayer_Offset;
+};
+struct struct_tag_scnr_Multiplayer
+{
+	_DWORD Map_ID;
+	_DWORD Preview_Image_Class;
+	_DWORD Preview_Image;
+	_BYTE padding_65[64];
+	_BYTE padding_66[64];
+	_BYTE padding_67[64];
+	_BYTE padding_68[64];
+	_BYTE padding_69[64];
+	_BYTE padding_70[64];
+	_BYTE padding_71[64];
+	_BYTE padding_72[64];
+	_BYTE padding_73[64];
+	_BYTE padding_74[256];
+	_BYTE padding_75[256];
+	_BYTE padding_76[256];
+	_BYTE padding_77[256];
+	_BYTE padding_78[256];
+	_BYTE padding_79[256];
+	_BYTE padding_80[256];
+	_BYTE padding_81[256];
+	_BYTE padding_82[256];
+	_BYTE padding_83[256];
+	_DWORD Sort_Order;
+	_DWORD Flags;
+	_BYTE Max_Teams_None;
+	_BYTE Max_Teams_CTF;
+	_BYTE Max_Teams_Slayer;
+	_BYTE Max_Teams_Oddball;
+	_BYTE Max_Teams_KOTH;
+	_BYTE padding_84[-1];
+	_BYTE padding_85[1];
+	_BYTE Max_Teams_Headhunter;
+	_BYTE Max_Teams_Juggernaught;
+	_BYTE Max_Teams_Territories;
+	_BYTE Max_Teams_Assault;
+	_BYTE Max_Teams_Stub_ten;
+	_BYTE Max_Teams_Stub_eleven;
+	_BYTE Max_Teams_Stub_twelve;
+	_BYTE Max_Teams_Stub_thirteen;
+	_BYTE Max_Teams_Stub_fourteen;
+	_BYTE Max_Teams_Stub_fifteen;
+};

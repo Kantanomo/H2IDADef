@@ -1,0 +1,44 @@
+struct struct_styl
+{
+	_BYTE padding_0[32];
+	_WORD Unknown;
+	_WORD Unknown_0;
+	_WORD Unknown_1;
+	_WORD Unknown_2;
+	_WORD Unknown_3;
+	_WORD Unknown_4;
+	_WORD Unknown_5;
+	_WORD Unknown_6;
+	_WORD Unknown_7;
+	_WORD Unknown_8;
+	_WORD Unknown_9;
+	_WORD Unknown_10;
+	_BYTE Unknown;
+	_BYTE Unknown_0;
+	_BYTE Unknown_1;
+	_BYTE Unknown_2;
+	_BYTE Unknown_3;
+	_BYTE Unknown_4;
+	_WORD Unknown_11;
+	_WORD Unknown_12;
+	_BYTE Unknown_5;
+	_BYTE Unknown_6;
+	_BYTE Unknown_7;
+	_BYTE Unknown_8;
+	_BYTE Unknown_9;
+	_BYTE Unknown_10;
+	_WORD Unknown_13;
+	_BYTE padding_1[2];
+	_DWORD Unknownfifteen_Count;
+	_DWORD Unknownfifteen_Offset;
+	_DWORD Unknowneighteen_Count;
+	_DWORD Unknowneighteen_Offset;
+};
+struct struct_tag_styl_Unknownfifteen
+{
+	_WORD Unknown;
+	_WORD Unknown_0;
+};
+struct struct_tag_styl_Unknowneighteen
+{
+};

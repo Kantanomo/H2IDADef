@@ -1,0 +1,98 @@
+struct struct_clu!
+{
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+	_DWORD Background_Sound_Pallete_Count;
+	_DWORD Background_Sound_Pallete_Offset;
+	_DWORD Sound_Environment_Pallete_Count;
+	_DWORD Sound_Environment_Pallete_Offset;
+	_DWORD Weather_Palette_Count;
+	_DWORD Weather_Palette_Offset;
+	_DWORD Atmospheric_Fog_Palette_Count;
+	_DWORD Atmospheric_Fog_Palette_Offset;
+};
+struct struct_tag_clu!_Unknown
+{
+};
+struct struct_tag_clu!_Background_Sound_Pallete
+{
+	_BYTE padding_0[32];
+	_DWORD Background_Sound_Class;
+	_DWORD Background_Sound;
+	_DWORD Inside_Cluster_Sound_Class;
+	_DWORD Inside_Cluster_Sound;
+	float Cutoff_Distance;
+	_DWORD Scale_Flags;
+	_BYTE padding_1[12];
+	float Interior_Scale;
+	float Portal_Scale;
+	float Exterior_Scale;
+	_BYTE padding_2[8];
+	float Interpolation_Speed_Per_Sec;
+};
+struct struct_tag_clu!_Sound_Environment_Pallete
+{
+	_BYTE padding_3[32];
+	_DWORD Sound_Environment_Class;
+	_DWORD Sound_Environment;
+	float Cuttoff_Distance;
+	float Interpolation_Speed_Per_Sec;
+};
+struct struct_tag_clu!_Weather_Palette
+{
+	_BYTE padding_4[32];
+	_DWORD Weather_System_Class;
+	_DWORD Weather_System;
+	_BYTE padding_5[36];
+	_DWORD Wind_Class;
+	_DWORD Wind;
+	float Wind_Direction_i;
+	float Wind_Direction_j;
+	float Wind_Direction_k;
+	float Wind_Magnitude;
+	_DWORD Wind_Scale_Function;
+};
+struct struct_tag_clu!_Atmospheric_Fog_Palette
+{
+	_DWORD Name;
+	_BYTE padding_6[1];
+	_BYTE Atmospheric_Fog_Color_R;
+	_BYTE Atmospheric_Fog_Color_G;
+	_BYTE Atmospheric_Fog_Color_B;
+	float Atmospheric_Fog_Spread_Distance;
+	float Atmospheric_Fog_Max_Density;
+	float Atmospheric_Fog_Start_Distance;
+	float Atmospheric_Fog_Opaque_Distance;
+	_BYTE padding_7[25];
+	_BYTE Secondary_Fog_Color_R;
+	_BYTE Secondary_Fog_Color_G;
+	_BYTE Secondary_Fog_Color_B;
+	float Secondary_Fog_Max_Density;
+	float Secondary_Fog_Start_Distance;
+	float Secondary_Fog_Opaque_Distance;
+	_BYTE padding_8[69];
+	_BYTE Planar_Color_R;
+	_BYTE Planar_Color_G;
+	_BYTE Planar_Color_B;
+	float Planar_Max_Density;
+	float Planar_Override_Amount;
+	float Planar_Min_Distance_Bias;
+	_BYTE padding_9[17];
+	_BYTE Patchy_Color_R;
+	_BYTE Patchy_Color_G;
+	_BYTE Patchy_Color_B;
+	float Patchy_Density;
+	float Patchy_Distance;
+	_BYTE padding_10[32];
+	_DWORD Patchy_Fog_Class;
+	_DWORD Patchy_Fog;
+	_BYTE padding_11[-216];
+	_DWORD Mixers:Atmospheric_Fog_Source;
+	_DWORD Mixers:Interpolator;
+	_BYTE padding_12[216];
+	float Amount;
+	float Thershold;
+	float Brightness;
+	float Gamma_Power;
+	_DWORD Camera_Immersion_Flags;
+};

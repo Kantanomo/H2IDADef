@@ -1,0 +1,108 @@
+struct struct_skin
+{
+	float Unused;
+	_DWORD bitm_Class;
+	_DWORD bitm;
+	_WORD Coord_X_Top_arrow;
+	_WORD Coord_Y_Top_arrow;
+	_WORD Coord_X_Bottom_arrow;
+	_WORD Coord_Y_Bottom_arrow;
+	_DWORD Button_effects_Count;
+	_DWORD Button_effects_Offset;
+	_DWORD Buttons_Text_strings_Count;
+	_DWORD Buttons_Text_strings_Offset;
+	_DWORD Button_bitmaps_Count;
+	_DWORD Button_bitmaps_Offset;
+	_DWORD Emblem_Count;
+	_DWORD Emblem_Offset;
+	_DWORD Buttons_Holder_Count;
+	_DWORD Buttons_Holder_Offset;
+};
+struct struct_tag_skin_Button_effects
+{
+	float Unused;
+	_WORD Brightness;
+	_WORD Brightness_only_once;
+	_DWORD Button_switching_effects_Count;
+	_DWORD Button_switching_effects_Offset;
+};
+struct struct_tag_skin_Button_switching_effects
+{
+	float Unused;
+	float Bitmap_Flashing_speed;
+	float Button_shifting_space;
+	float Unknown;
+	float Unknown_0;
+};
+struct struct_tag_skin_Buttons_Text_strings
+{
+	_DWORD Text_options;
+	_DWORD Transition_effect/movement;
+	_WORD Unused;
+	_WORD Font_Type;
+	float Alpha;
+	float Color_Red;
+	float Color_Green;
+	float Color_Blue;
+	_WORD Text_Placement_coord_Y_from_Top;
+	_WORD Text_Placement_coord_X_from_Right;
+	_WORD Text_Placement_coord_Y_from_Bottom;
+	_WORD Text_Placement_coord_X_from_Left;
+	_DWORD String_name;
+	_DWORD Unknown;
+};
+struct struct_tag_skin_Button_bitmaps
+{
+	_WORD Unknown;
+	_WORD Unknown_0;
+	_BYTE padding_0[-4];
+	_DWORD Transition_effect/movement;
+	_BYTE padding_1[4];
+	_WORD Alpha_transparence;
+	_WORD Xbox_live_bitmap_setting;
+	_WORD Bitmap_Placement_coord_X;
+	_WORD Bitmap_Placement_coord_Y;
+	float Horizontal_bitmap_scrolling_speed;
+	float Unused;
+	_DWORD bitm_Class;
+	_DWORD bitm;
+	_WORD Bitmap_Layer_Level;
+	_WORD Unused;
+	float Unused_0;
+	_WORD Unused_0;
+	_WORD Unused_1;
+	_DWORD Bitmap_color_variation_fuction;
+	float Unused_1;
+	float Unused_2;
+};
+struct struct_tag_skin_Emblem
+{
+	_WORD Space_between_buttons;
+	_WORD Unused;
+	_WORD Unknown;
+	_WORD Unknown_0;
+	_WORD Xbox_live_bitmap_setting;
+	_WORD Unused_0;
+	_DWORD bitm_Class;
+	_DWORD bitm;
+	_DWORD shad_Class;
+	_DWORD shad;
+	_WORD Coord_X;
+	_WORD Coord_Y;
+	_WORD Coord_X_0;
+	_WORD Coord_Y_0;
+};
+struct struct_tag_skin_Buttons_Holder
+{
+	float Unused;
+	_DWORD Skin_Class;
+	_DWORD Skin;
+	_WORD Coord_X;
+	_WORD Coord_Y;
+	_BYTE unknown;
+	_BYTE Max_Visible_Buttons;
+	_BYTE Unknown;
+	_BYTE Unknown_0;
+	_WORD Coord_X_0;
+	_WORD Coord_Y_0;
+};

@@ -1,0 +1,67 @@
+struct struct_lsnd
+{
+	_DWORD Flags;
+	float Marty's_Music_Time;
+	_BYTE padding_0[20];
+	_DWORD Tracks_Count;
+	_DWORD Tracks_Offset;
+	_DWORD Detail_Sounds_Count;
+	_DWORD Detail_Sounds_Offset;
+};
+struct struct_tag_lsnd_Tracks
+{
+	_DWORD Name;
+	_DWORD Flags;
+	float Gain_dB;
+	float Fade_In_Duration_Sec;
+	float Fade_Out_Duration_Sec;
+	_DWORD In_Class;
+	_DWORD In;
+	_BYTE padding_1[-4];
+	_BYTE padding_2[4];
+	_DWORD Loop_Class;
+	_DWORD Loop;
+	_BYTE padding_3[-4];
+	_BYTE padding_4[4];
+	_DWORD Out_Class;
+	_DWORD Out;
+	_BYTE padding_5[-4];
+	_BYTE padding_6[4];
+	_DWORD Alternate_Loop_Class;
+	_DWORD Alternate_Loop;
+	_BYTE padding_7[-4];
+	_BYTE padding_8[4];
+	_DWORD Alternate_Out_Class;
+	_DWORD Alternate_Out;
+	_BYTE padding_9[-4];
+	_BYTE padding_10[4];
+	_DWORD Output_Effect;
+	_DWORD Alternate_Trans_In_Class;
+	_DWORD Alternate_Trans_In;
+	_BYTE padding_11[-4];
+	_BYTE padding_12[4];
+	_DWORD Alternate_Trans_Out_Class;
+	_DWORD Alternate_Trans_Out;
+	_BYTE padding_13[-4];
+	_BYTE padding_14[4];
+	float Alternate_Crossfade;
+	float Alternate_Fade_Out_Duration;
+};
+struct struct_tag_lsnd_Detail_Sounds
+{
+	_DWORD Name;
+	_DWORD Sound_Class;
+	_DWORD Sound;
+	_BYTE padding_15[-4];
+	_BYTE padding_16[4];
+	float Random_Period_Bounds_Lower;
+	float Random_Period_Bounds_Upper;
+	_DWORD Flags;
+	_BYTE padding_17[4];
+	float Yaw_Bounds_Lower;
+	float Yaw_Bounds_Upper;
+	float Pitch_Bounds_Lower;
+	float Pitch_Bounds_Upper;
+	float Distance_Bounds_Lower;
+	float Distance_Bounds_Upper;
+};

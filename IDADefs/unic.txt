@@ -1,0 +1,22 @@
+struct struct_unic
+{
+	_BYTE padding_0[16];
+	_WORD English_String_Offset;
+	_WORD English_String_Count;
+	_WORD Japanese_String_Offset;
+	_WORD Japanese_String_Count;
+	_WORD German_String_Offset;
+	_WORD German_String_Count;
+	_WORD French_String_Offset;
+	_WORD French_String_Count;
+	_WORD Spanish_String_Offset;
+	_WORD Spanish_String_Count;
+	_WORD Italian_String_Offset;
+	_WORD Italian_String_Count;
+	_WORD Korean_String_Offset;
+	_WORD Korean_String_Count;
+	_WORD Chinese_String_Offset;
+	_WORD Chinese_String_Count;
+	_WORD Huh;
+	_WORD huh;
+};

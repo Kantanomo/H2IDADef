@@ -1,0 +1,34 @@
+struct struct_sncl
+{
+	_DWORD Sound_Classes_Count;
+	_DWORD Sound_Classes_Offset;
+};
+struct struct_tag_sncl_Sound_Classes
+{
+	_BYTE padding_0[2];
+	_WORD Max_Sounds_Per_Object;
+	_DWORD Preemption_Time;
+	_WORD Internal_Flags;
+	_WORD Flags;
+	_WORD Priority;
+	_WORD Cache_Miss_Mode;
+	float Reverb_Gain_dB;
+	float Override_Speaker_Gain;
+	float Distance_Bounds_Lower;
+	float Distance_Bounds_Upper;
+	float Gain_Bounds_Lower;
+	float Gain_Bounds_Upper;
+	float Cutscene_Ducking_dB;
+	float Cutscene_Ducking_Fade_In_Time_Sec;
+	float Cutscene_Ducking_Sustain_Time_Sec;
+	float Cutscene_Ducking_Fade_Out_Time_Sec;
+	float Scripted_Dialog_Ducking_dB;
+	float Scripted_Dialog_Ducking_Fade_In_Time_Sec;
+	float Scripted_Dialog_Ducking_Sustain_Time_Sec;
+	float Scripted_Dialog_Ducking_Fade_Out_Time_Sec;
+	float Doppler_Factor;
+	_DWORD Stereo_Playback_Type;
+	float Transmission_Multiplier;
+	float Obreflexiveion_Max_Bend;
+	float Occlusion_Max_Bend;
+};

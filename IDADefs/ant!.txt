@@ -1,0 +1,33 @@
+struct struct_ant!
+{
+	_DWORD Attachment_Marker_Name;
+	_DWORD Bitmap_Class;
+	_DWORD Bitmap;
+	_DWORD Physics_Class;
+	_DWORD Physics;
+	_BYTE padding_0[80];
+	float Spring_Strength_Coefficient;
+	float Falloff_Pixels;
+	float Cutoff_Pixels;
+	_BYTE padding_1[40];
+	_DWORD Vertices_Count;
+	_DWORD Vertices_Offset;
+};
+struct struct_tag_ant!_Vertices
+{
+	float Spring_Strength_Coefficient;
+	float Angle_Yaw;
+	float Angle_Pitch;
+	_BYTE padding_2[24];
+	float Lengthworld_units;
+	_DWORD Sequence_index;
+	float Color_Alpha;
+	float Color_Red;
+	float Color_Green;
+	float Color_Blue;
+	_BYTE padding_3[52];
+	float Color_Alpha_0;
+	float Color_Red_0;
+	float Color_Green_0;
+	float Color_Blue_0;
+};

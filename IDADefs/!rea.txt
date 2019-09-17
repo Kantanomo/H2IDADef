@@ -1,0 +1,30 @@
+struct struct_!rea
+{
+	_BYTE padding_0[24];
+	_DWORD Creature_Pallete_Count;
+	_DWORD Creature_Pallete_Offset;
+	_DWORD Creature_Placement_Count;
+	_DWORD Creature_Placement_Offset;
+	_DWORD Unknown;
+};
+struct struct_tag_!rea_Creature_Pallete
+{
+	_DWORD Creature_Class;
+	_DWORD Creature;
+};
+struct struct_tag_!rea_Creature_Placement
+{
+	_BYTE padding_1[12];
+	_DWORD Starting_Location_Count;
+	_DWORD Starting_Location_Offset;
+};
+struct struct_tag_!rea_Starting_Location
+{
+	float X;
+	float Y;
+	float Z;
+	float Unknown;
+	float Yaw;
+	float Pitch;
+	float Roll;
+};

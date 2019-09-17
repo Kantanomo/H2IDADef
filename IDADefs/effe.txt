@@ -1,0 +1,239 @@
+struct struct_effe
+{
+	_DWORD Flags;
+	_WORD Loop_Start_Event_#;
+	_BYTE padding_0[6];
+	_DWORD Locations_Count;
+	_DWORD Locations_Offset;
+	_DWORD Events_Count;
+	_DWORD Events_Offset;
+	_DWORD Looping_Sound_Class;
+	_DWORD Looping_Sound;
+	_BYTE padding_31[-4];
+	_BYTE padding_32[4];
+	_WORD Location;
+	_BYTE padding_33[2];
+	float Always_Play_Distance;
+	float Never_Play_Distance;
+};
+struct struct_tag_effe_Locations
+{
+	_DWORD Marker_Name;
+};
+struct struct_tag_effe_Events
+{
+	_DWORD Flags;
+	float Skip_Fraction;
+	float Delay_Bounds;
+	float ___To;
+	float Duration_Bounds;
+	float ___To_0;
+	_DWORD Parts_Count;
+	_DWORD Parts_Offset;
+};
+struct struct_tag_effe_Parts
+{
+	_WORD Create_In;
+	_WORD Create_In_0;
+	_WORD Location;
+	_WORD Flags;
+	_BYTE padding_1[4];
+	_DWORD Type_Class;
+	_DWORD Type;
+	_BYTE padding_2[-4];
+	_BYTE padding_3[4];
+	float Velocity_Bound;
+	float ___To;
+	float Velocity_Cone_Angle_radians;
+	float Angular_Velocity_Bound;
+	float ___To_0;
+	float Radius_Modifier;
+	float ___To_1;
+	_DWORD A_Scales_Values;
+	_DWORD B_Scales_Values;
+	_BYTE padding_4[-24];
+	_DWORD Beams_Count;
+	_DWORD Beams_Offset;
+};
+struct struct_tag_effe_Beams
+{
+	_DWORD Shader_Class;
+	_DWORD Shader;
+	_WORD Location;
+	_BYTE padding_5[2];
+	_DWORD Color_Count;
+	_DWORD Color_Offset;
+};
+struct struct_tag_effe_Color
+{
+	_BYTE Data;
+	_BYTE padding_6[19];
+	_DWORD Alpha_Count;
+	_DWORD Alpha_Offset;
+};
+struct struct_tag_effe_Alpha
+{
+	_BYTE Data;
+	_BYTE padding_7[27];
+	_DWORD Width_Count;
+	_DWORD Width_Offset;
+};
+struct struct_tag_effe_Width
+{
+	_BYTE Data;
+	_BYTE padding_8[35];
+	_DWORD Length_Count;
+	_DWORD Length_Offset;
+};
+struct struct_tag_effe_Length
+{
+	_BYTE Data;
+	_BYTE padding_9[43];
+	_DWORD Yaw_Count;
+	_DWORD Yaw_Offset;
+};
+struct struct_tag_effe_Yaw
+{
+	_BYTE Data;
+	_BYTE padding_10[51];
+	_DWORD Pitch_Count;
+	_DWORD Pitch_Offset;
+};
+struct struct_tag_effe_Pitch
+{
+	_BYTE Data;
+	_BYTE padding_11[39];
+	_DWORD Accelerations_Count;
+	_DWORD Accelerations_Offset;
+};
+struct struct_tag_effe_Accelerations
+{
+	_WORD Create_In;
+	_WORD Create_In_0;
+	_WORD Location;
+	_BYTE padding_12[-2];
+	_BYTE padding_13[4];
+	float Acceleration;
+	float Inner_Cone_Angle;
+	float Outer_Cone_Angle;
+	_BYTE padding_14[28];
+	_DWORD Particle_Systems_Count;
+	_DWORD Particle_Systems_Offset;
+};
+struct struct_tag_effe_Particle_Systems
+{
+	_DWORD Particle_Class;
+	_DWORD Particle;
+	_BYTE padding_15[-4];
+	_BYTE padding_16[4];
+	_WORD Location;
+	_BYTE padding_17[2];
+	_WORD Coordinate_System;
+	_WORD Environment;
+	_WORD Disposition;
+	_WORD Camera_Mode;
+	_WORD Sort_Bias;
+	_DWORD Flags;
+	_BYTE padding_18[2];
+	float LOD_In_Distance;
+	float LOD_Feather_In_Delta;
+	float LOD_Out_Distance;
+	float LOD_Feather_Out_Delta;
+	_BYTE padding_19[4];
+	_DWORD Emitters_Count;
+	_DWORD Emitters_Offset;
+};
+struct struct_tag_effe_Emitters
+{
+	_DWORD Particle_Physics_Class;
+	_DWORD Particle_Physics;
+	_BYTE padding_20[-4];
+	_BYTE padding_21[4];
+	_DWORD Output_Modifier;
+	_DWORD Output_Modifier_0;
+	_DWORD Particle_Emission_Rate_Count;
+	_DWORD Particle_Emission_Rate_Offset;
+};
+struct struct_tag_effe_Particle_Emission_Rate
+{
+	_BYTE Data;
+	_BYTE padding_22[23];
+	_DWORD Output_Modifier;
+	_DWORD Output_Modifier_0;
+	_DWORD Particle_Lifespan_sec_Count;
+	_DWORD Particle_Lifespan_sec_Offset;
+};
+struct struct_tag_effe_Particle_Lifespan_sec
+{
+	_BYTE Data;
+	_BYTE padding_23[39];
+	_DWORD Output_Modifier;
+	_DWORD Output_Modifier_0;
+	_DWORD Particle_Velocity_World_Units_Per_Sec_Count;
+	_DWORD Particle_Velocity_World_Units_Per_Sec_Offset;
+};
+struct struct_tag_effe_Particle_Velocity_World_Units_Per_Sec
+{
+	_BYTE Data;
+	_BYTE padding_24[55];
+	_DWORD Output_Modifier;
+	_DWORD Output_Modifier_0;
+	_DWORD Particle_Angular_Velocity_Degrees_Per_Sec_Count;
+	_DWORD Particle_Angular_Velocity_Degrees_Per_Sec_Offset;
+};
+struct struct_tag_effe_Particle_Angular_Velocity_Degrees_Per_Sec
+{
+	_BYTE Data;
+	_BYTE padding_25[71];
+	_DWORD Output_Modifier;
+	_DWORD Output_Modifier_0;
+	_DWORD Particle_Size_World_Units_Count;
+	_DWORD Particle_Size_World_Units_Offset;
+};
+struct struct_tag_effe_Particle_Size_World_Units
+{
+	_BYTE Data;
+	_BYTE padding_26[87];
+	_DWORD Output_Modifier;
+	_DWORD Output_Modifier_0;
+	_DWORD Particle_Tint_Count;
+	_DWORD Particle_Tint_Offset;
+};
+struct struct_tag_effe_Particle_Tint
+{
+	_BYTE Data;
+	_BYTE padding_27[103];
+	_DWORD Output_Modifier;
+	_DWORD Output_Modifier_0;
+	_DWORD Particle_Alpha_Count;
+	_DWORD Particle_Alpha_Offset;
+};
+struct struct_tag_effe_Particle_Alpha
+{
+	_BYTE Data;
+	_BYTE padding_28[119];
+	_DWORD Emission_Shape;
+	_DWORD Output_Modifier;
+	_DWORD Output_Modifier_0;
+	_DWORD Emission_Radius_World_Units_Count;
+	_DWORD Emission_Radius_World_Units_Offset;
+};
+struct struct_tag_effe_Emission_Radius_World_Units
+{
+	_BYTE Data;
+	_BYTE padding_29[139];
+	_DWORD Output_Modifier;
+	_DWORD Output_Modifier_0;
+	_DWORD Emission_Angle_Degrees_Count;
+	_DWORD Emission_Angle_Degrees_Offset;
+};
+struct struct_tag_effe_Emission_Angle_Degrees
+{
+	_BYTE Data;
+	_BYTE padding_30[155];
+	float Translation_Offset_X;
+	float Translation_Offset_Y;
+	float Translation_Offset_Z;
+	float Relative_Direction_Yaw;
+	float Relative_Direction_Pitch;
+};

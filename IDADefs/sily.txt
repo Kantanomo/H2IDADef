@@ -1,0 +1,19 @@
+struct struct_sily
+{
+	_DWORD Setting_Catergory;
+	_DWORD Value;
+	_DWORD Unicode_String_List_Of_Options_Class;
+	_DWORD Unicode_String_List_Of_Options;
+	_DWORD Title_Text;
+	_DWORD Header_Text;
+	_DWORD Description_Text;
+	_DWORD options_Count;
+	_DWORD options_Offset;
+};
+struct struct_tag_sily_options
+{
+	_DWORD Flags;
+	_WORD Value;
+	_BYTE padding_0[2];
+	_DWORD Label;
+};

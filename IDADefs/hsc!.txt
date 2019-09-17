@@ -1,0 +1,6 @@
+struct struct_hsc!
+{
+	_BYTE padding_0[32];
+	_DWORD Table_Size;
+	_DWORD Script_Table_Pointer;
+};

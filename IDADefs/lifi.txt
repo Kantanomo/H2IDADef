@@ -1,0 +1,150 @@
+struct struct_lifi
+{
+	_WORD Object_Type;
+	_BYTE padding_0[-2];
+	_BYTE padding_1[4];
+	_BYTE padding_2[4];
+	_BYTE padding_3[4];
+	_BYTE padding_4[4];
+	_BYTE padding_5[4];
+	_BYTE padding_6[4];
+	_WORD Lightmap_Shadow_Mode;
+	_BYTE Sweetener_Size;
+	_BYTE padding_7[1];
+	_BYTE padding_8[4];
+	_BYTE padding_9[4];
+	_BYTE padding_10[4];
+	_BYTE padding_11[4];
+	_BYTE padding_12[4];
+	_DWORD Default_Model_Variant;
+	_BYTE padding_13[8];
+	_BYTE padding_14[8];
+	_BYTE padding_15[8];
+	_BYTE padding_16[8];
+	_BYTE padding_17[8];
+	_DWORD AI_Properties_Count;
+	_DWORD AI_Properties_Offset;
+	_DWORD Functions_Count;
+	_DWORD Functions_Offset;
+	_BYTE padding_23[4];
+	_BYTE padding_24[4];
+	_BYTE padding_25[4];
+	_BYTE padding_26[4];
+	_BYTE padding_27[4];
+	_BYTE padding_28[4];
+	_BYTE padding_29[4];
+	_BYTE padding_30[4];
+	_BYTE padding_31[4];
+	_BYTE padding_32[2];
+	_BYTE padding_33[2];
+	_DWORD Attachments_Count;
+	_DWORD Attachments_Offset;
+	_DWORD Widgets_Count;
+	_DWORD Widgets_Offset;
+	_DWORD Old_Functions_Count;
+	_DWORD Old_Functions_Offset;
+	_DWORD Change_Colors_Count;
+	_DWORD Change_Colors_Offset;
+	_DWORD Predicted_Resource_Count;
+	_DWORD Predicted_Resource_Offset;
+	_BYTE padding_63[-188];
+	_BYTE padding_64[192];
+	_BYTE padding_65[4];
+	_BYTE padding_66[4];
+	_BYTE padding_67[4];
+	_BYTE padding_68[4];
+	_BYTE padding_69[4];
+	_BYTE padding_70[4];
+	_BYTE padding_71[-216];
+	_BYTE padding_72[218];
+	_BYTE padding_73[2];
+	_BYTE padding_74[8];
+	_BYTE padding_75[8];
+	_BYTE padding_76[8];
+	_BYTE padding_77[8];
+	_BYTE padding_78[8];
+	_BYTE padding_79[8];
+	_BYTE padding_80[4];
+	_BYTE padding_81[8];
+	_BYTE padding_82[-280];
+};
+struct struct_tag_lifi_AI_Properties
+{
+	_BYTE padding_18[4];
+	_DWORD AI_Type_Name;
+	_BYTE padding_19[4];
+	_WORD Size;
+	_WORD Leap_Jump_Speed;
+};
+struct struct_tag_lifi_Functions
+{
+	_BYTE padding_20[4];
+	_DWORD Import_Name;
+	_DWORD Export_Name;
+	_DWORD Turn_Off_With;
+	_BYTE padding_21[4];
+	_BYTE padding_22[8];
+	_DWORD Scale_By;
+};
+struct struct_tag_lifi_Attachments
+{
+	_BYTE padding_34[8];
+	_DWORD Marker;
+	_WORD Change_Color;
+	_BYTE padding_35[2];
+	_DWORD Primary_Scale;
+	_DWORD Secondary_Scale;
+};
+struct struct_tag_lifi_Widgets
+{
+};
+struct struct_tag_lifi_Old_Functions
+{
+	_BYTE padding_36[4];
+	_BYTE padding_37[4];
+	_BYTE padding_38[4];
+	_BYTE padding_39[4];
+	_BYTE padding_40[4];
+	_BYTE padding_41[4];
+	_BYTE padding_42[4];
+	_BYTE padding_43[4];
+	_BYTE padding_44[4];
+	_BYTE padding_45[4];
+	_BYTE padding_46[4];
+	_BYTE padding_47[4];
+	_BYTE padding_48[4];
+	_BYTE padding_49[4];
+	_BYTE padding_50[4];
+	_BYTE padding_51[4];
+	_BYTE padding_52[4];
+	_BYTE padding_53[4];
+	_BYTE padding_54[4];
+};
+struct struct_tag_lifi_Change_Colors
+{
+	_DWORD Initial_Permutations_Count;
+	_DWORD Initial_Permutations_Offset;
+};
+struct struct_tag_lifi_Initial_Permutations
+{
+	_BYTE padding_55[4];
+	_BYTE padding_56[12];
+	_BYTE padding_57[12];
+	_DWORD Variant_Name;
+	_BYTE padding_58[-24];
+	_DWORD Functions_Count;
+	_DWORD Functions_Offset;
+};
+struct struct_tag_lifi_Functions_0
+{
+	_BYTE padding_59[4];
+	_BYTE padding_60[12];
+	_BYTE padding_61[12];
+	_DWORD Darken_By;
+	_DWORD Scale_By;
+};
+struct struct_tag_lifi_Predicted_Resource
+{
+	_WORD Type;
+	_BYTE padding_62[2];
+};

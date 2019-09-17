@@ -1,0 +1,313 @@
+struct struct_prtthree
+{
+	_DWORD Flags;
+	_DWORD Particle_Billboard_Style;
+	_WORD First_Billboard_Style;
+	_WORD Sequence_Count;
+	_DWORD Shader_Template_Class;
+	_DWORD Shader_Template;
+	_DWORD Shader_Count;
+	_DWORD Shader_Offset;
+	_BYTE padding_1[-28];
+	_BYTE padding_2[32];
+	_DWORD Output_Modifier;
+	_DWORD Color_Count;
+	_DWORD Color_Offset;
+	_DWORD Output_Modifier_0;
+	_DWORD Output_Modifier_1;
+	_DWORD Alpha_Count;
+	_DWORD Alpha_Offset;
+	_DWORD Output_Modifier_2;
+	_DWORD Output_Modifier_3;
+	_DWORD Scale_Count;
+	_DWORD Scale_Offset;
+	_DWORD Output_Modifier_4;
+	_DWORD Output_Modifier_5;
+	_DWORD Rotation_Count;
+	_DWORD Rotation_Offset;
+	_DWORD Output_Modifier_6;
+	_DWORD Output_Modifier_7;
+	_DWORD Frame_Index_Count;
+	_DWORD Frame_Index_Offset;
+	_DWORD Collision_Effect_Class;
+	_DWORD Collision_Effect;
+	_DWORD Death_Effect_Class;
+	_DWORD Death_Effect;
+	_DWORD Locations_Count;
+	_DWORD Locations_Offset;
+	_DWORD Attached_Particle_Systems_Count;
+	_DWORD Attached_Particle_Systems_Offset;
+	_DWORD Unknownone hundred and sixteen_Count;
+	_DWORD Unknownone hundred and sixteen_Offset;
+	_BYTE padding_37[4];
+	_BYTE padding_38[4];
+	_BYTE padding_39[4];
+	_BYTE padding_40[4];
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+	float Unknown_3;
+	float Unknown_4;
+	float Unknown_5;
+};
+struct struct_tag_prtthree_Shader
+{
+	_DWORD Unknown;
+	_BYTE padding_0[4];
+	_DWORD Unknown_Class;
+	_DWORD Unknown_0;
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+};
+struct struct_tag_prtthree_Color
+{
+	_BYTE Data;
+};
+struct struct_tag_prtthree_Alpha
+{
+	_BYTE Data;
+};
+struct struct_tag_prtthree_Scale
+{
+	_BYTE Data;
+};
+struct struct_tag_prtthree_Rotation
+{
+	_BYTE Data;
+};
+struct struct_tag_prtthree_Frame_Index
+{
+	_BYTE Data;
+};
+struct struct_tag_prtthree_Locations
+{
+	_DWORD Location;
+};
+struct struct_tag_prtthree_Attached_Particle_Systems
+{
+	_DWORD Particle_Class;
+	_DWORD Particle;
+	_WORD Location;
+	_BYTE padding_3[2];
+	_WORD Coordinate_System;
+	_WORD Environment;
+	_WORD Disposition;
+	_WORD Camera_Mode;
+	_WORD Sort_Bias;
+	_DWORD Flags;
+	_BYTE padding_4[2];
+	float LOD_In_Distance;
+	float LOD_Feather_In_Delta;
+	float LOD_Out_Distance;
+	float LOD_Feather_Out_Delta;
+	_BYTE padding_5[4];
+	_DWORD Emitters_Count;
+	_DWORD Emitters_Offset;
+};
+struct struct_tag_prtthree_Emitters
+{
+	_DWORD Particle_Physics_Class;
+	_DWORD Particle_Physics;
+	_DWORD Output_Modifier;
+	_DWORD Output_Modifier_0;
+	_DWORD Particle_Emission_Rate_Count;
+	_DWORD Particle_Emission_Rate_Offset;
+};
+struct struct_tag_prtthree_Particle_Emission_Rate
+{
+	_BYTE Data;
+	_BYTE padding_6[23];
+	_DWORD Output_Modifier;
+	_DWORD Output_Modifier_0;
+	_DWORD Particle_Lifespan_sec_Count;
+	_DWORD Particle_Lifespan_sec_Offset;
+};
+struct struct_tag_prtthree_Particle_Lifespan_sec
+{
+	_BYTE Data;
+	_BYTE padding_7[39];
+	_DWORD Output_Modifier;
+	_DWORD Output_Modifier_0;
+	_DWORD Particle_Velocity_World_Units_Per_Sec_Count;
+	_DWORD Particle_Velocity_World_Units_Per_Sec_Offset;
+};
+struct struct_tag_prtthree_Particle_Velocity_World_Units_Per_Sec
+{
+	_BYTE Data;
+	_BYTE padding_8[55];
+	_DWORD Output_Modifier;
+	_DWORD Output_Modifier_0;
+	_DWORD Particle_Angular_Velocity_Degrees_Per_Sec_Count;
+	_DWORD Particle_Angular_Velocity_Degrees_Per_Sec_Offset;
+};
+struct struct_tag_prtthree_Particle_Angular_Velocity_Degrees_Per_Sec
+{
+	_BYTE Data;
+	_BYTE padding_9[71];
+	_DWORD Output_Modifier;
+	_DWORD Output_Modifier_0;
+	_DWORD Particle_Size_World_Units_Count;
+	_DWORD Particle_Size_World_Units_Offset;
+};
+struct struct_tag_prtthree_Particle_Size_World_Units
+{
+	_BYTE Data;
+	_BYTE padding_10[87];
+	_DWORD Output_Modifier;
+	_DWORD Output_Modifier_0;
+	_DWORD Particle_Tint_Count;
+	_DWORD Particle_Tint_Offset;
+};
+struct struct_tag_prtthree_Particle_Tint
+{
+	_BYTE Data;
+	_BYTE padding_11[103];
+	_DWORD Output_Modifier;
+	_DWORD Output_Modifier_0;
+	_DWORD Particle_Alpha_Count;
+	_DWORD Particle_Alpha_Offset;
+};
+struct struct_tag_prtthree_Particle_Alpha
+{
+	_BYTE Data;
+	_BYTE padding_12[119];
+	_DWORD Emission_Shape;
+	_DWORD Output_Modifier;
+	_DWORD Output_Modifier_0;
+	_DWORD Emission_Radius_World_Units_Count;
+	_DWORD Emission_Radius_World_Units_Offset;
+};
+struct struct_tag_prtthree_Emission_Radius_World_Units
+{
+	_BYTE Data;
+	_BYTE padding_13[139];
+	_DWORD Output_Modifier;
+	_DWORD Output_Modifier_0;
+	_DWORD Emission_Angle_Degrees_Count;
+	_DWORD Emission_Angle_Degrees_Offset;
+};
+struct struct_tag_prtthree_Emission_Angle_Degrees
+{
+	_BYTE Data;
+	_BYTE padding_14[155];
+	float Translation_Offset_X;
+	float Translation_Offset_Y;
+	float Translation_Offset_Z;
+	float Relative_Direction_Yaw;
+	float Relative_Direction_Pitch;
+};
+struct struct_tag_prtthree_Unknownone hundred and sixteen
+{
+	_BYTE padding_15[4];
+	_DWORD Unknownone hundred and eighteen_Count;
+	_DWORD Unknownone hundred and eighteen_Offset;
+};
+struct struct_tag_prtthree_Unknownone hundred and eighteen
+{
+	_BYTE padding_16[4];
+	_BYTE padding_17[4];
+	float Unknown;
+	_DWORD Unknownone hundred and twenty_three_Count;
+	_DWORD Unknownone hundred and twenty_three_Offset;
+};
+struct struct_tag_prtthree_Unknownone hundred and twenty_three
+{
+	_WORD Unknown;
+	_WORD Unknown_0;
+	_BYTE padding_18[16];
+	_DWORD Unknownone hundred and twenty_six_Count;
+	_DWORD Unknownone hundred and twenty_six_Offset;
+};
+struct struct_tag_prtthree_Unknownone hundred and twenty_six
+{
+	float Unknown;
+	float Unknown_0;
+	_BYTE padding_19[4];
+	float Unknown_1;
+	_BYTE padding_20[12];
+	_DWORD Unknownone hundred and thirty_two_Count;
+	_DWORD Unknownone hundred and thirty_two_Offset;
+};
+struct struct_tag_prtthree_Unknownone hundred and thirty_two
+{
+	_BYTE padding_21[4];
+	_BYTE padding_22[32];
+	_DWORD Unknownone hundred and thirty_six_Count;
+	_DWORD Unknownone hundred and thirty_six_Offset;
+};
+struct struct_tag_prtthree_Unknownone hundred and thirty_six
+{
+	_WORD Unknown;
+	_BYTE padding_23[42];
+	_DWORD Unknownone hundred and thirty_nine_Count;
+	_DWORD Unknownone hundred and thirty_nine_Offset;
+};
+struct struct_tag_prtthree_Unknownone hundred and thirty_nine
+{
+	_BYTE padding_24[52];
+	_DWORD Unknownone hundred and forty_two_Count;
+	_DWORD Unknownone hundred and forty_two_Offset;
+};
+struct struct_tag_prtthree_Unknownone hundred and forty_two
+{
+	_BYTE padding_25[8];
+	_BYTE padding_26[52];
+	_DWORD Unknownone hundred and forty_six_Count;
+	_DWORD Unknownone hundred and forty_six_Offset;
+};
+struct struct_tag_prtthree_Unknownone hundred and forty_six
+{
+	_BYTE padding_27[8];
+	float Unknown;
+	_DWORD Unknownone hundred and forty_six_zero_Count;
+	_DWORD Unknownone hundred and forty_six_zero_Offset;
+};
+struct struct_tag_prtthree_Unknownone hundred and forty_six_zero
+{
+	_BYTE padding_28[68];
+	_DWORD Unknownone thousand three hundred and ninety_two_Count;
+	_DWORD Unknownone thousand three hundred and ninety_two_Offset;
+};
+struct struct_tag_prtthree_Unknownone thousand three hundred and ninety_two
+{
+	_BYTE padding_29[76];
+	_DWORD Unknownone hundred and thirty_six_Count;
+	_DWORD Unknownone hundred and thirty_six_Offset;
+};
+struct struct_tag_prtthree_Unknownone hundred and thirty_six_0
+{
+	_WORD Unknown;
+	_BYTE padding_30[82];
+	_DWORD Unknownone thousand three hundred and ninety_two_Count;
+	_DWORD Unknownone thousand three hundred and ninety_two_Offset;
+};
+struct struct_tag_prtthree_Unknownone thousand three hundred and ninety_two_0
+{
+	_BYTE padding_31[92];
+	_DWORD Unknownone hundred and fifty_eight_Count;
+	_DWORD Unknownone hundred and fifty_eight_Offset;
+};
+struct struct_tag_prtthree_Unknownone hundred and fifty_eight
+{
+	_WORD Unknown;
+	_WORD Unknown_0;
+	_BYTE padding_32[96];
+	_DWORD Unknownone thousand five hundred and eighty_three_Count;
+	_DWORD Unknownone thousand five hundred and eighty_three_Offset;
+};
+struct struct_tag_prtthree_Unknownone thousand five hundred and eighty_three
+{
+	float Unknown;
+	_BYTE padding_33[104];
+	_DWORD Unknownone thousand five hundred and eighty_four_Count;
+	_DWORD Unknownone thousand five hundred and eighty_four_Offset;
+};
+struct struct_tag_prtthree_Unknownone thousand five hundred and eighty_four
+{
+	float Unknown;
+	_BYTE padding_34[112];
+	_BYTE padding_35[4];
+	_BYTE padding_36[4];
+};

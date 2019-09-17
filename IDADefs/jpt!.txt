@@ -1,0 +1,92 @@
+struct struct_jpt!
+{
+	float Radius;
+	float ___To;
+	float Cutoff_Scale;
+	_DWORD Flags;
+	_WORD Side_Effect;
+	_WORD Category;
+	_DWORD Flags_0;
+	float AOE_Core_Radius;
+	float Damage_Lower_Bound;
+	float Damge_Upper_Bound;
+	float ___To_0;
+	float Damage_Inner_Cone_Angle;
+	float Damage_Outter_Cone_Angle;
+	float Active_Camoflage_Damage;
+	float Stun;
+	float Max_Stun;
+	float Stun_Time;
+	float Instantaneous_Acceleration;
+	float Rider_Direct_Damage_Scale;
+	float Rider_Max_Transfer_Damage;
+	float Rider_Min_Transfer_Damage;
+	_DWORD General_Damage;
+	_DWORD Specific_Damage;
+	float AI_Stun_Radius;
+	float AI_Stun_Bounds;
+	float ___To_1;
+	float Shake_Radius;
+	float Emp_Radius;
+	_DWORD Player_Responses_Count;
+	_DWORD Player_Responses_Offset;
+	float Temporary_Camera_Impulse_Duration;
+	_DWORD Temporary_Camera_Impulse_Fade_Function;
+	float Temporary_Camera_Impulse_Rotation;
+	float Temporary_Camera_Impulse_Pushback;
+	float Temporary_Camera_Impulse_Jitter;
+	float ___To;
+	float Camera_Shaking_Duration;
+	_DWORD Camera_Shaking_Falloff_Function;
+	float Camera_Shaking_Random_Translation;
+	float Camera_Shaking_Random_Rotation;
+	_DWORD Camera_Shaking_Wobble_Function;
+	float Camera_Shaking_Wobble_Function_Period;
+	float Camera_Shaking_Wobble_Weight;
+	_DWORD Sound_Class;
+	_DWORD Sound;
+	_BYTE padding_2[-4];
+	_BYTE padding_3[4];
+	float Breaking_Effect_Forward_Velocity;
+	float Breaking_Effect_Forward_Radius;
+	float Breaking_Effect_Forward_Exponent;
+	float Breaking_Effect_Outward_Velocity;
+	float Breaking_Effect_Outward_Radius;
+	float Breaking_Effect_Outward_Exponent;
+};
+struct struct_tag_jpt!_Player_Responses
+{
+	_WORD Response_Type;
+	_DWORD Screen_Flash_Type;
+	_WORD Screen_Flash_Priority;
+	float Screen_Flash_Duration;
+	_DWORD Screen_Flash_Fade_Function;
+	float Screen_Flash_Max_Intensity;
+	float Screen_Flash_Color_A;
+	float Screen_Flash_Color_R;
+	float Screen_Flash_Color_G;
+	float Screen_Flash_Color_B;
+	float Low_Frequency_Vibration_Duration;
+	_DWORD Low_Frequency_Vibration_Count;
+	_DWORD Low_Frequency_Vibration_Offset;
+};
+struct struct_tag_jpt!_Low_Frequency_Vibration
+{
+	_BYTE Data;
+	_BYTE padding_0[47];
+	float High_Frequency_Vibration_Duration;
+	_DWORD High_Frequency_Vibration_Count;
+	_DWORD High_Frequency_Vibration_Offset;
+};
+struct struct_tag_jpt!_High_Frequency_Vibration
+{
+	_BYTE Data;
+	_BYTE padding_1[59];
+	_DWORD Sound_Effect_Name;
+	float Sound_Effect_Duration;
+	_DWORD Sound_Effect_Count;
+	_DWORD Sound_Effect_Offset;
+};
+struct struct_tag_jpt!_Sound_Effect
+{
+};

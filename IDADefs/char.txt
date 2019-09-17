@@ -1,0 +1,454 @@
+struct struct_char
+{
+	_BYTE padding_0[4];
+	_DWORD Unknown_Class;
+	_DWORD Unknown;
+	_DWORD Unknown_Class_0;
+	_DWORD Unknown_0;
+	_DWORD Unknown_Class_1;
+	_DWORD Unknown_1;
+	_DWORD Unknown_Class_2;
+	_DWORD Unknown_2;
+	_DWORD Unknown_Class_3;
+	_DWORD Unknown_3;
+	_DWORD Variation_Count;
+	_DWORD Variation_Offset;
+	_DWORD Flags_Count;
+	_DWORD Flags_Offset;
+	_DWORD Char_Stats_Count;
+	_DWORD Char_Stats_Offset;
+	_DWORD Unknownfifty_four_Count;
+	_DWORD Unknownfifty_four_Offset;
+	_DWORD Unknownsixty_eight_Count;
+	_DWORD Unknownsixty_eight_Offset;
+	_DWORD Unknowneighty_three_Count;
+	_DWORD Unknowneighty_three_Offset;
+	_DWORD Unknownone hundred and five_Count;
+	_DWORD Unknownone hundred and five_Offset;
+	_DWORD Unknownone hundred and sixteen_Count;
+	_DWORD Unknownone hundred and sixteen_Offset;
+	_DWORD Unknownone hundred and twenty_eight_Count;
+	_DWORD Unknownone hundred and twenty_eight_Offset;
+	_DWORD Unknownone hundred and thirty_two_Count;
+	_DWORD Unknownone hundred and thirty_two_Offset;
+	_DWORD Unknownone hundred and thirty_eight_Count;
+	_DWORD Unknownone hundred and thirty_eight_Offset;
+	_DWORD Unknownone hundred and fifty_six_Count;
+	_DWORD Unknownone hundred and fifty_six_Offset;
+	_DWORD Unknownone hundred and sixty_three_Count;
+	_DWORD Unknownone hundred and sixty_three_Offset;
+	_DWORD Unknownone hundred and eighty_one_Count;
+	_DWORD Unknownone hundred and eighty_one_Offset;
+	_DWORD Unknowntwo hundred and two_Count;
+	_DWORD Unknowntwo hundred and two_Offset;
+	_DWORD Unknowntwo hundred and nine_Count;
+	_DWORD Unknowntwo hundred and nine_Offset;
+	_DWORD Unknowntwo hundred and twenty_Count;
+	_DWORD Unknowntwo hundred and twenty_Offset;
+	_DWORD Unknowntwo hundred and twenty_five_Count;
+	_DWORD Unknowntwo hundred and twenty_five_Offset;
+	_DWORD Unknowntwo hundred and twenty_nine_Count;
+	_DWORD Unknowntwo hundred and twenty_nine_Offset;
+	_DWORD Unknowntwo hundred and thirty_five_Count;
+	_DWORD Unknowntwo hundred and thirty_five_Offset;
+	_DWORD Unknowntwo hundred and forty_Count;
+	_DWORD Unknowntwo hundred and forty_Offset;
+	_DWORD Weapon_Associations_Count;
+	_DWORD Weapon_Associations_Offset;
+	_DWORD Unknownthree hundred and eight_Count;
+	_DWORD Unknownthree hundred and eight_Offset;
+	_DWORD Vehicle_Associations_Count;
+	_DWORD Vehicle_Associations_Offset;
+};
+struct struct_tag_char_Variation
+{
+	_DWORD Permutation;
+	_BYTE padding_1[4];
+	_DWORD Base_permutation;
+};
+struct struct_tag_char_Flags
+{
+	_DWORD Flags_one;
+	_BYTE padding_2[4];
+	float Unknown;
+};
+struct struct_tag_char_Char_Stats
+{
+	_BYTE padding_3[4];
+	float Health_on_easy;
+	float Shields_on_easy;
+	float Health_on_legendary;
+	float Shields_on_legendary;
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+	float Unknown_3;
+	float Unknown_4;
+	float Unknown_5;
+	float Unknown_6;
+	float Unknown_7;
+	float Unknown_8;
+	float Unknown_9;
+	float Unknown_10;
+	float Shield_recharge_rate_on_easy;
+	float Shield_recharge_rate_on_legendary;
+	float Unknown_11;
+	float Unknown_12;
+	float Unknown_13;
+	float Unknown_14;
+	float Unknown_15;
+	float Unknown_16;
+	_BYTE padding_4[4];
+	float Unknown_17;
+};
+struct struct_tag_char_Unknownfifty_four
+{
+	_BYTE padding_5[8];
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+	float Unknown_3;
+	float Unknown_4;
+	float Unknown_5;
+	float Unknown_6;
+	float Unknown_7;
+	float Unknown_8;
+	float Unknown_9;
+};
+struct struct_tag_char_Unknownsixty_eight
+{
+	_BYTE padding_6[4];
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+	float Unknown_3;
+	float Unknown_4;
+	float Unknown_5;
+	float Unknown_6;
+	float Unknown_7;
+	float Unknown_8;
+	float Unknown_9;
+	float Unknown_10;
+};
+struct struct_tag_char_Unknowneighty_three
+{
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+	float Unknown_3;
+	float Unknown_4;
+	float Unknown_5;
+	float Unknown_6;
+	float Unknown_7;
+	float Unknown_8;
+	float Unknown_9;
+	float Unknown_10;
+	float Unknown_11;
+	float Unknown_12;
+	float Unknown_13;
+	float Unknown_14;
+	float Unknown_15;
+	float Unknown_16;
+	float Unknown_17;
+	float Unknown_18;
+};
+struct struct_tag_char_Unknownone hundred and five
+{
+	_BYTE padding_7[4];
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	_BYTE padding_8[4];
+	_BYTE padding_9[4];
+	_BYTE padding_10[4];
+	_BYTE padding_11[4];
+};
+struct struct_tag_char_Unknownone hundred and sixteen
+{
+	_BYTE padding_12[4];
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+	float Unknown_3;
+	float Unknown_4;
+	float Unknown_5;
+	float Unknown_6;
+	float Unknown_7;
+};
+struct struct_tag_char_Unknownone hundred and twenty_eight
+{
+	float Unknown;
+	float Unknown_0;
+};
+struct struct_tag_char_Unknownone hundred and thirty_two
+{
+	_BYTE padding_13[4];
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+};
+struct struct_tag_char_Unknownone hundred and thirty_eight
+{
+	_BYTE padding_14[4];
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+	float Unknown_3;
+	float Unknown_4;
+	float Unknown_5;
+	float Unknown_6;
+	float Unknown_7;
+	float Unknown_8;
+	float Unknown_9;
+	float Unknown_10;
+	float Unknown_11;
+	_DWORD Unknown_Class;
+	_DWORD Unknown;
+	_BYTE padding_15[-4];
+};
+struct struct_tag_char_Unknownone hundred and fifty_six
+{
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+	float Unknown_3;
+};
+struct struct_tag_char_Unknownone hundred and sixty_three
+{
+	_BYTE padding_16[4];
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+	_BYTE padding_17[4];
+	float Unknown_3;
+	float Unknown_4;
+	float Unknown_5;
+	float Unknown_6;
+	float Unknown_7;
+	float Unknown_8;
+	float Unknown_9;
+	float Unknown_10;
+	float Unknown_11;
+	float Unknown_12;
+};
+struct struct_tag_char_Unknownone hundred and eighty_one
+{
+	_BYTE padding_18[4];
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+	float Unknown_3;
+	float Unknown_4;
+	float Unknown_5;
+	float Unknown_6;
+	float Unknown_7;
+	_BYTE padding_19[4];
+	float Unknown_8;
+	float Unknown_9;
+	float Unknown_10;
+	float Unknown_11;
+	float Unknown_12;
+	float Unknown_13;
+	_DWORD Unknown_Class;
+	_DWORD Unknown;
+	_BYTE padding_20[-4];
+};
+struct struct_tag_char_Unknowntwo hundred and two
+{
+	_BYTE padding_21[4];
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+};
+struct struct_tag_char_Unknowntwo hundred and nine
+{
+	_BYTE padding_22[4];
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+	float Unknown_3;
+	float Unknown_4;
+	float Unknown_5;
+	float Unknown_6;
+};
+struct struct_tag_char_Unknowntwo hundred and twenty
+{
+	_BYTE padding_23[4];
+	float Unknown;
+	float Unknown_0;
+};
+struct struct_tag_char_Unknowntwo hundred and twenty_five
+{
+	float Unknown;
+	float Unknown_0;
+};
+struct struct_tag_char_Unknowntwo hundred and twenty_nine
+{
+	_BYTE padding_24[4];
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+};
+struct struct_tag_char_Unknowntwo hundred and thirty_five
+{
+	_BYTE padding_25[4];
+	float Unknown;
+	float Unknown_0;
+};
+struct struct_tag_char_Unknowntwo hundred and forty
+{
+	_BYTE padding_26[4];
+	_DWORD Unknown_Class;
+	_DWORD Unknown;
+	_BYTE padding_27[-4];
+	_BYTE padding_28[4];
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+	float Unknown_3;
+	float Unknown_4;
+	float Unknown_5;
+	float Unknown_6;
+	float Unknown_7;
+	float Unknown_8;
+	float Unknown_9;
+	float Unknown_10;
+	float Unknown_11;
+	float Unknown_12;
+	float Unknown_13;
+	float Unknown_14;
+	float Unknown_15;
+	float Unknown_16;
+	float Unknown_17;
+	float Unknown_18;
+	float Unknown_19;
+	_BYTE padding_29[24];
+	_BYTE padding_30[4];
+	float Unknown_20;
+	float Unknown_21;
+	_BYTE padding_31[8];
+	float Unknown_22;
+	float Unknown_23;
+	_BYTE padding_32[4];
+	float Unknown_24;
+	float Unknown_25;
+	float Unknown_26;
+	float Unknown_27;
+	float Unknown_28;
+	float Unknown_29;
+	float Unknown_30;
+	float Unknown_31;
+	float Unknown_32;
+	_BYTE padding_33[8];
+	_DWORD Unknown_Class_0;
+	_DWORD Unknown_0;
+	_BYTE padding_34[-4];
+};
+struct struct_tag_char_Weapon_Associations
+{
+	_DWORD Weapon_Class;
+	_DWORD Weapon;
+	_BYTE padding_35[-4];
+	_BYTE padding_36[4];
+	_DWORD Unknowntwo hundred and eighty_nine_Count;
+	_DWORD Unknowntwo hundred and eighty_nine_Offset;
+};
+struct struct_tag_char_Unknowntwo hundred and eighty_nine
+{
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+	_BYTE padding_37[4];
+	float Unknown_3;
+	float Unknown_4;
+	_BYTE padding_38[4];
+	float Unknown_5;
+	float Unknown_6;
+	float Unknown_7;
+	float Unknown_8;
+	float Unknown_9;
+	_BYTE padding_39[4];
+	float Unknown_10;
+};
+struct struct_tag_char_Unknownthree hundred and eight
+{
+	_BYTE padding_40[4];
+	_BYTE padding_41[4];
+	_BYTE padding_42[4];
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+	float Unknown_3;
+	float Unknown_4;
+	float Unknown_5;
+	float Unknown_6;
+	float Unknown_7;
+	float Unknown_8;
+	_BYTE padding_43[4];
+	float Unknown_9;
+};
+struct struct_tag_char_Vehicle_Associations
+{
+	_DWORD Vehicle_Class;
+	_DWORD Vehicle;
+	_BYTE padding_44[-4];
+	_BYTE padding_45[4];
+	_DWORD Style_Class;
+	_DWORD Style;
+	_BYTE padding_46[-4];
+	_BYTE padding_47[4];
+	_DWORD Flags;
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+	float Unknown_3;
+	float Unknown_4;
+	_BYTE padding_48[4];
+	float Unknown_5;
+	float Unknown_6;
+	float Unknown_7;
+	float Unknown_8;
+	float Unknown_9;
+	float Unknown_10;
+	float Unknown_11;
+	float Unknown_12;
+	float Unknown_13;
+	float Unknown_14;
+	float Unknown_15;
+	float Unknown_16;
+	float Unknown_17;
+	float Unknown_18;
+	float Unknown_19;
+	float Unknown_20;
+	_BYTE padding_49[4];
+	float Unknown_21;
+	float Unknown_22;
+	float Unknown_23;
+	float Unknown_24;
+	float Unknown_25;
+	float Unknown_26;
+	float Unknown_27;
+	float Unknown_28;
+	float Unknown_29;
+	float Unknown_30;
+	float Unknown_31;
+	float Unknown_32;
+	float Unknown_33;
+	float Unknown_34;
+	float Unknown_35;
+};

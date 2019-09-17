@@ -1,0 +1,1282 @@
+struct struct_sbsp
+{
+	_BYTE padding_0[12];
+	_DWORD sbsp_Class;
+	_DWORD sbsp;
+	_BYTE padding_1[-4];
+	_BYTE padding_2[4];
+	_BYTE padding_3[4];
+	_BYTE padding_4[-12];
+	_BYTE padding_5[-12];
+	_DWORD Unused_Class;
+	_DWORD Unused;
+	_BYTE padding_6[-4];
+	_BYTE padding_7[4];
+	_BYTE padding_8[4];
+	_DWORD Shader_Class;
+	_DWORD Shader;
+	_BYTE padding_9[-4];
+	_BYTE padding_10[4];
+	_DWORD Collision_Bsp_Count;
+	_DWORD Collision_Bsp_Offset;
+	_BYTE padding_20[16];
+	float Vehicle_Floor;
+	float Vehicle_Ceiling;
+	_BYTE padding_21[-8];
+	_DWORD Leaves_Count;
+	_DWORD Leaves_Offset;
+	_BYTE padding_24[16];
+	float World_Bounds_X;
+	float ___To;
+	float World_Bounds_Y;
+	float ___To_0;
+	float World_Bounds_Z;
+	float ___To_1;
+	_BYTE padding_25[-16];
+	_DWORD Surface_References_Count;
+	_DWORD Surface_References_Offset;
+	_DWORD Cluster_Data_Count;
+	_DWORD Cluster_Data_Offset;
+	_DWORD Cluster_Portals_Count;
+	_DWORD Cluster_Portals_Offset;
+	_DWORD Fog_Planes_Count;
+	_DWORD Fog_Planes_Offset;
+	_BYTE padding_28[16];
+	_BYTE padding_29[8];
+	_DWORD Weather_Pallete_Count;
+	_DWORD Weather_Pallete_Offset;
+	_DWORD Weather_Polyhedral_Count;
+	_DWORD Weather_Polyhedral_Offset;
+	_DWORD Sound_Data_Count;
+	_DWORD Sound_Data_Offset;
+	_DWORD Detail_Objects_Count;
+	_DWORD Detail_Objects_Offset;
+	_DWORD Materials_Count;
+	_DWORD Materials_Offset;
+	_DWORD Sky_Owner_Cluster_Count;
+	_DWORD Sky_Owner_Cluster_Offset;
+	_DWORD Conveyor_Surfaces_Count;
+	_DWORD Conveyor_Surfaces_Offset;
+	_DWORD Breakable_Surfaces_Count;
+	_DWORD Breakable_Surfaces_Offset;
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+	_BYTE padding_106[16];
+	_BYTE padding_107[-8];
+	_DWORD Background_Sound_Palette_Count;
+	_DWORD Background_Sound_Palette_Offset;
+	_DWORD Sound_Environment_Palette_Count;
+	_DWORD Sound_Environment_Palette_Offset;
+	_DWORD Sound_PAS_Data_Count;
+	_DWORD Sound_PAS_Data_Offset;
+	_DWORD Markers_Count;
+	_DWORD Markers_Offset;
+	_DWORD Runtime_Decals_Count;
+	_DWORD Runtime_Decals_Offset;
+	_DWORD Environment_Object_Palette_Count;
+	_DWORD Environment_Object_Palette_Offset;
+	_DWORD Environment_Objects_Count;
+	_DWORD Environment_Objects_Offset;
+	_BYTE padding_128[16];
+	_BYTE padding_129[28];
+	_DWORD Bsp_Permutations_Count;
+	_DWORD Bsp_Permutations_Offset;
+	_DWORD Instanced_Geometry_Instances_Count;
+	_DWORD Instanced_Geometry_Instances_Offset;
+	_DWORD Ambience_Sound_Clusters_Count;
+	_DWORD Ambience_Sound_Clusters_Offset;
+	_DWORD Reverb_Sound_Clusters_Count;
+	_DWORD Reverb_Sound_Clusters_Offset;
+	_DWORD Transparent_Planes_Count;
+	_DWORD Transparent_Planes_Offset;
+	_BYTE padding_177[16];
+	float Vehicle_Sperical_Limit_Radius;
+	float Vehicle_Sperical_Limit_X;
+	float Vehicle_Sperical_Limit_Y;
+	float Vehicle_Sperical_Limit_Z;
+	_BYTE padding_178[80];
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+	_BYTE padding_182[16];
+	_DWORD Decorators_Class;
+	_DWORD Decorators;
+	_BYTE padding_183[-4];
+	_BYTE padding_184[-12];
+	_DWORD MOPP_Code_Count;
+	_DWORD MOPP_Code_Offset;
+	_BYTE padding_185[16];
+	_BYTE padding_186[4];
+	float MOPP_Bounds_Min_X;
+	float MOPP_Bounds_Min_Y;
+	float MOPP_Bounds_Min_Z;
+	float MOPP_Bounds_Max_X;
+	float MOPP_Bounds_Max_Y;
+	float MOPP_Bounds_Max_Z;
+	_BYTE padding_187[-16];
+	_DWORD MOPP_Code_Count_0;
+	_DWORD MOPP_Code_Offset_0;
+	_DWORD Breakable_Surface_Key_Table_Count;
+	_DWORD Breakable_Surface_Key_Table_Offset;
+	_DWORD Water_Definitions_Count;
+	_DWORD Water_Definitions_Offset;
+	_DWORD Portal___Device_Mapping_Count;
+	_DWORD Portal___Device_Mapping_Offset;
+	_DWORD Audibility_Count;
+	_DWORD Audibility_Offset;
+	_DWORD Object_Fake_Lightprobes_Count;
+	_DWORD Object_Fake_Lightprobes_Offset;
+	_DWORD Decorators_Count;
+	_DWORD Decorators_Offset;
+};
+struct struct_tag_sbsp_Collision_Bsp
+{
+	_DWORD threeD_Nodes_Count;
+	_DWORD threeD_Nodes_Offset;
+};
+struct struct_tag_sbsp_threeD_Nodes
+{
+	_BYTE padding_11[4];
+	_WORD Back_child;
+	_BYTE padding_12[-2];
+	_BYTE padding_13[4];
+	_DWORD Planes_Count;
+	_DWORD Planes_Offset;
+};
+struct struct_tag_sbsp_Planes
+{
+	float Plane_i;
+	float Plane_j;
+	float Plane_k;
+	float Plane_d;
+	_DWORD Leaves_Count;
+	_DWORD Leaves_Offset;
+};
+struct struct_tag_sbsp_Leaves
+{
+	_BYTE Flags;
+	_BYTE BSP_twoD_Reference_Count;
+	_WORD First_BSP_twoD_Reference;
+	_BYTE padding_14[20];
+	_DWORD BSP_twoD_Refrences_Count;
+	_DWORD BSP_twoD_Refrences_Offset;
+};
+struct struct_tag_sbsp_BSP_twoD_Refrences
+{
+	_WORD Plane;
+	_WORD BSP_twoD_Node;
+	_BYTE padding_15[28];
+	_DWORD BSPtwoD_Nodes_Count;
+	_DWORD BSPtwoD_Nodes_Offset;
+};
+struct struct_tag_sbsp_BSPtwoD_Nodes
+{
+	float Plane_i;
+	float Plane_j;
+	float Plane_d;
+	_WORD Left_Child;
+	_WORD Right_Child;
+	_BYTE padding_16[24];
+	_DWORD Surfaces_Count;
+	_DWORD Surfaces_Offset;
+};
+struct struct_tag_sbsp_Surfaces
+{
+	_WORD Plane;
+	_WORD First_Edge;
+	_BYTE Flags;
+	_BYTE Breakable_Surface_#;
+	_WORD Material_#;
+	_BYTE padding_17[40];
+	_DWORD Edges_Count;
+	_DWORD Edges_Offset;
+};
+struct struct_tag_sbsp_Edges
+{
+	_WORD Start_Vertex;
+	_WORD End_Vertex;
+	_WORD Forward_Edge;
+	_WORD Backward_Edge;
+	_WORD Left_Surface;
+	_WORD Right_Surface;
+	_BYTE padding_18[44];
+	_DWORD Collsion_Model_Count;
+	_DWORD Collsion_Model_Offset;
+};
+struct struct_tag_sbsp_Collsion_Model
+{
+	float Point_X;
+	float Point_Y;
+	float Point_Z;
+	_WORD First_Edge;
+	_BYTE padding_19[50];
+	float Unknown;
+};
+struct struct_tag_sbsp_Leaves_0
+{
+	_WORD Cluster;
+	_BYTE padding_22[2];
+	_WORD Surface_Count;
+	_BYTE padding_23[-2];
+};
+struct struct_tag_sbsp_Surface_References
+{
+	_WORD Strip_Index;
+	_BYTE padding_26[2];
+	_WORD Lightmap_Triangle_Index;
+	_BYTE padding_27[-2];
+};
+struct struct_tag_sbsp_Cluster_Data
+{
+	_BYTE Data;
+};
+struct struct_tag_sbsp_Cluster_Portals
+{
+	_WORD Back_Cluster;
+	_WORD Front_Cluster;
+	_DWORD Plane_Index;
+	float Centroid_X;
+	float Centroid_Y;
+	float Centroid_Z;
+	float Bounding_Radius;
+	_DWORD Flags;
+	_DWORD Vertices_Count;
+	_DWORD Vertices_Offset;
+};
+struct struct_tag_sbsp_Vertices
+{
+	float X;
+	float Y;
+	float Z;
+};
+struct struct_tag_sbsp_Fog_Planes
+{
+	_WORD Scenario_Planar_Fog_Index;
+	float Plane_i;
+	float Plane_j;
+	float Plane_k;
+	float Plane_d;
+	_DWORD Flags;
+	_WORD Priority;
+};
+struct struct_tag_sbsp_Weather_Pallete
+{
+	_BYTE padding_30[32];
+	_DWORD Weather_System_Class;
+	_DWORD Weather_System;
+	_BYTE padding_31[-4];
+	_BYTE padding_32[4];
+	_BYTE padding_33[36];
+	_DWORD Wind_Class;
+	_DWORD Wind;
+	_BYTE padding_34[-4];
+	_BYTE padding_35[4];
+	float Wind_Direction_i;
+	float Wind_Direction_j;
+	float Wind_Direction_k;
+	float Wind_Magnitude;
+	_DWORD Wind_Scale_Function;
+};
+struct struct_tag_sbsp_Weather_Polyhedral
+{
+	float Bounding_Sphere_Center_X;
+	float Bounding_Sphere_Center_Y;
+	float Bounding_Sphere_Center_Z;
+	float Bounding_Sphere_Radius;
+	_DWORD Planes_Count;
+	_DWORD Planes_Offset;
+};
+struct struct_tag_sbsp_Planes_0
+{
+	float i;
+	float j;
+	float k;
+	float d;
+};
+struct struct_tag_sbsp_Sound_Data
+{
+};
+struct struct_tag_sbsp_Detail_Objects
+{
+	_DWORD Vertice_Count;
+	_DWORD Face_Count;
+	_BYTE padding_36[4];
+	_BYTE padding_37[4];
+	_BYTE padding_38[4];
+	_BYTE padding_39[4];
+	_BYTE padding_40[12];
+	_DWORD Unknown;
+	_DWORD Raw_Offset;
+	_DWORD Raw_Size;
+	_DWORD Raw_Header_Size;
+	_DWORD Size_of_Model_without_header;
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_sbsp_Unknown
+{
+	_BYTE padding_41[4];
+	_BYTE padding_42[4];
+	_BYTE padding_43[4];
+	_BYTE padding_44[52];
+	_DWORD Unknown;
+	_BYTE padding_45[4];
+	_BYTE padding_46[12];
+	float Max_X;
+	float Min_X;
+	float Max_Y;
+	float Min_Y;
+	float Max_Z;
+	float Max_Z_0;
+	_BYTE padding_47[4];
+	_BYTE padding_48[4];
+	_BYTE padding_49[4];
+	_BYTE padding_50[4];
+	_BYTE padding_51[4];
+	_BYTE padding_52[4];
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_sbsp_Unknown_0
+{
+	_DWORD Unknown_Class;
+	_DWORD Unknown;
+	_BYTE padding_53[-8];
+	_BYTE padding_54[4];
+	_BYTE padding_55[136];
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_sbsp_Unknown_1
+{
+	_BYTE padding_56[4];
+	_BYTE padding_57[144];
+	_BYTE padding_58[4];
+};
+struct struct_tag_sbsp_Materials
+{
+	_DWORD Old_Shader_Class;
+	_DWORD Old_Shader;
+	_BYTE padding_59[-4];
+	_BYTE padding_60[4];
+	_DWORD Shader_Class;
+	_DWORD Shader;
+	_BYTE padding_61[-4];
+	_BYTE padding_62[4];
+	_DWORD Properties_Count;
+	_DWORD Properties_Offset;
+};
+struct struct_tag_sbsp_Properties
+{
+	_WORD Type;
+	_WORD Int_Value;
+	float Real_Value;
+	_BYTE padding_63[16];
+	_WORD Breakable_Surface_Index;
+};
+struct struct_tag_sbsp_Sky_Owner_Cluster
+{
+	_WORD Cluster_Owner;
+};
+struct struct_tag_sbsp_Conveyor_Surfaces
+{
+	float U_i;
+	float U_j;
+	float U_k;
+	float V_i;
+	float V_j;
+	float V_j_0;
+};
+struct struct_tag_sbsp_Breakable_Surfaces
+{
+	_WORD Instanced_Geometry_Instance;
+	_WORD Breakable_Surface_Index;
+	float Centroid_X;
+	float Centroid_Y;
+	float Centroid_Z;
+	float Radius;
+	_DWORD Collision_Surface_Index;
+};
+struct struct_tag_sbsp_Unknown_2
+{
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_sbsp_Unknown_3
+{
+	_BYTE padding_64[4];
+	_BYTE padding_65[4];
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_sbsp_Unknown_4
+{
+	_BYTE padding_66[4];
+	_BYTE padding_67[4];
+	_BYTE padding_68[4];
+	_BYTE padding_69[4];
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_sbsp_Unknown_5
+{
+	_BYTE padding_70[24];
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_sbsp_Unknown_6
+{
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	_BYTE padding_71[4];
+	_BYTE padding_72[16];
+	_BYTE padding_73[8];
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_sbsp_Unknown_7
+{
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	_BYTE padding_74[36];
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_sbsp_Unknown_8
+{
+	_BYTE padding_75[4];
+	_BYTE padding_76[4];
+	_BYTE padding_77[4];
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_sbsp_Unknown_9
+{
+	_BYTE padding_78[4];
+	_BYTE padding_79[4];
+	_BYTE padding_80[4];
+	_BYTE padding_81[8];
+	_BYTE padding_82[4];
+	_BYTE padding_83[32];
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_sbsp_Unknown_10
+{
+	_BYTE padding_84[4];
+	_BYTE padding_85[4];
+	_BYTE padding_86[4];
+	_BYTE padding_87[4];
+	_BYTE padding_88[48];
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_sbsp_Unknown_11
+{
+	_WORD Unknown;
+	_WORD Unknown_0;
+	_BYTE padding_89[68];
+	_BYTE padding_90[4];
+	_BYTE padding_91[32];
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_sbsp_Unknown_12
+{
+	_BYTE padding_92[16];
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_sbsp_Unknown_13
+{
+	_BYTE padding_93[4];
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	_BYTE padding_94[4];
+	float Unknown_2;
+	float Unknown_3;
+	float Unknown_4;
+	_BYTE padding_95[-8];
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_sbsp_Unknown_14
+{
+	_BYTE padding_96[4];
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	_BYTE padding_97[4];
+	float Unknown_2;
+	float Unknown_3;
+	float Unknown_4;
+	_BYTE padding_98[4];
+	float Unknown_5;
+	float Unknown_6;
+	float Unknown_7;
+	_BYTE padding_99[4];
+	float Unknown_8;
+	float Unknown_9;
+	float Unknown_10;
+	_BYTE padding_100[-32];
+	_BYTE padding_101[8];
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_sbsp_Unknown_15
+{
+	_WORD Unknown;
+	_WORD Unknown_0;
+	_WORD Unknown_1;
+	_WORD Unknown_2;
+	_BYTE padding_102[40];
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_sbsp_Unknown_16
+{
+	_WORD Unknown;
+	_WORD Unknown_0;
+	_BYTE padding_103[52];
+	_BYTE padding_104[8];
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_sbsp_Unknown_17
+{
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_sbsp_Unknown_18
+{
+	_BYTE padding_105[4];
+	float Unknown;
+	float Unknown_0;
+};
+struct struct_tag_sbsp_Background_Sound_Palette
+{
+	_BYTE padding_108[32];
+	_DWORD Background_Sound_Class;
+	_DWORD Background_Sound;
+	_BYTE padding_109[-4];
+	_BYTE padding_110[4];
+	_DWORD Inside_Cluster_Sound_Class;
+	_DWORD Inside_Cluster_Sound;
+	_BYTE padding_111[-4];
+	_BYTE padding_112[4];
+	float Cutoff_Distance;
+	_DWORD Scale_Flags;
+	float Interior_Scale;
+	float Portal_Scale;
+	float Exterior_Scale;
+	float Interpolation_Speed;
+	_BYTE padding_113[4];
+	_BYTE padding_114[4];
+	_BYTE padding_115[4];
+	_BYTE padding_116[4];
+	float unused?;
+	_BYTE padding_117[4];
+};
+struct struct_tag_sbsp_Sound_Environment_Palette
+{
+	_BYTE padding_118[32];
+	_DWORD Sound_Environment_Class;
+	_DWORD Sound_Environment;
+	_BYTE padding_119[-4];
+	_BYTE padding_120[4];
+	float Cutoff_Distance;
+	float Interpolation_Speed;
+};
+struct struct_tag_sbsp_Sound_PAS_Data
+{
+	_BYTE Data;
+};
+struct struct_tag_sbsp_Markers
+{
+	_BYTE padding_121[32];
+	float Rotation_i;
+	float Rotation_j;
+	float Rotation_k;
+	float Rotation_w;
+	float Position_X;
+	float Position_Y;
+	float Position_Z;
+};
+struct struct_tag_sbsp_Runtime_Decals
+{
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+};
+struct struct_tag_sbsp_Environment_Object_Palette
+{
+	_DWORD Definition_Class;
+	_DWORD Definition;
+	_BYTE padding_122[-4];
+	_BYTE padding_123[4];
+	_DWORD Model_Class;
+	_DWORD Model;
+	_BYTE padding_124[-4];
+	_BYTE padding_125[4];
+};
+struct struct_tag_sbsp_Environment_Objects
+{
+	_BYTE padding_126[32];
+	float Rotation_i;
+	float Rotation_j;
+	float Rotation_k;
+	float Rotation_w;
+	float X;
+	float Y;
+	float Z;
+	_WORD Palette_Index;
+	_DWORD Unique_ID;
+	_WORD Exported_Object_Type;
+	_BYTE padding_127[32];
+};
+struct struct_tag_sbsp_Bsp_Permutations
+{
+	_WORD Total_Vertex_Count;
+	_WORD Total_Triangle_count;
+	_WORD Total_Part_Count;
+	_WORD Shadow_Casting_Triangle_Count;
+	_WORD Shadow_Casting_Part_Count;
+	_WORD Opaque_Point_Count;
+	_WORD Opaque_Vertex_Count;
+	_WORD Opaque_Part_Count;
+	_WORD Opaque_Max_Nodes/Vertex;
+	_WORD Transparent_Max_Nodes/Vertex;
+	_WORD Shadow_Casting_Rigid_Triangle;
+	_WORD Geometry_Classification;
+	_DWORD Bounding_Box_Count;
+	_DWORD Bounding_Box_Offset;
+};
+struct struct_tag_sbsp_Bounding_Box
+{
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+	float Unknown_3;
+	float Unknown_4;
+	float Unknown_5;
+	float Unknown_6;
+	float Unknown_7;
+	float Unknown_8;
+	_BYTE padding_130[-8];
+	_WORD Geometry_Compression_Flags;
+	_BYTE Hardware_Node_Count;
+	_BYTE Node_Map_Size;
+	_BYTE Software_Plane_Count;
+	_BYTE Total_Subpart_Count;
+	_WORD Section_Lighting_Flags;
+	_DWORD Raw_Offset;
+	_DWORD Raw_Size;
+	_DWORD Header_Size;
+	_DWORD Size___Header_Size;
+	_DWORD Resources_Count;
+	_DWORD Resources_Offset;
+};
+struct struct_tag_sbsp_Resources
+{
+	_DWORD Type;
+	_WORD Primary_Locator;
+	_WORD Secondary_Locator;
+	_DWORD Resource_Data_Size;
+	_DWORD Resource_Data_Offset;
+	_BYTE padding_131[48];
+	_WORD Owner_Tag_Section_Offset;
+	_BYTE padding_132[10];
+	_DWORD Render_Data_Count;
+	_DWORD Render_Data_Offset;
+};
+struct struct_tag_sbsp_Render_Data
+{
+	_DWORD Parts_Count;
+	_DWORD Parts_Offset;
+};
+struct struct_tag_sbsp_Parts
+{
+	_BYTE padding_133[8];
+	_DWORD Subparts_Count;
+	_DWORD Subparts_Offset;
+};
+struct struct_tag_sbsp_Subparts
+{
+	_BYTE padding_134[16];
+	_DWORD Visibility_Bounds_Count;
+	_DWORD Visibility_Bounds_Offset;
+};
+struct struct_tag_sbsp_Visibility_Bounds
+{
+	_BYTE padding_135[24];
+	_DWORD Raw_Vertices_Count;
+	_DWORD Raw_Vertices_Offset;
+};
+struct struct_tag_sbsp_Raw_Vertices
+{
+	_BYTE padding_136[32];
+	_DWORD Strip_Indices_Count;
+	_DWORD Strip_Indices_Offset;
+};
+struct struct_tag_sbsp_Strip_Indices
+{
+	_BYTE padding_137[40];
+	_DWORD Visibility_MOPP_Code_Count;
+	_DWORD Visibility_MOPP_Code_Offset;
+};
+struct struct_tag_sbsp_Visibility_MOPP_Code
+{
+	_BYTE Data;
+	_BYTE padding_138[47];
+	_DWORD MOPP_Reorder_Table_Count;
+	_DWORD MOPP_Reorder_Table_Offset;
+};
+struct struct_tag_sbsp_MOPP_Reorder_Table
+{
+	_BYTE padding_139[56];
+	_DWORD Vertex_Buffers_Count;
+	_DWORD Vertex_Buffers_Offset;
+};
+struct struct_tag_sbsp_Vertex_Buffers
+{
+	_BYTE padding_140[84];
+	_DWORD Index_Reorder_Table_Count;
+	_DWORD Index_Reorder_Table_Offset;
+};
+struct struct_tag_sbsp_Index_Reorder_Table
+{
+	_WORD Index;
+	_BYTE padding_141[90];
+	_DWORD Checksum;
+	float Bounding_Sphere_X;
+	float Bounding_Sphere_Y;
+	float Bounding_Sphere_Z;
+	float Bounding_Sphere_Radius;
+	_DWORD BSP_threeD_Nodes_Count;
+	_DWORD BSP_threeD_Nodes_Offset;
+};
+struct struct_tag_sbsp_BSP_threeD_Nodes
+{
+	_BYTE padding_142[120];
+	_DWORD Planes_Count;
+	_DWORD Planes_Offset;
+};
+struct struct_tag_sbsp_Planes_1
+{
+	float Plane_i;
+	float Plane_j;
+	float Plane_k;
+	float Plane_d;
+	_BYTE padding_143[112];
+	_DWORD Leaves_Count;
+	_DWORD Leaves_Offset;
+};
+struct struct_tag_sbsp_Leaves_1
+{
+	_BYTE Flags;
+	_BYTE BSP_twoD_Reference_Count;
+	_WORD First_BSP_twoD_Reference;
+	_BYTE padding_144[132];
+	_DWORD BSP_twoD_References_Count;
+	_DWORD BSP_twoD_References_Offset;
+};
+struct struct_tag_sbsp_BSP_twoD_References
+{
+	_WORD Plane;
+	_WORD BSP_twoD_Node;
+	_BYTE padding_145[140];
+	_DWORD BSP_twoD_Nodes_Count;
+	_DWORD BSP_twoD_Nodes_Offset;
+};
+struct struct_tag_sbsp_BSP_twoD_Nodes
+{
+	float Plane_i;
+	float Plane_j;
+	float Plane_d;
+	_WORD Left_Child;
+	_WORD Right_Child;
+	_BYTE padding_146[136];
+	_DWORD Surfaces_Count;
+	_DWORD Surfaces_Offset;
+};
+struct struct_tag_sbsp_Surfaces_0
+{
+	_WORD Plane;
+	_WORD First_Edge;
+	_BYTE Flags;
+	_BYTE Breakable_Surface_#;
+	_WORD Material_#;
+	_BYTE padding_147[152];
+	_DWORD Edges_Count;
+	_DWORD Edges_Offset;
+};
+struct struct_tag_sbsp_Edges_0
+{
+	_WORD Start_Vertex;
+	_WORD End_Vertex;
+	_WORD Forward_Edge;
+	_WORD Backward_Edge;
+	_WORD Left_Surface;
+	_WORD Right_Surface;
+	_BYTE padding_148[156];
+	_DWORD Vertices_Count;
+	_DWORD Vertices_Offset;
+};
+struct struct_tag_sbsp_Vertices_0
+{
+	float Point_X;
+	float Point_Y;
+	float Point_Z;
+	_WORD First_Edge;
+	_BYTE padding_149[162];
+	_DWORD BSP_Physics_Count;
+	_DWORD BSP_Physics_Offset;
+};
+struct struct_tag_sbsp_BSP_Physics
+{
+	_BYTE padding_150[4];
+	_BYTE padding_151[4];
+	_BYTE padding_152[4];
+	_BYTE padding_153[4];
+	_BYTE padding_154[4];
+	_BYTE padding_155[4];
+	float Unknown;
+	_BYTE padding_156[4];
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+	_BYTE padding_157[4];
+	_BYTE padding_158[4];
+	_BYTE padding_159[12];
+	_BYTE padding_160[4];
+	_BYTE padding_161[4];
+	_BYTE padding_162[4];
+	_BYTE padding_163[4];
+	_BYTE padding_164[4];
+	_BYTE padding_165[4];
+	_BYTE padding_166[4];
+	_BYTE padding_167[4];
+	_BYTE padding_168[4];
+	_DWORD MOPP_Code_Data_Count;
+	_DWORD MOPP_Code_Data_Offset;
+};
+struct struct_tag_sbsp_MOPP_Code_Data
+{
+	_BYTE Data;
+	_BYTE padding_169[107];
+	_BYTE padding_170[76];
+	_DWORD Render_Leaves_Count;
+	_DWORD Render_Leaves_Offset;
+};
+struct struct_tag_sbsp_Render_Leaves
+{
+	_WORD Cluster;
+	_WORD Surface_Reference_Count;
+	_DWORD First_Surface_Reference_Index;
+	_BYTE padding_171[184];
+	_DWORD Surface_References_Count;
+	_DWORD Surface_References_Offset;
+};
+struct struct_tag_sbsp_Surface_References_0
+{
+	_WORD Strip_Index;
+	_WORD Lightmap_Triangle;
+	_DWORD BSP_Node_Index;
+};
+struct struct_tag_sbsp_Instanced_Geometry_Instances
+{
+	float Scale;
+	float Forward_i;
+	float Forward_j;
+	float Forward_k;
+	float Left_i;
+	float Left_j;
+	float Left_k;
+	float Up_i;
+	float Up_j;
+	float Up_k;
+	float Position_X;
+	float Position_Y;
+	float Position_Z;
+	_WORD Instance_Definition_#;
+	_WORD Flags;
+	_DWORD Checksum;
+	_BYTE padding_172[20];
+	_DWORD Name;
+	_WORD Pathfinding_Policy;
+	_WORD Lightmapping_Policy;
+};
+struct struct_tag_sbsp_Ambience_Sound_Clusters
+{
+	_BYTE padding_173[4];
+	_DWORD Enclosing_Portal_Designators_Count;
+	_DWORD Enclosing_Portal_Designators_Offset;
+};
+struct struct_tag_sbsp_Enclosing_Portal_Designators
+{
+	_WORD Portal_Designator;
+	_BYTE padding_174[10];
+	_DWORD Interior_Cluster_Indices_Count;
+	_DWORD Interior_Cluster_Indices_Offset;
+};
+struct struct_tag_sbsp_Interior_Cluster_Indices
+{
+	_WORD Interior_Cluster_Index;
+};
+struct struct_tag_sbsp_Reverb_Sound_Clusters
+{
+	_BYTE padding_175[4];
+	_DWORD Enclosing_Portal_Designators_Count;
+	_DWORD Enclosing_Portal_Designators_Offset;
+};
+struct struct_tag_sbsp_Enclosing_Portal_Designators_0
+{
+	_WORD Portal_Designator;
+	_BYTE padding_176[10];
+	_DWORD Interior_Cluster_Indices_Count;
+	_DWORD Interior_Cluster_Indices_Offset;
+};
+struct struct_tag_sbsp_Interior_Cluster_Indices_0
+{
+	_WORD Interior_Cluster_Index;
+};
+struct struct_tag_sbsp_Transparent_Planes
+{
+	_WORD Section_Index;
+	_WORD Part_Index;
+	float Plane_i;
+	float Plane_j;
+	float Plane_k;
+	float Plane_d;
+};
+struct struct_tag_sbsp_Unknown_19
+{
+	_BYTE padding_179[64];
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_sbsp_Unknown_20
+{
+	_BYTE padding_180[74];
+	_WORD Unknown;
+	_WORD Unknown_0;
+	_WORD Unknown_1;
+	_WORD Unknown_2;
+	_WORD Unknown_3;
+	_BYTE padding_181[-12];
+};
+struct struct_tag_sbsp_MOPP_Code
+{
+	_BYTE Data;
+};
+struct struct_tag_sbsp_MOPP_Code_0
+{
+	_BYTE Data;
+};
+struct struct_tag_sbsp_Breakable_Surface_Key_Table
+{
+	_WORD Instance_Geometry_Index;
+	_WORD Breakable_Surface_Index;
+	_DWORD Seed_Surface_Index;
+	float Xzero;
+	float Xone;
+	float Yzero;
+	float Yone;
+	float Zzero;
+	float Zone;
+};
+struct struct_tag_sbsp_Water_Definitions
+{
+	_DWORD Shader_Class;
+	_DWORD Shader;
+	_BYTE padding_188[-4];
+	_BYTE padding_189[4];
+	_DWORD Section_Count;
+	_DWORD Section_Offset;
+};
+struct struct_tag_sbsp_Section
+{
+	_DWORD Parts_Count;
+	_DWORD Parts_Offset;
+};
+struct struct_tag_sbsp_Parts_0
+{
+	_BYTE padding_190[8];
+	_DWORD Subparts_Count;
+	_DWORD Subparts_Offset;
+};
+struct struct_tag_sbsp_Subparts_0
+{
+	_BYTE padding_191[16];
+	_DWORD Visibility_Bounds_Count;
+	_DWORD Visibility_Bounds_Offset;
+};
+struct struct_tag_sbsp_Visibility_Bounds_0
+{
+	_BYTE padding_192[24];
+	_DWORD Raw_Vertices_Count;
+	_DWORD Raw_Vertices_Offset;
+};
+struct struct_tag_sbsp_Raw_Vertices_0
+{
+	_BYTE padding_193[32];
+	_DWORD Strip_Indices_Count;
+	_DWORD Strip_Indices_Offset;
+};
+struct struct_tag_sbsp_Strip_Indices_0
+{
+	_BYTE padding_194[40];
+	_DWORD Visibility_MOPP_Code_Count;
+	_DWORD Visibility_MOPP_Code_Offset;
+};
+struct struct_tag_sbsp_Visibility_MOPP_Code_0
+{
+	_BYTE Data;
+	_BYTE padding_195[47];
+	_DWORD MOPP_Reorder_Table_Count;
+	_DWORD MOPP_Reorder_Table_Offset;
+};
+struct struct_tag_sbsp_MOPP_Reorder_Table_0
+{
+	_BYTE padding_196[56];
+	_DWORD Vertex_Buffers_Count;
+	_DWORD Vertex_Buffers_Offset;
+};
+struct struct_tag_sbsp_Vertex_Buffers_0
+{
+	_BYTE padding_197[16];
+	_DWORD Block_Offset;
+	_DWORD Block_Size;
+	_DWORD Section_Data_Size;
+	_DWORD Resource_Data_Size;
+	_DWORD Resources_Count;
+	_DWORD Resources_Offset;
+};
+struct struct_tag_sbsp_Resources_0
+{
+	_WORD Type;
+	_WORD Primary_Locator;
+	_WORD Secondary_Locator;
+	_WORD Resource_Size;
+	_DWORD Resource_Data_Size;
+	_DWORD Resource_Data_Offset;
+	_BYTE padding_198[24];
+	_BYTE padding_199[8];
+	_WORD Owner_Tag_Section_Offset;
+	_BYTE padding_200[2];
+	float Sun_Spot_Color_R;
+	float Sun_Spot_Color_G;
+	float Sun_Spot_Color_B;
+	float Reflection_Tint_R;
+	float Reflection_Tint_G;
+	float Reflection_Tint_B;
+	float Refraction_Tint_R;
+	float Refraction_Tint_G;
+	float Refraction_Tint_B;
+	float Horizion_Color_R;
+	float Horizion_Color_G;
+	float Horizion_Color_B;
+	float Sun_Specular_Power;
+	float Reflection_Bump_Scale;
+	float Refraction_Bump_Scale;
+	float Fresnel_Scale;
+	float Sun_Dir_Heading;
+	float Sun_Dir_Pitch;
+	float FOV;
+	float Aspect;
+	float Height;
+	float Farz;
+	float Rotate_Offset;
+	float Center_i;
+	float Center_j;
+	float Extents_i;
+	float Extents_j;
+	float Fog_Near;
+	float Fog_Far;
+	float Dynamic_Height_Bias;
+};
+struct struct_tag_sbsp_Portal___Device_Mapping
+{
+	_DWORD Device_Portal_Association_Count;
+	_DWORD Device_Portal_Association_Offset;
+};
+struct struct_tag_sbsp_Device_Portal_Association
+{
+	_BYTE padding_201[4];
+	_WORD Origin_BSP_Index;
+	_WORD Type;
+	_WORD Source;
+	_WORD First_Game_Potal_Index;
+	_WORD Game_Portal_Count;
+	_BYTE padding_202[-6];
+	_DWORD Game_Portal_To_Portal_Map_Count;
+	_DWORD Game_Portal_To_Portal_Map_Offset;
+};
+struct struct_tag_sbsp_Game_Portal_To_Portal_Map
+{
+	_WORD Portal_Index;
+};
+struct struct_tag_sbsp_Audibility
+{
+	_DWORD Door_Portal_Count;
+	float Cluster_Distance_Bounds;
+	float ___To;
+	_DWORD Encoded_Door_Pas_Count;
+	_DWORD Encoded_Door_Pas_Offset;
+};
+struct struct_tag_sbsp_Encoded_Door_Pas
+{
+	_BYTE padding_203[20];
+	_DWORD Cluster_Door_Portal_Encoded_Pas_Count;
+	_DWORD Cluster_Door_Portal_Encoded_Pas_Offset;
+};
+struct struct_tag_sbsp_Cluster_Door_Portal_Encoded_Pas
+{
+	_BYTE padding_204[28];
+	_DWORD AI_Deafening_Pas_Count;
+	_DWORD AI_Deafening_Pas_Offset;
+};
+struct struct_tag_sbsp_AI_Deafening_Pas
+{
+	_BYTE padding_205[36];
+	_DWORD Cluster_Distances_Count;
+	_DWORD Cluster_Distances_Offset;
+};
+struct struct_tag_sbsp_Cluster_Distances
+{
+	_BYTE padding_206[44];
+	_DWORD Machine_Door_Mapping_Count;
+	_DWORD Machine_Door_Mapping_Offset;
+};
+struct struct_tag_sbsp_Machine_Door_Mapping
+{
+	_WORD Machine_Door_Index;
+};
+struct struct_tag_sbsp_Object_Fake_Lightprobes
+{
+	_DWORD Unique_ID;
+	_WORD Origin_BSP_Index;
+	_WORD Type;
+	_WORD Source;
+	_WORD Unknown;
+	float Ambient_R;
+	float Ambient_G;
+	float Ambient_B;
+	float Shadow_Direction_i;
+	float Shadow_Direction_j;
+	float Shadow_Direction_k;
+	float Lighting_Accuracy;
+	float Shadow_Opacity;
+	float Primary_Direction_Color_R;
+	float Primary_Direction_Color_G;
+	float Primary_Direction_Color_B;
+	float Primary_Direction_i;
+	float Primary_Direction_j;
+	float Primary_Direction_k;
+	float Secondary_Direction_Color_R;
+	float Secondary_Direction_Color_G;
+	float Secondary_Direction_Color_B;
+	float Secondary_Direction_i;
+	float Secondary_Direction_j;
+	float Secondary_Direction_k;
+};
+struct struct_tag_sbsp_Decorators
+{
+	float Grid_Origin_X;
+	float Grid_Origin_Y;
+	float Grid_Origin_Z;
+	float Cell_Count_Per_Dimension;
+	_DWORD Cache_Blocks_Count;
+	_DWORD Cache_Blocks_Offset;
+};
+struct struct_tag_sbsp_Cache_Blocks
+{
+	_BYTE padding_207[4];
+	_BYTE padding_208[4];
+	_BYTE padding_209[4];
+	_BYTE padding_210[4];
+	_DWORD hmm;
+	_DWORD hmm_0;
+	_BYTE padding_211[-8];
+	_DWORD Resources_Count;
+	_DWORD Resources_Offset;
+};
+struct struct_tag_sbsp_Resources_1
+{
+	_DWORD Type;
+	_WORD Primary_Locator;
+	_WORD Secondary_Locator;
+	_BYTE padding_212[4];
+	_BYTE padding_213[12];
+	_DWORD Owner_Tag_Section_Offset;
+	_BYTE padding_214[8];
+	_DWORD Cache_Block_Data_Count;
+	_DWORD Cache_Block_Data_Offset;
+};
+struct struct_tag_sbsp_Cache_Block_Data
+{
+	_BYTE padding_215[24];
+	_DWORD Groups_Count;
+	_DWORD Groups_Offset;
+};
+struct struct_tag_sbsp_Groups
+{
+	_WORD Decorator_Set;
+	_DWORD Decorator_Type;
+	_WORD Shader_Index;
+	_WORD Compressed_Radius;
+	_WORD Cluster;
+	_WORD Cache_Block_#;
+	_BYTE Decorator_Start_Index;
+	_BYTE Decorator_Count;
+	_BYTE Vertex_Start_Offset;
+	_BYTE Vertex_Count;
+	_BYTE Index_Start_Offset;
+	_BYTE Index_Count;
+	float Compressed_Bounding_Center;
+	_BYTE padding_216[8];
+	_DWORD Cells_Count;
+	_DWORD Cells_Offset;
+};
+struct struct_tag_sbsp_Cells
+{
+	_WORD Child_Index;
+	_WORD Child_Index_0;
+	_WORD Child_Index_1;
+	_WORD Child_Index_2;
+	_WORD Child_Index_3;
+	_WORD Child_Index_4;
+	_WORD Child_Index_5;
+	_WORD Child_Index_6;
+	_WORD Cache_Block_Index;
+	_WORD Group_Count;
+	_DWORD Group_Start_Index;
+	_BYTE padding_217[16];
+	_DWORD Decals_Count;
+	_DWORD Decals_Offset;
+};
+struct struct_tag_sbsp_Decals
+{
+	_WORD Decorator_Set;
+	_WORD Decorator_Class;
+	_WORD Decorator_Permutation;
+	_WORD Sprite_Index;
+	float Position_X;
+	float Position_Y;
+	float Position_Z;
+	float Left_i;
+	float Left_j;
+	float Left_k;
+	float Up_i;
+	float Up_j;
+	float Up_k;
+	float Extents_i;
+	float Extents_j;
+	float Extents_k;
+	float Previous_Position_X;
+	float Previous_Position_Y;
+	float Previous_Position_Z;
+};

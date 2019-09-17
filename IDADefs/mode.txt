@@ -1,0 +1,263 @@
+struct struct_mode
+{
+	_DWORD Model_Name;
+	_DWORD Flags;
+	_BYTE Unknown;
+	_BYTE Unknown_0;
+	_BYTE Unknown_1;
+	_BYTE Unknown_2;
+	_BYTE padding_0[8];
+	_DWORD Bounding_Box_Count;
+	_DWORD Bounding_Box_Offset;
+	_DWORD Compression_Info_Count;
+	_DWORD Compression_Info_Offset;
+	_DWORD Sections_Count;
+	_DWORD Sections_Offset;
+	_DWORD Unused_Count;
+	_DWORD Unused_Offset;
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+	float Unknown_0;
+	float Unknown_1;
+	_BYTE padding_3[4];
+	_DWORD Nodes_Count;
+	_DWORD Nodes_Offset;
+	_BYTE padding_4[8];
+	_DWORD Markers_Count;
+	_DWORD Markers_Offset;
+	_DWORD Shader_Count;
+	_DWORD Shader_Offset;
+	_BYTE padding_6[8];
+	float Unknown;
+	_DWORD Unknown_Count_0;
+	_DWORD Unknown_Offset_0;
+	_DWORD Section_Block_Fields_Count;
+	_DWORD Section_Block_Fields_Offset;
+};
+struct struct_tag_mode_Bounding_Box
+{
+	float X_min;
+	float X_max;
+	float Y_min;
+	float Y_max;
+	float Z_min;
+	float Z_max;
+	float U_min;
+	float U_max;
+	float V_min;
+	float V_max;
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+};
+struct struct_tag_mode_Compression_Info
+{
+	_DWORD Part_Name;
+	_WORD Unknown;
+	_WORD Unknown_0;
+	_DWORD Permutation_Count;
+	_DWORD Permutation_Offset;
+};
+struct struct_tag_mode_Permutation
+{
+	_DWORD Permutation_Name;
+	_WORD Lowest_Piece_Index;
+	_WORD Low_Piece_Index;
+	_WORD Medium_Low_Piece_Index;
+	_WORD Medium_High_Piece_Index;
+	_WORD High_Piece_Index;
+	_WORD Highest_Piece_Index;
+};
+struct struct_tag_mode_Sections
+{
+	_DWORD Type;
+	_WORD Vertex_Count;
+	_WORD Face_Count;
+	_WORD Unknown;
+	_WORD Unknown_0;
+	_WORD Unknown_1;
+	_WORD Unknown_2;
+	_WORD Unknown_3;
+	_WORD Unknown_4;
+	_WORD Bone_Type;
+	_WORD Unknown_5;
+	_WORD Unknown_6;
+	_WORD UnknownBlock_ChunkCount/Bonemap_Count;
+	_WORD Unknown_7;
+	_WORD Unknown_8;
+	_WORD Unknown_9;
+	_WORD Unknown_10;
+	_WORD Unknown_11;
+	_WORD Unknown_12;
+	_WORD Unknown_13;
+	_WORD Unknown_14;
+	_WORD Unknown_15;
+	_WORD Unknown_16;
+	_WORD Unknown_17;
+	_WORD Unknown_18;
+	_WORD Unknown_19;
+	_WORD Unknown_20;
+	_DWORD Raw_Offset;
+	_DWORD Raw_Size;
+	_DWORD Raw_Header_Size;
+	_DWORD Raw_Data_Size;
+	_DWORD Resource_Count;
+	_DWORD Resource_Offset;
+};
+struct struct_tag_mode_Resource
+{
+	_DWORD Block_Type;
+	_WORD Unknown;
+	_WORD IDK;
+	_DWORD Size;
+	_DWORD Offset;
+	_BYTE padding_1[64];
+	_BYTE padding_2[4];
+	_WORD Unknown_0;
+	_WORD Unknown_1;
+	_WORD Unknown_2;
+	_WORD Unknown_3;
+};
+struct struct_tag_mode_Unused
+{
+};
+struct struct_tag_mode_Unknown
+{
+	float Unknown;
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_mode_Unknown_0
+{
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+};
+struct struct_tag_mode_Nodes
+{
+	_DWORD Name;
+	_WORD Parent_Index;
+	_WORD First_Child_Index;
+	_WORD Next_Sibling_Index;
+	_WORD Unknown;
+	float X;
+	float Y;
+	float Z;
+	float i;
+	float j;
+	float k;
+	float w_zero_stops_movement;
+	float Scale_Factor;
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+	float Unknown_3;
+	float Unknown_4;
+	float Unknown_5;
+	float Unknown_6;
+	float Unknown_7;
+	float X_Center;
+	float Y_Center;
+	float Z_Center;
+	float Distance_from_Parent;
+};
+struct struct_tag_mode_Markers
+{
+	_DWORD Name;
+	_DWORD Instances_Count;
+	_DWORD Instances_Offset;
+};
+struct struct_tag_mode_Instances
+{
+	_WORD Permutation_index;
+	_WORD Parent_Node_index;
+	float X;
+	float Y_when_seen_from_back;
+	float Z;
+	float i;
+	float j;
+	float k;
+	float w;
+	float Unknown;
+};
+struct struct_tag_mode_Shader
+{
+	_DWORD Unused_Class;
+	_DWORD Unused;
+	_DWORD Shader_Class;
+	_DWORD Shader;
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_mode_Unknown_1
+{
+	float Unknown;
+	float Unknown_0;
+	_BYTE padding_5[16];
+};
+struct struct_tag_mode_Unknown_2
+{
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+	float Unknown_3;
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_mode_Unknown_3
+{
+	float Unknown;
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_mode_Unknown_4
+{
+	float Unknown;
+	float Unknown_0;
+	_BYTE padding_7[20];
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_mode_Unknown_5
+{
+	float Unknown;
+	_BYTE padding_8[32];
+	_BYTE padding_9[16];
+	_DWORD Raw_Offset;
+	_DWORD Raw_Size;
+	_DWORD Raw_Header_Size;
+	_DWORD Raw_Data_Size;
+	_DWORD Resource_Count;
+	_DWORD Resource_Offset;
+};
+struct struct_tag_mode_Resource_0
+{
+	_DWORD Block_Type;
+	_WORD Unknown;
+	_WORD Chunk_Count;
+	_DWORD Size;
+	_DWORD Offset;
+	_BYTE padding_10[60];
+	_BYTE padding_11[4];
+	float Unknown;
+};
+struct struct_tag_mode_Section_Block_Fields
+{
+	_DWORD Section_Data_Tag_Field_New_Count;
+	_DWORD Section_Data_Tag_Field_New_Offset;
+};
+struct struct_tag_mode_Section_Data_Tag_Field_New
+{
+	_BYTE padding_12[4];
+	float Unknown;
+	_DWORD Section_Data_Count;
+	_DWORD Section_Data_Offset;
+};
+struct struct_tag_mode_Section_Data
+{
+	float Unknown;
+	float Unknown_0;
+};

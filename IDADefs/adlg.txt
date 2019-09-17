@@ -1,0 +1,66 @@
+struct struct_adlg
+{
+	_DWORD Death/Taunting_Dialog_Count;
+	_DWORD Death/Taunting_Dialog_Offset;
+	_DWORD Killing/Cautious_Dialog_Count;
+	_DWORD Killing/Cautious_Dialog_Offset;
+	_BYTE padding_19[12];
+	_DWORD Unknown_Count_0;
+	_DWORD Unknown_Offset_0;
+	_DWORD Unknown_Count_1;
+	_DWORD Unknown_Offset_1;
+};
+struct struct_tag_adlg_Death/Taunting_Dialog
+{
+	_BYTE padding_0[4];
+	_DWORD Root_Situation;
+	_BYTE padding_1[4];
+	_BYTE padding_2[8];
+	_BYTE padding_3[4];
+	_BYTE padding_4[4];
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+	float Unknown_3;
+	float Unknown_4;
+	float Unknown_5;
+	float Unknown_6;
+	float Unknown_7;
+	_BYTE padding_5[4];
+	float Unknown_8;
+	float Unknown_9;
+	_DWORD Spoken_Dialog;
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_adlg_Unknown
+{
+	_DWORD Unknown;
+	_BYTE padding_6[4];
+	_BYTE padding_7[80];
+};
+struct struct_tag_adlg_Killing/Cautious_Dialog
+{
+	_BYTE padding_8[4];
+	_DWORD Situation;
+	_BYTE padding_9[4];
+	_BYTE padding_10[4];
+	_BYTE padding_11[4];
+	_BYTE padding_12[4];
+	_BYTE padding_13[4];
+	_BYTE padding_14[4];
+	_BYTE padding_15[4];
+	_BYTE padding_16[4];
+	_DWORD Unknown;
+	_BYTE padding_17[4];
+	_DWORD Unknown_0;
+	_BYTE padding_18[8];
+};
+struct struct_tag_adlg_Unknown_0
+{
+};
+struct struct_tag_adlg_Unknown_1
+{
+	_DWORD Unknown;
+};

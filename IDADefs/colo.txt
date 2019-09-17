@@ -1,0 +1,13 @@
+struct struct_colo
+{
+	_DWORD Colors_Count;
+	_DWORD Colors_Offset;
+};
+struct struct_tag_colo_Colors
+{
+	_BYTE padding_0[32];
+	float Alpha;
+	float Red;
+	float Green;
+	float Blue;
+};

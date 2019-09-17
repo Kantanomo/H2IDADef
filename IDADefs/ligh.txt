@@ -1,0 +1,98 @@
+struct struct_ligh
+{
+	_DWORD Flags;
+	_DWORD Type;
+	float Size_Modifier;
+	float ___To;
+	float Shadow_Quality_Bias;
+	_DWORD Shadow_Tap_Bias;
+	float Sphere_Light_Radius;
+	float Sphere_Light_Specular_Radius;
+	float Frustum_Light_Near_Width;
+	float Frustum_Light_Height_Stretch;
+	float Frustum_Light_Field_Of_View;
+	float Frustum_Light_Falloff_Distance;
+	float Frustum_Light_Cutoff_Distance;
+	_DWORD Interpolation_Flags;
+	float Bloom_Bounds;
+	float __To;
+	float Specular_Lower_Bound_R;
+	float Specular_Lower_Bound_G;
+	float Specular_Lower_Bound_B;
+	float Specular_Upper_Bound_R;
+	float Specular_Upper_Bound_G;
+	float Specular_Upper_Bound_B;
+	float Diffuse_Lower_Bound_R;
+	float Diffuse_Lower_Bound_G;
+	float Diffuse_Lower_Bound_B;
+	float Diffuse_Upper_Bound_R;
+	float Diffuse_Upper_Bound_G;
+	float Diffuse_Upper_Bound_B;
+	float Brightness_Bounds;
+	float ___To_0;
+	_DWORD Gel_Map_Class;
+	_DWORD Gel_Map;
+	_BYTE padding_0[-4];
+	_BYTE padding_1[4];
+	_DWORD Specular_Mask;
+	_BYTE padding_2[4];
+	_WORD Falloff_Function;
+	_WORD Diffuse_Contrast;
+	_WORD Specular_Contrast;
+	_WORD Falloff_Geometry;
+	_DWORD Lens_Flare_Class;
+	_DWORD Lens_Flare;
+	_BYTE padding_3[-4];
+	_BYTE padding_4[4];
+	float Bounding_Radius;
+	_DWORD Light_Volume_Class;
+	_DWORD Light_Volume;
+	_BYTE padding_5[-4];
+	_BYTE padding_6[4];
+	_DWORD Default_Lightmap_Setting;
+	float Lightmap_Half_Life;
+	float Lightmap_Light_Scale;
+	float Duration;
+	_WORD Falloff_Function_0;
+	_BYTE padding_7[2];
+	_WORD Illumination_Fade;
+	_WORD Shadow_Fade;
+	_WORD Specular_Fade;
+	_BYTE padding_8[2];
+	_DWORD Flags_0;
+	_DWORD Brightness_Animation_Count;
+	_DWORD Brightness_Animation_Offset;
+	_DWORD Color_Animation_Count;
+	_DWORD Color_Animation_Offset;
+	_DWORD Gel_Animation_Count;
+	_DWORD Gel_Animation_Offset;
+	_DWORD Shader_Class;
+	_DWORD Shader;
+	_BYTE padding_11[-4];
+};
+struct struct_tag_ligh_Brightness_Animation
+{
+	_DWORD Function_Count;
+	_DWORD Function_Offset;
+};
+struct struct_tag_ligh_Function
+{
+	_BYTE padding_9[8];
+};
+struct struct_tag_ligh_Color_Animation
+{
+	_DWORD Function_Count;
+	_DWORD Function_Offset;
+};
+struct struct_tag_ligh_Function_0
+{
+	_BYTE padding_10[8];
+};
+struct struct_tag_ligh_Gel_Animation
+{
+	_DWORD Function_Count;
+	_DWORD Function_Offset;
+};
+struct struct_tag_ligh_Function_1
+{
+};

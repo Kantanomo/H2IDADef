@@ -1,0 +1,63 @@
+struct struct_gldf
+{
+	_DWORD Light_Variables_Count;
+	_DWORD Light_Variables_Offset;
+};
+struct struct_tag_gldf_Light_Variables
+{
+	_BYTE padding_0[4];
+	float Lightmap_Brightness_Offset;
+	float Primary_Min_Lightmap_Color_R;
+	float Primary_Min_Lightmap_Color_G;
+	float Primary_Min_Lightmap_Color_B;
+	float Primary_Max_Lightmap_Color_R;
+	float Primary_Max_Lightmap_Color_G;
+	float Primary_Max_Lightmap_Color_B;
+	float Exclusion_Angle_From_Up;
+	_DWORD Primary_Light_Function_Count;
+	_DWORD Primary_Light_Function_Offset;
+};
+struct struct_tag_gldf_Primary_Light_Function
+{
+	_BYTE Data;
+	_BYTE padding_1[43];
+	float Secondary_Min_Lightmap_Color_R;
+	float Secondary_Min_Lightmap_Color_G;
+	float Secondary_Min_Lightmap_Color_B;
+	float Secondary_Max_Lightmap_Color_R;
+	float Secondary_Max_Lightmap_Color_G;
+	float Secondary_Max_Lightmap_Color_B;
+	float Secondary_Min_Diffuse_Sample_R;
+	float Secondary_Min_Diffuse_Sample_G;
+	float Secondary_Min_Diffuse_Sample_B;
+	float Secondary_Max_Diffuse_Sample_R;
+	float Secondary_Max_Diffuse_Sample_G;
+	float Secondary_Max_Diffuse_Sample_B;
+	float Secondary_Z_Axsis_Rotation;
+	_DWORD Secondary_Light_Function_Count;
+	_DWORD Secondary_Light_Function_Offset;
+};
+struct struct_tag_gldf_Secondary_Light_Function
+{
+	_BYTE Data;
+	_BYTE padding_2[103];
+	float Ambient_Min_Lightmap_Sample_R;
+	float Ambient_Min_Lightmap_Sample_G;
+	float Ambient_Min_Lightmap_Sample_B;
+	float Ambient_Max_Lightmap_Sample_R;
+	float Ambient_Max_Lightmap_Sample_G;
+	float Ambient_Max_Lightmap_Sample_B;
+	_DWORD Ambient_Light_Function_Count;
+	_DWORD Ambient_Light_Function_Offset;
+};
+struct struct_tag_gldf_Ambient_Light_Function
+{
+	_BYTE Data;
+	_BYTE padding_3[135];
+	_DWORD Lightmap_Shadows_Count;
+	_DWORD Lightmap_Shadows_Offset;
+};
+struct struct_tag_gldf_Lightmap_Shadows
+{
+	_BYTE Data;
+};

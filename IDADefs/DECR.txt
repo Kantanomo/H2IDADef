@@ -1,0 +1,98 @@
+struct struct_DECR
+{
+	_DWORD Shaders_Count;
+	_DWORD Shaders_Offset;
+	float Lighting_Min_Scale;
+	float Lighting_Max_Scale;
+	_DWORD Classes_Count;
+	_DWORD Classes_Offset;
+	_DWORD Models_Count;
+	_DWORD Models_Offset;
+	_DWORD Raw_Vertices_Count;
+	_DWORD Raw_Vertices_Offset;
+	_DWORD Indices_Count;
+	_DWORD Indices_Offset;
+	_DWORD Cached_Data_Count;
+	_DWORD Cached_Data_Offset;
+	_DWORD Block_Offset;
+	_DWORD Block_Size;
+	_DWORD Section_Data_Size;
+	_DWORD Resource_Data_Size;
+	_DWORD Resources_Count;
+	_DWORD Resources_Offset;
+	_WORD Owner_Tag_Section_Offset;
+	_BYTE padding_5[6];
+};
+struct struct_tag_DECR_Shaders
+{
+};
+struct struct_tag_DECR_Classes
+{
+	_DWORD Name;
+	_DWORD Type;
+	float Scale;
+	_DWORD Permutations_Count;
+	_DWORD Permutations_Offset;
+};
+struct struct_tag_DECR_Permutations
+{
+	_DWORD Name;
+	_WORD Shader_#;
+	_BYTE Flags;
+	_BYTE padding_0[-1];
+	_BYTE padding_1[-6];
+	_BYTE padding_2[8];
+	_WORD Index;
+	_WORD Distribution_Weight;
+	float Scale;
+	float ___To;
+	_BYTE Tint_one_R;
+	_BYTE Tint_one_G;
+	_BYTE Tint_one_B;
+	_BYTE padding_3[1];
+	_BYTE Tint_two_R;
+	_BYTE Tint_two_G;
+	_BYTE Tint_two_B;
+	_BYTE padding_4[1];
+	float Base_Map_Tint_Percentage;
+	float Lightmap_Tint_Percentage;
+	float Wind_Scale;
+};
+struct struct_tag_DECR_Models
+{
+	_DWORD Model_Name;
+	_WORD Index_Start;
+	_WORD Index_Count;
+};
+struct struct_tag_DECR_Raw_Vertices
+{
+	float X;
+	float Y;
+	float Z;
+	float Normal_i;
+	float Normal_j;
+	float Normal_k;
+	float Tangent_i;
+	float Tangent_j;
+	float Tangent_k;
+	float Binormal_i;
+	float Binormal_j;
+	float Binormal_k;
+	float U;
+	float V;
+};
+struct struct_tag_DECR_Indices
+{
+	_WORD Index;
+};
+struct struct_tag_DECR_Cached_Data
+{
+};
+struct struct_tag_DECR_Resources
+{
+	_DWORD Type;
+	_WORD Primary_Locator;
+	_WORD Secondary_Locator;
+	_DWORD Data_Size;
+	_DWORD Data_Offset;
+};

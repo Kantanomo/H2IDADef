@@ -1,0 +1,12 @@
+struct struct_itmc
+{
+	_DWORD Item_Permutations_Count;
+	_DWORD Item_Permutations_Offset;
+	_DWORD Unused_Spawn_Time___in_seconds,_zero_=_default;
+};
+struct struct_tag_itmc_Item_Permutations
+{
+	_BYTE padding_0[4];
+	_BYTE padding_1[8];
+	_DWORD Variant_Name;
+};

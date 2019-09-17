@@ -1,0 +1,130 @@
+struct struct_scen
+{
+	_DWORD Flags;
+	float Bounding_Radius;
+	float Bounding_Offset_X;
+	float Bounding_Offset_Y;
+	float Bounding_Offset_Z;
+	float Acceleration_Scale;
+	_DWORD Lightmap_Shadow_Mode;
+	_DWORD Sweetener_Size;
+	float Dynamic_Light_Sphere_Radius;
+	float Dynamic_Light_Sphere_Offset_X;
+	float Dynamic_Light_Sphere_Offset_Y;
+	float Dynamic_Light_Sphere_Offset_Z;
+	_DWORD Default_Model_Variant;
+	_DWORD Model_Class;
+	_DWORD Model;
+	_DWORD Crate_Object_Class;
+	_DWORD Crate_Object;
+	_DWORD Modifier_Shader_Class;
+	_DWORD Modifier_Shader;
+	_DWORD Creation_Effect_Class;
+	_DWORD Creation_Effect;
+	_DWORD Material_Effects_Class;
+	_DWORD Material_Effects;
+	_DWORD Ai_Properties_Count;
+	_DWORD Ai_Properties_Offset;
+	_DWORD Functions_Count;
+	_DWORD Functions_Offset;
+	float Apply_Collision_Damage_Scale;
+	float Min_Game_Acc_Default;
+	float Max_Game_Acc_Default;
+	float Min_Gam_Scale_Default;
+	float Max_Gam_Scale_Default;
+	float Min_abs_Acc_Default;
+	float Max_abs_Acc_Default;
+	float Min_abs_Scale_Default;
+	float Max_abs_Scale_Default;
+	_WORD Hud_Text_Message_Index;
+	_BYTE padding_1[2];
+	_DWORD Attachments_Count;
+	_DWORD Attachments_Offset;
+	_DWORD Widgets_Count;
+	_DWORD Widgets_Offset;
+	_DWORD Old_Functions_Count;
+	_DWORD Old_Functions_Offset;
+	_DWORD Change_Colors_Count;
+	_DWORD Change_Colors_Offset;
+	_DWORD Predicted_Resource_Count;
+	_DWORD Predicted_Resource_Offset;
+	_WORD Pathfinding_Policy;
+	_WORD flags;
+	_DWORD Lightmapping_Policy;
+};
+struct struct_tag_scen_Ai_Properties
+{
+	_DWORD Flags;
+	_DWORD Type_Name;
+	_DWORD Size;
+	_DWORD Leap_Jump_Speed;
+};
+struct struct_tag_scen_Functions
+{
+	_DWORD Flags;
+	_DWORD Import_Name;
+	_DWORD Export_Name;
+	_DWORD Turn_Off_With;
+	float Min_Value;
+	_DWORD Function_Type_Graph_Count;
+	_DWORD Function_Type_Graph_Offset;
+};
+struct struct_tag_scen_Function_Type_Graph
+{
+	_BYTE Data;
+	_BYTE padding_0[27];
+	_DWORD Scale_By;
+};
+struct struct_tag_scen_Attachments
+{
+	_DWORD Type_Class;
+	_DWORD Type;
+	_DWORD Marker;
+	_DWORD Change_Color;
+	_DWORD Primary_Scale;
+	_DWORD Secondary_Scale;
+};
+struct struct_tag_scen_Widgets
+{
+	_DWORD Type_Class;
+	_DWORD Type;
+};
+struct struct_tag_scen_Old_Functions
+{
+};
+struct struct_tag_scen_Change_Colors
+{
+	_DWORD Initial_Permutations_Count;
+	_DWORD Initial_Permutations_Offset;
+};
+struct struct_tag_scen_Initial_Permutations
+{
+	_BYTE padding_2[4];
+	float Color_Lower_Bound_R;
+	float Color_Lower_Bound_G;
+	float Color_Lower_Bound_B;
+	float Color_Upper_Bound_R;
+	float Color_Upper_Bound_G;
+	float Color_Upper_Bound_B;
+	_DWORD Variant_Name;
+	_BYTE padding_3[-24];
+	_DWORD Functions_Count;
+	_DWORD Functions_Offset;
+};
+struct struct_tag_scen_Functions_0
+{
+	_DWORD Scale_Flags;
+	float Color_Lower_Bound_R;
+	float Color_Lower_Bound_G;
+	float Color_Lower_Bound_B;
+	float Color_Upper_Bound_R;
+	float Color_Upper_Bound_G;
+	float Color_Upper_Bound_B;
+	_DWORD Darken_By;
+	_DWORD Scale_By;
+};
+struct struct_tag_scen_Predicted_Resource
+{
+	_WORD Type;
+	_WORD Resource_Index;
+};

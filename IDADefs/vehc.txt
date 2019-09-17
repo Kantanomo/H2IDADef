@@ -1,0 +1,12 @@
+struct struct_vehc
+{
+	_DWORD Vehicle_Permutations_Count;
+	_DWORD Vehicle_Permutations_Offset;
+};
+struct struct_tag_vehc_Vehicle_Permutations
+{
+	_BYTE padding_0[4];
+	_DWORD Vehicle_Class;
+	_DWORD Vehicle;
+	_DWORD Variant_Name;
+};

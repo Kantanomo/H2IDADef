@@ -1,0 +1,243 @@
+struct struct_nhdt
+{
+	_DWORD DO_NOT_USE_Class;
+	_DWORD DO_NOT_USE;
+	_DWORD Bitmap_Widgets_Count;
+	_DWORD Bitmap_Widgets_Offset;
+	_DWORD Numerical_Elements_Count;
+	_DWORD Numerical_Elements_Offset;
+	_WORD Low_Clip_Cutoff;
+	_WORD Low_Ammo_Cutoff;
+	float Age_Cutoff;
+	_DWORD Unknownninety_eight_Count;
+	_DWORD Unknownninety_eight_Offset;
+};
+struct struct_tag_nhdt_Bitmap_Widgets
+{
+	_DWORD Name;
+	_BYTE Input_one;
+	_BYTE Input_two;
+	_BYTE Input_three;
+	_BYTE Input_four;
+	_WORD [Do_Draw_If]_Unit_Flags;
+	_BYTE [Do_Draw_If]_Extra_Flags;
+	_WORD [Do_Draw_If]_Weapon_Flags;
+	_WORD [Do_Draw_If]_Game_Engine_State_Flags;
+	_WORD [Don't_Draw_If]_Unit_Flags;
+	_BYTE [Don't_Draw_If]_Extra_Flags;
+	_WORD [Don't_Draw_If]_Weapon_Flags;
+	_WORD [Don't_Draw_If]_Game_Engine_State_Flags;
+	_WORD Age_Cutoff;
+	_WORD Clip_Cutoff;
+	_WORD Total_Cutoff;
+	_WORD Anchor;
+	_WORD Flags;
+	_DWORD Bitmap_Class;
+	_DWORD Bitmap;
+	_DWORD Shader_Class;
+	_DWORD Shader;
+	_BYTE Fullscreen_Sequence_Index;
+	_BYTE Halfscreen_Sequence_Index;
+	_BYTE Quarterscreen_Sequence_Index;
+	_BYTE padding_0[1];
+	_WORD Fullscreen_Offset_X;
+	_WORD Fullscreen_Offset_Y;
+	_WORD Halfscreen_Offset_X;
+	_WORD Halfscreen_Offset_Y;
+	_WORD Quarterscreen_Offset_X;
+	_WORD Quarterscreen_Offset_Y;
+	float Fullscreen_Registration_Point_X;
+	float Fullscreen_Registration_Point_Y;
+	float Halfscreen_Registration_Point_X;
+	float Halfscreen_Registration_Point_Y;
+	float Quarterscreen_Registration_Point_X;
+	float Quarterscreen_Registration_Point_Y;
+	_DWORD Effect_Count;
+	_DWORD Effect_Offset;
+};
+struct struct_tag_nhdt_Effect
+{
+	_DWORD Flags;
+	_DWORD Input_Name;
+	_DWORD Range_Name;
+	float Time_Period_In_Seconds;
+	_DWORD Function_Count;
+	_DWORD Function_Offset;
+};
+struct struct_tag_nhdt_Function
+{
+	_BYTE Data;
+	_BYTE padding_1[23];
+	_DWORD Input_Name;
+	_DWORD Range_Name;
+	float Time_Period_In_Seconds;
+	_DWORD Function_Count;
+	_DWORD Function_Offset;
+};
+struct struct_tag_nhdt_Function_0
+{
+	_BYTE Data;
+	_BYTE padding_2[43];
+	_DWORD Input_Name;
+	_DWORD Range_Name;
+	float Time_Period_In_Seconds;
+	_DWORD Function_Count;
+	_DWORD Function_Offset;
+};
+struct struct_tag_nhdt_Function_1
+{
+	_BYTE Data;
+	_BYTE padding_3[63];
+	_DWORD Input_Name;
+	_DWORD Range_Name;
+	float Time_Period_In_Seconds;
+	_DWORD Function_Count;
+	_DWORD Function_Offset;
+};
+struct struct_tag_nhdt_Function_2
+{
+	_BYTE Data;
+	_BYTE padding_4[83];
+	_DWORD Input_Name;
+	_DWORD Range_Name;
+	float Time_Period_In_Seconds;
+	_DWORD Function_Count;
+	_DWORD Function_Offset;
+};
+struct struct_tag_nhdt_Function_3
+{
+	_BYTE Data;
+	_BYTE padding_5[95];
+	_DWORD Special_HUD_Type;
+};
+struct struct_tag_nhdt_Numerical_Elements
+{
+	_DWORD Name;
+	_BYTE Input_one;
+	_BYTE Input_two;
+	_BYTE Input_three;
+	_BYTE Input_four;
+	_WORD [Do_Draw_If]_Unit_Flags;
+	_BYTE [Do_Draw_If]_Extra_Flags;
+	_WORD [Do_Draw_If]_Weapon_Flags;
+	_WORD [Do_Draw_If]_Game_Engine_State_Flags;
+	_WORD [Don't_Draw_If]_Unit_Flags;
+	_BYTE [Don't_Draw_If]_Extra_Flags;
+	_WORD [Don't_Draw_If]_Weapon_Flags;
+	_WORD [Don't_Draw_If]_Game_Engine_State_Flags;
+	_WORD Age_Cutoff;
+	_WORD Clip_Cutoff;
+	_WORD Total_Cutoff;
+	_WORD Anchor;
+	_WORD Flags;
+	_DWORD Shader_Class;
+	_DWORD Shader;
+	_DWORD String;
+	_WORD Justification;
+	_WORD Fullscreen_Font_Index;
+	_WORD Halfscreen_Font_Index;
+	_WORD Quarterscreen_Font_Index;
+	float Fullscreen_Scale;
+	float Halfscreen_Scale;
+	float Quarterscreen_Scale;
+	_WORD Fullscreen_Offset_X;
+	_WORD Fullscreen_Offset_Y;
+	_WORD Halfscreen_Offset_X;
+	_WORD Halfscreen_Offset_Y;
+	_WORD Quarterscreen_Offset_X;
+	_WORD Quarterscreen_Offset_Y;
+	_DWORD Effect_Count;
+	_DWORD Effect_Offset;
+};
+struct struct_tag_nhdt_Effect_0
+{
+	_DWORD Flags;
+	_DWORD Input_Name;
+	_DWORD Range_Name;
+	float Time_Period_In_Seconds;
+	_DWORD Function_Count;
+	_DWORD Function_Offset;
+};
+struct struct_tag_nhdt_Function_4
+{
+	_BYTE Data;
+	_BYTE padding_6[23];
+	_DWORD Input_Name;
+	_DWORD Range_Name;
+	float Time_Period_In_Seconds;
+	_DWORD Function_Count;
+	_DWORD Function_Offset;
+};
+struct struct_tag_nhdt_Function_5
+{
+	_BYTE Data;
+	_BYTE padding_7[43];
+	_DWORD Input_Name;
+	_DWORD Range_Name;
+	float Time_Period_In_Seconds;
+	_DWORD Function_Count;
+	_DWORD Function_Offset;
+};
+struct struct_tag_nhdt_Function_6
+{
+	_BYTE Data;
+	_BYTE padding_8[63];
+	_DWORD Input_Name;
+	_DWORD Range_Name;
+	float Time_Period_In_Seconds;
+	_DWORD Function_Count;
+	_DWORD Function_Offset;
+};
+struct struct_tag_nhdt_Function_7
+{
+	_BYTE Data;
+	_BYTE padding_9[83];
+	_DWORD Input_Name;
+	_DWORD Range_Name;
+	float Time_Period_In_Seconds;
+	_DWORD Function_Count;
+	_DWORD Function_Offset;
+};
+struct struct_tag_nhdt_Function_8
+{
+	_BYTE Data;
+};
+struct struct_tag_nhdt_Unknownninety_eight
+{
+	_DWORD Name;
+	_BYTE Input_one;
+	_BYTE Input_two;
+	_BYTE Input_three;
+	_BYTE Input_four;
+	_WORD [Do_Draw_If]_Unit_Flags;
+	_BYTE [Do_Draw_If]_Extra_Flags;
+	_WORD [Do_Draw_If]_Weapon_Flags;
+	_WORD [Do_Draw_If]_Game_Engine_State_Flags;
+	_WORD [Don't_Draw_If]_Unit_Flags;
+	_BYTE [Don't_Draw_If]_Extra_Flags;
+	_WORD [Don't_Draw_If]_Weapon_Flags;
+	_WORD [Don't_Draw_If]_Game_Engine_State_Flags;
+	_WORD Age_Cutoff;
+	_WORD Clip_Cutoff;
+	_WORD Total_Cutoff;
+	_WORD Anchor;
+	_WORD Flags;
+	_DWORD Bitmap_Class;
+	_DWORD Bitmap;
+	_DWORD Fullscreen_Effect_Class;
+	_DWORD Fullscreen_Effect;
+	_DWORD Halfscreen_Effect_Class;
+	_DWORD Halfscreen_Effect;
+	_DWORD Quarterscreen_Effect_Class;
+	_DWORD Quarterscreen_Effect;
+	_BYTE Fullscreen;
+	_BYTE Halfscreen;
+	_BYTE Quarterscreen;
+	_BYTE padding_10[1];
+	_WORD Fullscreen_Offset_X;
+	_WORD Fullscreen_Offset_Y;
+	_WORD Halfscreen_Offset_X;
+	_WORD Halfscreen_Offset_Y;
+	_WORD Quarterscreen_Offset_X;
+	_WORD Quarterscreen_Offset_Y;
+};

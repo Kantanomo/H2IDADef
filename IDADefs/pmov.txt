@@ -1,0 +1,36 @@
+struct struct_pmov
+{
+	_DWORD Particle_Physics_Class;
+	_DWORD Particle_Physics;
+	_WORD Unknown;
+	_WORD Unknown_0;
+	_DWORD Unknownsix_Count;
+	_DWORD Unknownsix_Offset;
+};
+struct struct_tag_pmov_Unknownsix
+{
+	_WORD Unknown;
+	_WORD Unknown_0;
+	_DWORD Unknowneight_Count;
+	_DWORD Unknowneight_Offset;
+};
+struct struct_tag_pmov_Unknowneight
+{
+	_WORD Unknown;
+	_WORD Unknown_0;
+	_WORD Unknown_1;
+	_WORD Unknown_2;
+	_WORD Unknown_3;
+	_WORD Unknown_4;
+	_DWORD Unknowntwelve_Count;
+	_DWORD Unknowntwelve_Offset;
+};
+struct struct_tag_pmov_Unknowntwelve
+{
+	_BYTE Floats;
+	_BYTE padding_0[11];
+	_WORD Unknown;
+	_WORD Unknown_0;
+	_WORD Unknown_1;
+	_WORD Unknown_2;
+};

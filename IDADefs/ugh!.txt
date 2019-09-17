@@ -1,0 +1,147 @@
+struct struct_ugh!
+{
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+	_DWORD Unknown_Count_0;
+	_DWORD Unknown_Offset_0;
+	_BYTE padding_1[-16];
+	_DWORD Name;
+	_BYTE padding_2[20];
+	_DWORD Unknown_Count_1;
+	_DWORD Unknown_Offset_1;
+	_DWORD Sound_Permutations_Count;
+	_DWORD Sound_Permutations_Offset;
+	_DWORD Sound_Choices_Count;
+	_DWORD Sound_Choices_Offset;
+	_DWORD Unknown_Count_2;
+	_DWORD Unknown_Offset_2;
+	_DWORD Zero_Count;
+	_DWORD Zero_Offset;
+	_DWORD Sound_Raw_Data_Count;
+	_DWORD Sound_Raw_Data_Offset;
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+	_DWORD Model_Raw_Data_Count;
+	_DWORD Model_Raw_Data_Offset;
+};
+struct struct_tag_ugh!_Unknown
+{
+	_BYTE padding_0[4];
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	float Unknown_2;
+	float Unknown_3;
+	_WORD Unknown;
+	_WORD Unknown_0;
+	float Pi;
+	float Pi_0;
+};
+struct struct_tag_ugh!_Unknown_0
+{
+	float Unknown;
+	float Unknown_0;
+	_WORD Unknown;
+	_WORD Unknown_0;
+	float One;
+	float One_0;
+};
+struct struct_tag_ugh!_Unknown_1
+{
+	_WORD Unknown;
+	_WORD Unknown_0;
+	_WORD Unknown_1;
+	_WORD Unknown_2;
+	_WORD Unknown_3;
+};
+struct struct_tag_ugh!_Sound_Permutations
+{
+	_WORD Unknown;
+	_WORD Unknown_0;
+	_BYTE Unknown;
+	_BYTE Chunk;
+	_WORD Unknown_1;
+	_WORD Sound_Choices_Index;
+	_WORD chunkCount;
+};
+struct struct_tag_ugh!_Sound_Choices
+{
+	_DWORD Name_Index;
+	_WORD Unknown;
+	_WORD Unknown_0;
+	_DWORD Unknown;
+	_WORD Sound_Chunk_Index;
+	_WORD chunkCount;
+};
+struct struct_tag_ugh!_Unknown_2
+{
+	_BYTE padding_3[20];
+	_DWORD Unknownfifty_three_Count;
+	_DWORD Unknownfifty_three_Offset;
+};
+struct struct_tag_ugh!_Unknownfifty_three
+{
+	float One;
+	_BYTE padding_4[4];
+	float eight hundred ;
+	float eight thousand ;
+	_BYTE padding_5[24];
+	float eight hundred _0;
+	float eight thousand _0;
+	_BYTE padding_6[-20];
+};
+struct struct_tag_ugh!_Zero
+{
+};
+struct struct_tag_ugh!_Sound_Raw_Data
+{
+	_DWORD Raw_Offset;
+	_DWORD Size;
+	_DWORD Effect;
+};
+struct struct_tag_ugh!_Unknown_3
+{
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_ugh!_Unknown_4
+{
+	_BYTE padding_7[2];
+	_WORD Unknown;
+	float Unknown;
+	float Unknown_0;
+	float Unknown_1;
+	_BYTE padding_8[-8];
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_ugh!_Unknown_5
+{
+	_BYTE padding_9[16];
+	_BYTE padding_10[4];
+};
+struct struct_tag_ugh!_Model_Raw_Data
+{
+	_BYTE padding_11[8];
+	_DWORD Offset;
+	_DWORD Size;
+	_DWORD Header_Size;
+	_DWORD Data_Size;
+	_DWORD Resource_Blocks_Count;
+	_DWORD Resource_Blocks_Offset;
+};
+struct struct_tag_ugh!_Resource_Blocks
+{
+	_WORD Unknown;
+	_WORD Unknown_0;
+	_WORD Unknown_1;
+	_WORD Chunk_Size;
+	_DWORD Size;
+	_DWORD Offset;
+	_BYTE padding_12[16];
+	_DWORD Crazy_Class;
+	_DWORD Crazy;
+	_BYTE padding_13[-4];
+	float Constant;
+	float Constant_0;
+};

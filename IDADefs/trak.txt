@@ -1,0 +1,16 @@
+struct struct_trak
+{
+	_BYTE padding_0[4];
+	_DWORD Control_Points_Count;
+	_DWORD Control_Points_Offset;
+};
+struct struct_tag_trak_Control_Points
+{
+	float Pos_i;
+	float Pos_j;
+	float Pos_k;
+	float Orientation_i;
+	float Orientation_j;
+	float Orientation_k;
+	float Orientation_w;
+};

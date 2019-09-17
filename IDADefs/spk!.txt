@@ -1,0 +1,7 @@
+struct struct_spk!
+{
+	float Almost_Never;
+	float Rarely;
+	float Somewhat;
+	float Often;
+};

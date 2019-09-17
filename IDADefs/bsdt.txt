@@ -1,0 +1,125 @@
+struct struct_bsdt
+{
+	float Max_Vitality;
+	_DWORD Effect_Class;
+	_DWORD Effect;
+	_DWORD Sound_Class;
+	_DWORD Sound;
+	_BYTE padding_0[28];
+	_DWORD Particle_Systems_Count;
+	_DWORD Particle_Systems_Offset;
+	_BYTE padding_12[-28];
+	float Particle_Density;
+};
+struct struct_tag_bsdt_Particle_Systems
+{
+	_DWORD Particle_Class;
+	_DWORD Particle;
+	_WORD Location;
+	_WORD Coordinate_System;
+	_WORD Environment;
+	_WORD Disposition;
+	_WORD Camera_Mode;
+	_WORD Sort_Bias;
+	_DWORD Flags;
+	_BYTE padding_1[4];
+	float LOD_In_Distance;
+	float LOD_Feather_In_Delta;
+	float LOD_Out_Distance;
+	float LOD_Feather_Out_Delta;
+	_BYTE padding_2[4];
+	_DWORD Emitters_Count;
+	_DWORD Emitters_Offset;
+};
+struct struct_tag_bsdt_Emitters
+{
+	_DWORD Particle_Physics_Class;
+	_DWORD Particle_Physics;
+	_DWORD Output_Modifier;
+	_DWORD Output_Modifier_0;
+	_DWORD Particle_Emission_Rate_Count;
+	_DWORD Particle_Emission_Rate_Offset;
+};
+struct struct_tag_bsdt_Particle_Emission_Rate
+{
+	_BYTE Data;
+	_BYTE padding_3[23];
+	_DWORD Output_Modifier;
+	_DWORD Output_Modifier_0;
+	_DWORD Particle_Lifespan_sec_Count;
+	_DWORD Particle_Lifespan_sec_Offset;
+};
+struct struct_tag_bsdt_Particle_Lifespan_sec
+{
+	_BYTE Data;
+	_BYTE padding_4[39];
+	_DWORD Output_Modifier;
+	_DWORD Output_Modifier_0;
+	_DWORD Particle_Velocity_World_Units_Per_Sec_Count;
+	_DWORD Particle_Velocity_World_Units_Per_Sec_Offset;
+};
+struct struct_tag_bsdt_Particle_Velocity_World_Units_Per_Sec
+{
+	_BYTE Data;
+	_BYTE padding_5[55];
+	_DWORD Output_Modifier;
+	_DWORD Output_Modifier_0;
+	_DWORD Particle_Angular_Velocity_Degrees_Per_Sec_Count;
+	_DWORD Particle_Angular_Velocity_Degrees_Per_Sec_Offset;
+};
+struct struct_tag_bsdt_Particle_Angular_Velocity_Degrees_Per_Sec
+{
+	_BYTE Data;
+	_BYTE padding_6[71];
+	_DWORD Output_Modifier;
+	_DWORD Output_Modifier_0;
+	_DWORD Particle_Size_World_Units_Count;
+	_DWORD Particle_Size_World_Units_Offset;
+};
+struct struct_tag_bsdt_Particle_Size_World_Units
+{
+	_BYTE Data;
+	_BYTE padding_7[87];
+	_DWORD Output_Modifier;
+	_DWORD Output_Modifier_0;
+	_DWORD Particle_Tint_Count;
+	_DWORD Particle_Tint_Offset;
+};
+struct struct_tag_bsdt_Particle_Tint
+{
+	_BYTE Data;
+	_BYTE padding_8[103];
+	_DWORD Output_Modifier;
+	_DWORD Output_Modifier_0;
+	_DWORD Particle_Alpha_Count;
+	_DWORD Particle_Alpha_Offset;
+};
+struct struct_tag_bsdt_Particle_Alpha
+{
+	_BYTE Data;
+	_BYTE padding_9[119];
+	_DWORD Emission_Shape;
+	_DWORD Output_Modifier;
+	_DWORD Output_Modifier_0;
+	_DWORD Emission_Radius_World_Units_Count;
+	_DWORD Emission_Radius_World_Units_Offset;
+};
+struct struct_tag_bsdt_Emission_Radius_World_Units
+{
+	_BYTE Data;
+	_BYTE padding_10[139];
+	_DWORD Output_Modifier;
+	_DWORD Output_Modifier_0;
+	_DWORD Emission_Angle_Degrees_Count;
+	_DWORD Emission_Angle_Degrees_Offset;
+};
+struct struct_tag_bsdt_Emission_Angle_Degrees
+{
+	_BYTE Data;
+	_BYTE padding_11[155];
+	float Translation_Offset_X;
+	float Translation_Offset_Y;
+	float Translation_Offset_Z;
+	float Relative_Direction_Yaw;
+	float Relative_Direction_Pitch;
+};

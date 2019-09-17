@@ -1,0 +1,23 @@
+struct struct_fpch
+{
+	_DWORD Flags;
+	float Movement_Rotation_Multiplier;
+	float Movement_Strafing_Multiplier;
+	float Movement_Zoom_Multiplier;
+	float Noise_Map_Scale;
+	_DWORD Noise_Map_Class;
+	_DWORD Noise_Map;
+	float Noise_Vertical_Scale_Forward;
+	float Noise_Vertical_Scale_Up;
+	float Noise_Opacity_Scale_Up;
+	float Animation_Period_sec;
+	float Wind_Velocity;
+	float ___To;
+	float Wind_Period;
+	float ___To_0;
+	float Wind_Acceleration_Weight;
+	float Wind_Perpendicular_Weight;
+	float Wind_Constant_Velocity_X;
+	float Wind_Constant_Velocity_Y;
+	float Wind_Constant_Velocity_Z;
+};

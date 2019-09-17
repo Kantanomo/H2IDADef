@@ -1,0 +1,31 @@
+struct struct_cin!
+{
+	_DWORD Cutscene_Flags_Count;
+	_DWORD Cutscene_Flags_Offset;
+	_DWORD Cutscene_Camera_Count;
+	_DWORD Cutscene_Camera_Offset;
+	_DWORD Unused;
+	_DWORD Unused_0;
+};
+struct struct_tag_cin!_Cutscene_Flags
+{
+	_BYTE padding_0[4];
+	_BYTE padding_1[32];
+	float Position_X;
+	float Position_Y;
+	float Position_Z;
+	float Facing_Yaw;
+	float Facing_Pitch;
+};
+struct struct_tag_cin!_Cutscene_Camera
+{
+	_BYTE padding_2[4];
+	_BYTE padding_3[32];
+	float Position_X;
+	float Position_Y;
+	float Position_Z;
+	float Orientation_Y;
+	float Orientation_P;
+	float Orientation_R;
+	float Field_of_View;
+};

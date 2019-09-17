@@ -1,0 +1,27 @@
+struct struct_deca
+{
+	_WORD Flags;
+	_WORD Type;
+	_WORD Layer;
+	_WORD Max_Overlapping_Count;
+	_DWORD Next_Decal_In_Chain_Class;
+	_DWORD Next_Decal_In_Chain;
+	float Radius;
+	float ^ToWorld_Units;
+	float Radius_Overlapping_Rejection;
+	float Color_Lower_Bound_R;
+	float Color_Lower_Bound_G;
+	float Color_Lower_Bound_B;
+	float Color_Upper_Bound_R;
+	float Color_Upper_Bound_G;
+	float Color_Upper_Bound_B;
+	float Lifetime;
+	float ^ToSeconds;
+	float Decay_Time;
+	float ^ToSeconds_0;
+	_BYTE padding_0[68];
+	_DWORD Bitmap_Class;
+	_DWORD Bitmap;
+	_BYTE padding_1[20];
+	float Maximun_Sprite_Extentpixels;
+};

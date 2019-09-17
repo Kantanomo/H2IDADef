@@ -1,0 +1,25 @@
+struct struct_foot
+{
+	_BYTE padding_0[8];
+	_BYTE padding_1[-8];
+	_DWORD Impact_Sound_Class;
+	_DWORD Impact_Sound;
+	_BYTE padding_2[-4];
+	_BYTE padding_3[4];
+	_BYTE padding_4[8];
+	_DWORD Material_Identifier;
+	_WORD Material_Identity;
+	_WORD Sound_Type;
+	_BYTE padding_5[-8];
+	_BYTE padding_6[-16];
+	_DWORD Impact_Effect_#one_Class;
+	_DWORD Impact_Effect_#one;
+	_BYTE padding_7[-4];
+	_BYTE padding_8[4];
+	_DWORD Impact_Effect_#two_Class;
+	_DWORD Impact_Effect_#two;
+	_BYTE padding_9[-4];
+	_BYTE padding_10[4];
+	_DWORD Material_Identifier_0;
+	_WORD Material_Identity_0;
+};

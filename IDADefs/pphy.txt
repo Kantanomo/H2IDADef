@@ -1,0 +1,11 @@
+struct struct_pphy
+{
+	_DWORD Flags;
+	float Density;
+	float Air_Friction;
+	float Water_Friction;
+	_BYTE padding_0[16];
+	float Surface_Friction;
+	float Elasticity?;
+	float Unknown;
+};

@@ -1,0 +1,18 @@
+struct struct_mdlg
+{
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_mdlg_Unknown
+{
+	_BYTE padding_0[4];
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_mdlg_Unknown_0
+{
+	_DWORD Unknown;
+	_DWORD Unknown_Class;
+	_DWORD Unknown_0;
+	_DWORD Unknown_1;
+};

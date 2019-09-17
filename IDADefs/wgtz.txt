@@ -1,0 +1,16 @@
+struct struct_wgtz
+{
+	_DWORD Globals_Class;
+	_DWORD Globals;
+	_DWORD Collection_Count;
+	_DWORD Collection_Offset;
+	_DWORD Gametype_Collection_Class;
+	_DWORD Gametype_Collection;
+	_DWORD Unicode_Strings_Class;
+	_DWORD Unicode_Strings;
+};
+struct struct_tag_wgtz_Collection
+{
+	_DWORD Game_Shell_Class;
+	_DWORD Game_Shell;
+};

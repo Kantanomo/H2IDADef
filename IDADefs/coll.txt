@@ -1,0 +1,165 @@
+struct struct_coll
+{
+	_BYTE padding_0[20];
+	_DWORD Materials_Count;
+	_DWORD Materials_Offset;
+	_DWORD Regions_Count;
+	_DWORD Regions_Offset;
+	_DWORD Path_Finding_Spheres_Count;
+	_DWORD Path_Finding_Spheres_Offset;
+	_DWORD Nodes_Count;
+	_DWORD Nodes_Offset;
+};
+struct struct_tag_coll_Materials
+{
+	_DWORD Material_Type;
+};
+struct struct_tag_coll_Regions
+{
+	_DWORD Peice;
+	_DWORD Premutations_Count;
+	_DWORD Premutations_Offset;
+};
+struct struct_tag_coll_Premutations
+{
+	_DWORD Premutation;
+	_DWORD BSP_Count;
+	_DWORD BSP_Offset;
+};
+struct struct_tag_coll_BSP
+{
+	_WORD BSP;
+	_WORD Lightmap;
+	_DWORD threeD_Nodes_Count;
+	_DWORD threeD_Nodes_Offset;
+};
+struct struct_tag_coll_threeD_Nodes
+{
+	_WORD Unknown;
+	_WORD Unknown_0;
+	_BYTE Unknown;
+	_BYTE Unknown_0;
+	_BYTE Unknown_1;
+	_BYTE Unknown_2;
+	_BYTE padding_1[4];
+	_DWORD Planes_Count;
+	_DWORD Planes_Offset;
+};
+struct struct_tag_coll_Planes
+{
+	float i;
+	float I;
+	float k;
+	float Distance_of_plane_from_center_;
+	_BYTE padding_2[4];
+	_DWORD Leaves_Count;
+	_DWORD Leaves_Offset;
+};
+struct struct_tag_coll_Leaves
+{
+	_BYTE Flags;
+	_BYTE twoD_Ref;
+	_WORD Refrence_count;
+	_BYTE padding_3[24];
+	_DWORD twoD_Refrences_Count;
+	_DWORD twoD_Refrences_Offset;
+};
+struct struct_tag_coll_twoD_Refrences
+{
+	_WORD Plane;
+	_WORD Node;
+	_BYTE padding_4[32];
+	_DWORD Planes_Count;
+	_DWORD Planes_Offset;
+};
+struct struct_tag_coll_Planes_0
+{
+	float Plane_i;
+	float Plane_j;
+	float Plane_k;
+	_WORD Left_Child;
+	_WORD Right_Child;
+	_BYTE padding_5[28];
+	_DWORD Surfaces_Count;
+	_DWORD Surfaces_Offset;
+};
+struct struct_tag_coll_Surfaces
+{
+	_WORD Plane;
+	_WORD First_Edge;
+	_BYTE Flags;
+	_BYTE Breakable_Surface_#;
+	_WORD Material;
+	_BYTE padding_6[44];
+	_DWORD Edge_Buffer_Count;
+	_DWORD Edge_Buffer_Offset;
+};
+struct struct_tag_coll_Edge_Buffer
+{
+	_WORD Start_Vertex;
+	_WORD End_Vertex;
+	_WORD Forward_Edge;
+	_WORD Reverse_Edge;
+	_WORD Left_Surface;
+	_WORD Right_Surface;
+	_BYTE padding_7[48];
+	_DWORD Vertices_Count;
+	_DWORD Vertices_Offset;
+};
+struct struct_tag_coll_Vertices
+{
+	float x;
+	float y;
+	float z;
+	_DWORD First_Edge;
+	_BYTE padding_8[-4];
+	_BYTE padding_9[-12];
+	float Unknown;
+	float Unknown_0;
+	_BYTE padding_10[4];
+	float Unknown_1;
+	float Unknown_2;
+	float Unknown_3;
+	float Unknown_4;
+	_BYTE padding_11[4];
+	float Unknown_5;
+	float Unknown_6;
+	float Unknown_7;
+	_BYTE padding_12[4];
+	_DWORD Unknown_Class;
+	_DWORD Unknown;
+	_BYTE padding_13[-4];
+	_BYTE padding_14[12];
+	float Unknown_8;
+	float Unknown_9;
+	_BYTE padding_15[4];
+	float Unknown_10;
+	float Unknown_11;
+	float Unknown_12;
+	_BYTE padding_16[4];
+	float Unknown_13;
+	float Unknown_14;
+	_DWORD Unknown_Count;
+	_DWORD Unknown_Offset;
+};
+struct struct_tag_coll_Unknown
+{
+	_BYTE Unknown;
+	_BYTE padding_17[107];
+};
+struct struct_tag_coll_Path_Finding_Spheres
+{
+	_DWORD Node_Chunk;
+	float Center_Point_X;
+	float Center_Point_Y;
+	float Center_Point_Z;
+	float Radius;
+};
+struct struct_tag_coll_Nodes
+{
+	_DWORD Node;
+	_WORD Parent;
+	_WORD Child;
+	_WORD Next_Sibling;
+	_WORD Final_Sibling?;
+};

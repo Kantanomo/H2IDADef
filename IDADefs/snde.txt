@@ -1,0 +1,16 @@
+struct struct_snde
+{
+	_BYTE padding_0[8];
+	float Priority;
+	float Room_intensitydB;
+	float Room_intensity_hfdB;
+	float Room_Rolloffzero_to_ten;
+	float Decay_Time_one_to_twenty_Sec;
+	float Decay_Hf_Ratio_one_to_two;
+	float Reflections_Delay_zero_to_zero_three_Sec;
+	float Reverb_IntensitydB__one hundred ,twenty;
+	float Reverb_Delayzero_to__one_Sec;
+	float Diffusion;
+	float Density;
+	float Hf_Refrencetwenty_to_twenty,zeroHz;
+};

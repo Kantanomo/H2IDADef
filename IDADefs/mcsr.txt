@@ -1,0 +1,9 @@
+struct struct_mcsr
+{
+	_DWORD Bitmaps_Count;
+	_DWORD Bitmaps_Offset;
+	float Animation_Speed;
+};
+struct struct_tag_mcsr_Bitmaps
+{
+};
